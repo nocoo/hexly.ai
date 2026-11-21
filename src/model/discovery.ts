@@ -367,6 +367,15 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 
 function homePage(projects: Project[]): DiscoveryPage {
 	const visible = filterProjects(projects, "", "all");
+	const archived = filterProjects(projects, "", "archive");
+	const archivedSection = archived.length
+		? `<section id="archived"><h2>Archived projects</h2><ul>${archived
+				.map(
+					(entry) =>
+						`<li><a href="/projects/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
+				)
+				.join("")}</ul></section>`
+		: "";
 	return {
 		path: "/",
 		title: homeTitle,
@@ -375,7 +384,10 @@ function homePage(projects: Project[]): DiscoveryPage {
 		image: socialImage(),
 		imageAlt: "hexly.ai mark on warm paper",
 		heading: homeHeading,
-		bodyHtml: snapshotHtml(homeHeading, homeDescription, "/", visible),
+		bodyHtml: snapshotHtml(homeHeading, homeDescription, "/", visible).replace(
+			"</main>",
+			`${archivedSection}</main>`,
+		),
 		jsonLd: {
 			"@context": "https://schema.org",
 			"@graph": [
@@ -395,10 +407,7 @@ function homePage(projects: Project[]): DiscoveryPage {
 					description: homeDescription,
 					isPartOf: { "@id": `${siteOrigin}/#website` },
 					mainEntity: itemList(visible, "Active projects"),
-					hasPart: itemList(
-						filterProjects(projects, "", "archive"),
-						"Archived projects",
-					),
+					hasPart: itemList(archived, "Archived projects"),
 				},
 			],
 		},
@@ -558,7 +567,7 @@ function snapshotHtml(
 			? `<ul>${statusSites(projects)
 					.map(
 						(site) =>
-							`<li><a href="${escapeHtml(site.website)}">${escapeHtml(site.title)}</a> — <a href="${escapeHtml(site.endpoint)}">/api/live</a></li>`,
+							`<li><a href="${escapeHtml(site.website)}">${escapeHtml(site.title)}</a> — <a href="${escapeHtml(site.endpoint)}" rel="nofollow">/api/live</a></li>`,
 					)
 					.join("")}</ul>`
 			: `<ul>${projects

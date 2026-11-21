@@ -163,7 +163,11 @@ describe("crawler discovery documents", () => {
 		expect(home.heading).toBe(homeHeading);
 		expect(home.bodyHtml).toContain("<h1>");
 		expect(home.bodyHtml).toContain("Firefly");
+		expect(home.bodyHtml).toContain('id="archived"');
+		expect(home.bodyHtml).toContain('href="/projects/sleepy"');
 		expect(home.bodyHtml).toContain("https://lizheng.me/en/");
+		const status = pageForPath("/status", projects);
+		expect(status.bodyHtml).toContain('rel="nofollow">/api/live</a>');
 		expect(home.jsonLd).toMatchObject({
 			"@graph": [{ "@type": "WebSite" }, { "@type": "CollectionPage" }],
 		});

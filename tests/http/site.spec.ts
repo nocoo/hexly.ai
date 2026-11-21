@@ -208,6 +208,24 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	const home = await (await request.get("/")).text();
 	expect(home).toContain("Active projects");
 	expect(home).toContain("Archived projects");
+	expect(home).toContain('href="/projects/sleepy"');
+	for (const missingPath of [
+		"/templates?project=pew-game",
+		"/projects/not-a-project",
+	]) {
+		const missing = await request.get(missingPath, { maxRedirects: 0 });
+		expect(missing.status(), missingPath).toBe(404);
+		expect(missing.headers()["x-robots-tag"]).toBe("noindex");
+	}
+	for (const noindexPath of [
+		"/api/live",
+		"/data/projects.json",
+		"/agents/index.md",
+	]) {
+		const res = await request.get(noindexPath);
+		expect(res.status(), noindexPath).toBe(200);
+		expect(res.headers()["x-robots-tag"]).toBe("noindex");
+	}
 	const social = await request.get(
 		`/og/${socialCards.projects.frogie.path.split("/").pop()}`,
 	);

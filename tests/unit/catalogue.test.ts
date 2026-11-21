@@ -66,6 +66,27 @@ describe("the imported project catalogue", () => {
 		expect(projects.length).toBeGreaterThan(0);
 		expect(catalogueProblems(projects)).toEqual([]);
 	});
+	it("rejects relative family.archive links that break under /projects/<id>", () => {
+		if (!frogie.family) throw new Error("Missing family fixture");
+		const relative = {
+			...frogie,
+			family: {
+				...frogie.family,
+				archive: "artwork/logo-family/frogie/2026-09-06-01",
+			},
+		};
+		expect(catalogueProblems([relative])).toContain(
+			`Invalid family archive link: ${frogie.id}`,
+		);
+		const rooted = {
+			...frogie,
+			family: {
+				...frogie.family,
+				archive: "/artwork/logo-family/frogie/2026-09-06-01/review.html",
+			},
+		};
+		expect(catalogueProblems([rooted])).toEqual([]);
+	});
 	it("requires first-identity candidates to remain unadopted and match their reviewed foreground", () => {
 		if (!frogie.family) throw new Error("Missing family fixture");
 		const family = {

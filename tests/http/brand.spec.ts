@@ -25,6 +25,6 @@ test("serves Brand discovery, usage instructions and status-origin redirection",
 		headers: { Host: "status.hexly.ai" },
 		maxRedirects: 0,
 	});
-	expect(redirect.status()).toBe(302);
+	expect(redirect.status()).toBe(301);
 	expect(redirect.headers().location).toBe("https://hexly.ai/brand");
 });

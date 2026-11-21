@@ -48,6 +48,7 @@ describe("single-project API gateway", () => {
 		);
 		expect(await response.json()).toEqual({ repo: "life.ai" });
 		expect(response.headers.get("Cache-Control")).toBe("public, max-age=3600");
+		expect(response.headers.get("X-Robots-Tag")).toBe("noindex");
 		await Promise.all(pending);
 		expect(put).toHaveBeenCalledOnce();
 		const forwarded = fetchAsset.mock.calls[0]?.[0] as Request | undefined;
@@ -125,10 +126,58 @@ describe("the static asset gateway", () => {
 			new Request("https://status.hexly.ai/brand"),
 			env,
 		);
-		expect(response.status).toBe(302);
+		expect(response.status).toBe(301);
 		expect(response.headers.get("Location")).toBe("https://hexly.ai/brand");
 		const main = await worker.fetch(new Request("https://hexly.ai/brand"), env);
 		expect(main.status).toBe(200);
+	});
+	it("returns 404 with noindex instead of SPA 200 fallback for unknown routes", async () => {
+		const spaFallbackEnv: Env = Object.assign(Object.create(env), {
+			ASSETS: {
+				...assets,
+				fetch: async () =>
+					new Response("<!doctype html><html></html>", {
+						status: 200,
+						headers: { "Content-Type": "text/html; charset=utf-8" },
+					}),
+			},
+		});
+		for (const path of [
+			"/templates?project=pew-game",
+			"/projects/not-a-project",
+			"/projects/artwork/logo-family/base-cli/2026-10-18-01",
+			"/missing-page",
+		]) {
+			const response = await worker.fetch(
+				new Request(`https://hexly.ai${path}`),
+				spaFallbackEnv,
+			);
+			expect(response.status, path).toBe(404);
+			expect(response.headers.get("X-Robots-Tag")).toBe("noindex");
+			expect(await response.text()).toContain("Page not found.");
+		}
+		const head = await worker.fetch(
+			new Request("https://hexly.ai/templates?project=pew-game", {
+				method: "HEAD",
+			}),
+			spaFallbackEnv,
+		);
+		expect(head.status).toBe(404);
+		expect(await head.text()).toBe("");
+		for (const path of [
+			"/",
+			"/logos",
+			"/brand",
+			"/status",
+			"/projects/frogie",
+			"/brands/snail/v2.0.0/review.html",
+		]) {
+			const ok = await worker.fetch(
+				new Request(`https://hexly.ai${path}`),
+				spaFallbackEnv,
+			);
+			expect(ok.status, path).toBe(200);
+		}
 	});
 	it("redirects legacy materials directly to R2 in production while keeping archived HTML/code and page routes", async () => {
 		const live = Object.assign(Object.create(env), {

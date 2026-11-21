@@ -398,6 +398,13 @@ export function catalogueProblems(projects: Project[]): string[] {
 			if (!/^https:\/\/[^\s/]+(?:\/[^\s]*)?$/.test(url))
 				problems.push(`Invalid external link: ${project.id}`);
 		}
+		if (
+			project.family?.archive &&
+			!/^(https:\/\/[^\s/]+(?:\/[^\s]*)?|\/[^\s]*)$/.test(
+				project.family.archive,
+			)
+		)
+			problems.push(`Invalid family archive link: ${project.id}`);
 		for (const asset of [
 			project.logo.original,
 			project.logo.thumbnail,

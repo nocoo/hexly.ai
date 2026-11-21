@@ -6,9 +6,43 @@ import { runStatusChecks, statusResponse } from "./status";
 
 const slugs = new Set(projectIds);
 
+function isKnownHtmlPath(path: string): boolean {
+	if (
+		path === "/" ||
+		path === "/logos" ||
+		path === "/brand" ||
+		path === "/status"
+	)
+		return true;
+	const project = /^\/projects\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(path)?.[1];
+	if (project && slugs.has(project)) return true;
+	return /^\/(brands|textures|artwork\/logo-family|logos\/family)\//.test(path);
+}
+
+function notFoundHtmlResponse(method: string): Response {
+	const headers = {
+		"Content-Type": "text/html; charset=utf-8",
+		"Cache-Control": "no-store",
+		"X-Robots-Tag": "noindex",
+	};
+	return new Response(
+		method === "HEAD"
+			? null
+			: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Not found — hexly.ai</title></head><body><main><h1>Page not found.</h1><p><a href="/">Back to hexly.ai</a></p></main></body></html>',
+		{ status: 404, headers },
+	);
+}
+
+function noindex(response: Response): Response {
+	const headers = new Headers(response.headers);
+	headers.set("X-Robots-Tag", "noindex");
+	return new Response(response.body, { status: response.status, headers });
+}
+
 function cors(response: Response): Response {
 	const headers = new Headers(response.headers);
 	headers.set("Access-Control-Allow-Origin", "*");
+	headers.set("X-Robots-Tag", "noindex");
 	return new Response(response.body, { status: response.status, headers });
 }
 
@@ -22,6 +56,7 @@ function shareResponse(
 		headers: {
 			"Content-Type": contentType,
 			"Access-Control-Allow-Origin": "*",
+			"X-Robots-Tag": "noindex",
 		},
 	});
 }
@@ -82,7 +117,7 @@ export default {
 			url.hostname = "hexly.ai";
 			url.protocol = "https:";
 			url.port = "";
-			return Response.redirect(url.toString(), 302);
+			return Response.redirect(url.toString(), 301);
 		}
 		if (changed) {
 			return new Response(null, {
@@ -91,13 +126,16 @@ export default {
 			});
 		}
 		if (path === "/api/projects" || path.startsWith("/api/projects/")) {
-			return projectApiResponse(request, env, ctx);
+			return noindex(await projectApiResponse(request, env, ctx));
 		}
 		if (path === "/api/status") {
 			if (!["GET", "HEAD"].includes(request.method))
 				return Response.json(
 					{ error: "Method not allowed" },
-					{ status: 405, headers: { Allow: "GET, HEAD" } },
+					{
+						status: 405,
+						headers: { Allow: "GET, HEAD", "X-Robots-Tag": "noindex" },
+					},
 				);
 			const key = new Request(`${url.origin}/api/status`);
 			const cached =
@@ -107,12 +145,14 @@ export default {
 			const response = cached ?? (await statusResponse(env));
 			if (!cached && response.ok && env.STATUS_MODE === "live" && ctx)
 				ctx.waitUntil(caches.default.put(key, response.clone()));
-			return request.method === "HEAD"
-				? new Response(null, {
-						status: response.status,
-						headers: response.headers,
-					})
-				: response;
+			return noindex(
+				request.method === "HEAD"
+					? new Response(null, {
+							status: response.status,
+							headers: response.headers,
+						})
+					: response,
+			);
 		}
 		if (path === "/api/share.json" || path.startsWith("/api/share/")) {
 			const id = /^\/api\/share\/([a-z0-9]+(?:-[a-z0-9]+)*)\.json$/.exec(
@@ -131,6 +171,13 @@ export default {
 			return cors(await env.ASSETS.fetch(request));
 		}
 		let response = await env.ASSETS.fetch(request);
+		if (
+			response.status === 200 &&
+			response.headers.get("Content-Type")?.includes("text/html") &&
+			!isKnownHtmlPath(path)
+		) {
+			return notFoundHtmlResponse(request.method);
+		}
 		const reviewDocument =
 			/^\/(brands|textures|artwork\/logo-family)\//.test(path) &&
 			/\/review(?:\.html)?$/.test(path) &&

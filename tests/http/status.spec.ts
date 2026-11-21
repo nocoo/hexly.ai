@@ -62,6 +62,6 @@ test("serves both status entry points and keeps family logo assets on the status
 		headers: { Host: "status.hexly.ai" },
 		maxRedirects: 0,
 	});
-	expect(gallery.status()).toBe(302);
+	expect(gallery.status()).toBe(301);
 	expect(gallery.headers().location).toBe("https://hexly.ai/projects/pika");
 });
