@@ -15,6 +15,7 @@
 ### Fixes
 
 - return 404 for unknown routes, fix relative archive links, and tighten crawler signals ([88be119](https://github.com/nocoo/hexly.ai/commit/88be119e0af3b611e284c6ccc5ec464e0ddf6376))
+- preserve SPA shell body on 404 responses and align status redirect test ([c0f79ad](https://github.com/nocoo/hexly.ai/commit/c0f79adf2f3e8f54607cf18314262096d145090d))
 
 ## [1.9.5] - 2026-11-20
 
