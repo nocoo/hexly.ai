@@ -51,9 +51,9 @@ bun run build
 
 Vite runs at `127.0.0.1:7048` and the local Worker at 37048; the Caddy URL is https://index.dev.hexly.ai. Daily development reads CDN assets without downloading historical galleries. Before brand changes or offline previews of the complete historical archive, run `bun run assets:hydrate` to restore missing assets by hash without overwriting local changes.
 
-Local `/status` uses the real Worker API and SQLite with clearly labeled simulated data; it does not probe production websites. Project sources live in `src/data/projects/`; the browser-facing `/data/projects.json` is generated. `src/model/` holds pure logic, `worker/` owns routes/status/scheduled checks, and `packages/video-kit/` owns shared templates and rendering.
+Local `/status` uses the real Worker API and SQLite with clearly labeled simulated data; it does not probe production websites. Project sources live in `src/data/projects/`; the browser-facing `/data/projects.json` is generated. `src/model/` holds pure logic, and `worker/` owns routes/status/scheduled checks.
 
-Video Kit uses actual logos, fonts and themes with independently selectable covers, bodies and outros. Offline PPTX/PDF exports retain rendered page images; PPTX includes editable speaker notes. Video exports require Chromium and FFmpeg. See [Video Kit](../packages/video-kit/README.md) for commands and [maintenance](29-project-maintenance.md) for catalogue/profile synchronization, asset uploads and publication.
+See [maintenance](29-project-maintenance.md) for catalogue/profile synchronization, asset uploads and publication.
 
 ## Tests
 
@@ -86,18 +86,12 @@ Vitest covers models and logic; HTTP tests start a local Worker, while Playwrigh
 - [Local development](04-development.md)
 - [Versions and releases](05-release.md)
 - [Service status](11-status-monitoring.md)
-- [Video Kit API and exports](../packages/video-kit/README.md)
-- [Project media](17-project-media.md)
-- [Brand archives and scope](19-family-brand-archives.md)
 - [R2 storage and maintenance](21-asset-storage.md)
-- [History and asset recovery](23-git-history-recovery.md)
-- [Standard outros](24-standard-outro-examples.md)
 - [Agent instructions](25-agent-guides.md)
 - [Project textures](27-project-textures.md)
 - [Current texture packs](40-texture-packs.md)
 - [Maintenance](29-project-maintenance.md)
 - [Project profiles and palettes](profiles/README.md)
-- [Source snapshots](sources/README.md)
 - [Changelog](../CHANGELOG.md)
 
 ## License

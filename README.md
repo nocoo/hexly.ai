@@ -51,9 +51,9 @@ bun run build
 
 Vite 位于 `127.0.0.1:7048`，本地 Worker 位于 37048；Caddy 地址是 https://index.dev.hexly.ai。日常开发直接读取 CDN，不必下载历史图库。品牌修改或完整历史档案离线预览前运行 `bun run assets:hydrate`，按哈希恢复缺失素材，不覆盖已有改动。
 
-本地 `/status` 使用真实 Worker API 和 SQLite，自动填充明确标注的模拟数据，不探测生产站点。项目源数据位于 `src/data/projects/`，浏览器加载的 `/data/projects.json` 由构建生成。`src/model/` 管纯逻辑，`worker/` 管路由、状态 API 与定时检查，`packages/video-kit/` 管共享模板与渲染。
+本地 `/status` 使用真实 Worker API 和 SQLite，自动填充明确标注的模拟数据，不探测生产站点。项目源数据位于 `src/data/projects/`，浏览器加载的 `/data/projects.json` 由构建生成。`src/model/` 管纯逻辑，`worker/` 管路由、状态 API 与定时检查。
 
-Video Kit 使用真实 Logo、字体和主题，支持独立组合封面、正文、片尾；离线 PPTX/PDF 保留渲染图像，PPTX 附可编辑演讲者备注，视频导出需要 Chromium 与 FFmpeg。详细命令见 [Video Kit](packages/video-kit/README.md)。目录与 GitHub profile 同步、资源上传和发布见 [维护流程](docs/29-project-maintenance.md)。
+目录与 GitHub profile 同步、资源上传和发布见 [维护流程](docs/29-project-maintenance.md)。
 
 ## 测试
 
@@ -86,17 +86,12 @@ Vitest 检查模型与逻辑；HTTP 测试启动本地 Worker，Playwright 覆�
 - [本地开发](docs/04-development.md)
 - [版本与发布](docs/05-release.md)
 - [服务状态](docs/11-status-monitoring.md)
-- [Video Kit API 与导出](packages/video-kit/README.md)
-- [项目媒体](docs/17-project-media.md)
-- [品牌档案与作用域](docs/19-family-brand-archives.md)
 - [R2 存储与维护](docs/21-asset-storage.md)
-- [历史与素材恢复](docs/23-git-history-recovery.md)
-- [标准片尾](docs/24-standard-outro-examples.md)
 - [Agent 使用说明](docs/25-agent-guides.md)
 - [项目底纹](docs/27-project-textures.md)
+- [当前底纹包](docs/40-texture-packs.md)
 - [维护流程](docs/29-project-maintenance.md)
 - [项目档案与色板](docs/profiles/README.md)
-- [来源快照](docs/sources/README.md)
 - [更新记录](CHANGELOG.md)
 
 ## 许可证
