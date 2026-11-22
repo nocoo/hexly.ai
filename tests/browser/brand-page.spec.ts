@@ -87,7 +87,7 @@ for (const [name, options, locale, theme] of [
 				await menuToggle.click();
 			}
 			await navigation
-				.getByRole("button", { name: copy[locale].brandPage, exact: true })
+				.getByRole("link", { name: copy[locale].brandPage, exact: true })
 				.click();
 			await expect(page).toHaveURL(/\/brand$/);
 			await expect(page).toHaveTitle("Brand — hexly.ai");
@@ -98,11 +98,11 @@ for (const [name, options, locale, theme] of [
 				await menuToggle.click();
 			}
 			await expect(
-				navigation.getByRole("button", {
+				navigation.getByRole("link", {
 					name: copy[locale].brandPage,
 					exact: true,
 				}),
-			).toHaveAttribute("aria-pressed", "true");
+			).toHaveAttribute("aria-current", "page");
 			if (await menuToggle.isVisible()) {
 				await menuToggle.click();
 			}

@@ -130,7 +130,7 @@ test("navigates to status, filters services, and inspects hourly history and the
 	page,
 }) => {
 	await page.goto("/");
-	await page.getByRole("button", { name: "Status", exact: true }).click();
+	await page.getByRole("link", { name: "Status", exact: true }).click();
 	await expect(page).toHaveURL(/\/status$/);
 	await expect(page).toHaveTitle("Service status — hexly.ai");
 	await expect(page.locator(".status-demo")).toBeVisible();

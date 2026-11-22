@@ -62,6 +62,36 @@ export function Header({
 		};
 	}, [menuOpen]);
 
+	const navItems: {
+		view: View;
+		href: string;
+		icon: "grid" | "folder" | "activity";
+		label: string;
+		active: boolean;
+	}[] = [
+		{
+			view: "directory",
+			href: homeHref,
+			icon: "grid",
+			label: t.directory,
+			active: ["directory", "logos", "project"].includes(view),
+		},
+		{
+			view: "brand",
+			href: homeHref === "/" ? "/brand" : "https://hexly.ai/brand",
+			icon: "folder",
+			label: t.brandPage,
+			active: view === "brand",
+		},
+		{
+			view: "status",
+			href: homeHref === "/" ? "/status" : "/",
+			icon: "activity",
+			label: t.status,
+			active: view === "status",
+		},
+	];
+
 	return (
 		<header className="site-header" ref={headerRef}>
 			<div className="site-header-bar">
@@ -89,33 +119,29 @@ export function Header({
 						data-open={menuOpen ? "true" : "false"}
 					>
 						<nav className="view-links" aria-label={t.views}>
-							<button
-								type="button"
-								onClick={() => selectView("directory")}
-								aria-pressed={["directory", "logos", "project"].includes(view)}
-								title={t.directory}
-							>
-								<Icon name="grid" />
-								<span className="view-link-label">{t.directory}</span>
-							</button>
-							<button
-								type="button"
-								onClick={() => selectView("brand")}
-								aria-pressed={view === "brand"}
-								title={t.brandPage}
-							>
-								<Icon name="folder" />
-								<span className="view-link-label">{t.brandPage}</span>
-							</button>
-							<button
-								type="button"
-								onClick={() => selectView("status")}
-								aria-pressed={view === "status"}
-								title={t.status}
-							>
-								<Icon name="activity" />
-								<span className="view-link-label">{t.status}</span>
-							</button>
+							{navItems.map((item) => (
+								<a
+									key={item.view}
+									href={item.href}
+									aria-current={item.active ? "page" : undefined}
+									title={item.label}
+									onClick={(event) => {
+										if (
+											event.button ||
+											event.metaKey ||
+											event.ctrlKey ||
+											event.shiftKey ||
+											event.altKey
+										)
+											return;
+										event.preventDefault();
+										selectView(item.view);
+									}}
+								>
+									<Icon name={item.icon} />
+									<span className="view-link-label">{item.label}</span>
+								</a>
+							))}
 						</nav>
 						<SurfaceLinks
 							locale={locale}
@@ -149,8 +175,8 @@ export function Header({
 							className="icon-toggle menu-toggle"
 							aria-expanded={menuOpen}
 							aria-controls="mobile-nav-drawer"
-							aria-label={menuOpen ? t.closeMenu : t.openMenu}
-							title={menuOpen ? t.closeMenu : t.openMenu}
+							aria-label={t.menu}
+							title={t.menu}
 							onClick={() => setMenuOpen((open) => !open)}
 						>
 							<Icon name="menu" className="menu-icon-bars" />

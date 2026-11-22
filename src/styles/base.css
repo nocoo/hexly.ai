@@ -260,7 +260,7 @@ a {
 	background: var(--control-well) var(--control-grain);
 	box-shadow: var(--control-recess);
 }
-.view-links button {
+.view-links a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -275,6 +275,9 @@ a {
 	font-weight: var(--control-font-weight);
 	line-height: var(--control-line-height);
 	letter-spacing: 0;
+	text-decoration: none;
+	-webkit-user-select: none;
+	user-select: none;
 	white-space: nowrap;
 	transition:
 		background 160ms,
@@ -282,23 +285,23 @@ a {
 		box-shadow 160ms,
 		color 160ms;
 }
-.view-links button .icon {
+.view-links a .icon {
 	width: var(--control-icon);
 	height: var(--control-icon);
 	color: var(--control-icon-ink);
 }
-.view-links button:hover {
+.view-links a:hover {
 	background: var(--control-hover);
 	color: var(--control-selected-ink);
 }
-.view-links button[aria-pressed="true"] {
+.view-links a[aria-current="page"] {
 	background: var(--control-selected);
 	color: var(--control-selected-ink);
 	box-shadow:
 		var(--control-relief),
 		inset 0 -2px 0 var(--accent);
 }
-.view-links button[aria-pressed="true"] .icon {
+.view-links a[aria-current="page"] .icon {
 	color: var(--accent);
 }
 .surface-links {
@@ -1078,7 +1081,7 @@ select.control-select optgroup {
 		background: var(--control-well) var(--control-grain);
 		box-shadow: var(--control-recess);
 	}
-	.site-header-nav-drawer .view-links button {
+	.site-header-nav-drawer .view-links a {
 		justify-content: flex-start;
 		gap: var(--space-12);
 		width: 100%;
@@ -1095,7 +1098,7 @@ select.control-select optgroup {
 			transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
 			opacity 220ms ease;
 	}
-	.site-header-nav-drawer .view-links button::after {
+	.site-header-nav-drawer .view-links a::after {
 		content: "";
 		margin-left: auto;
 		width: 6px;
@@ -1108,14 +1111,14 @@ select.control-select optgroup {
 			opacity 180ms ease,
 			transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
 	}
-	.site-header-nav-drawer .view-links button[aria-pressed="true"] {
+	.site-header-nav-drawer .view-links a[aria-current="page"] {
 		background: var(--control-selected);
 		color: var(--control-selected-ink);
 		box-shadow:
 			var(--control-relief),
 			0 4px 12px -2px rgba(0, 0, 0, 0.1);
 	}
-	.site-header-nav-drawer .view-links button[aria-pressed="true"]::after {
+	.site-header-nav-drawer .view-links a[aria-current="page"]::after {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -1151,6 +1154,8 @@ select.control-select optgroup {
 	}
 	.site-header-nav-drawer .surface-links a:not([aria-current])::after {
 		content: "↗";
+		/* biome-ignore lint/suspicious/noDuplicateProperties: Fallback before CSS generated-content alt text. */
+		content: "↗" / "";
 		font-family: var(--sans);
 		font-size: 12px;
 		line-height: 1;
@@ -1179,13 +1184,13 @@ select.control-select optgroup {
 		border-radius: 2px;
 		background: var(--accent);
 	}
-	.site-header-nav-drawer[data-open="true"] .view-links button:nth-child(1) {
+	.site-header-nav-drawer[data-open="true"] .view-links a:nth-child(1) {
 		transition-delay: 15ms;
 	}
-	.site-header-nav-drawer[data-open="true"] .view-links button:nth-child(2) {
+	.site-header-nav-drawer[data-open="true"] .view-links a:nth-child(2) {
 		transition-delay: 35ms;
 	}
-	.site-header-nav-drawer[data-open="true"] .view-links button:nth-child(3) {
+	.site-header-nav-drawer[data-open="true"] .view-links a:nth-child(3) {
 		transition-delay: 55ms;
 	}
 	.site-header-nav-drawer[data-open="true"] .surface-links a:nth-child(1) {
@@ -1201,7 +1206,7 @@ select.control-select optgroup {
 		transition-delay: 115ms;
 	}
 	@starting-style {
-		.site-header-nav-drawer[data-open="true"] .view-links button,
+		.site-header-nav-drawer[data-open="true"] .view-links a,
 		.site-header-nav-drawer[data-open="true"] .surface-links a {
 			opacity: 0;
 			transform: translateY(-6px);
@@ -1308,5 +1313,30 @@ select.control-select optgroup {
 		animation: none !important;
 		/* biome-ignore lint/complexity/noImportantStyles: User motion preferences must override component transitions. */
 		transition: none !important;
+	}
+}
+
+@media (forced-colors: active) {
+	.view-links,
+	.search-field,
+	.count-badge,
+	.site-header-nav-drawer {
+		border: 1px solid CanvasText;
+	}
+	.view-links a[aria-current="page"],
+	.site-header-nav-drawer .view-links a[aria-current="page"],
+	.site-header-nav-drawer .surface-links a[aria-current] {
+		background: Highlight;
+		color: HighlightText;
+		outline: 2px solid Highlight;
+		outline-offset: -2px;
+	}
+	.view-links a[aria-current="page"] .icon {
+		color: HighlightText;
+	}
+	select.control-select {
+		appearance: auto;
+		background-image: none;
+		border: 1px solid CanvasText;
 	}
 }

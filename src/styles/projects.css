@@ -608,3 +608,22 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+@media (prefers-contrast: more) {
+	.project-video-list {
+		scrollbar-width: auto;
+	}
+}
+
+@media (forced-colors: active) {
+	.collection-views {
+		border: 1px solid CanvasText;
+	}
+	.collection-views a[aria-current="page"],
+	.project-section-nav a[aria-selected="true"] {
+		background: Highlight;
+		color: HighlightText;
+		outline: 2px solid Highlight;
+		outline-offset: -2px;
+	}
+}

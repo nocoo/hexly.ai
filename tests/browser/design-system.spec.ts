@@ -155,8 +155,8 @@ test("mobile header renders a 64px single row and toggles navigation drawer", as
 	await menuToggle.click();
 	await expect(menuToggle).toHaveAttribute("aria-expanded", "true");
 	await expect(drawer).toHaveAttribute("data-open", "true");
-	for (const button of await page.locator(".view-links button").all()) {
-		expect((await button.boundingBox())?.height).toBe(44);
+	for (const link of await page.locator(".view-links a").all()) {
+		expect((await link.boundingBox())?.height).toBe(44);
 	}
 
 	await page.keyboard.press("Escape");

@@ -443,3 +443,26 @@
 		font-size: 15px;
 	}
 }
+
+@media (prefers-contrast: more) {
+	.category-tabs {
+		scrollbar-width: auto;
+	}
+	.category-tabs::-webkit-scrollbar {
+		display: block;
+	}
+}
+
+@media (forced-colors: active) {
+	.category-tabs,
+	.sort-toggle {
+		border: 1px solid CanvasText;
+	}
+	.category-tabs button[aria-pressed="true"],
+	.sort-toggle[aria-pressed="true"] {
+		background: Highlight;
+		color: HighlightText;
+		outline: 2px solid Highlight;
+		outline-offset: -2px;
+	}
+}

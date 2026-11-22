@@ -492,7 +492,7 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 
 	await page
 		.getByRole("navigation", { name: "Main navigation" })
-		.getByRole("button", { name: "Projects", exact: true })
+		.getByRole("link", { name: "Projects", exact: true })
 		.click();
 	await page.keyboard.press("ArrowRight");
 	await expect(page).toHaveURL(/\/$/);

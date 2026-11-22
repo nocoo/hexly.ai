@@ -82,3 +82,9 @@
 		flex-wrap: wrap;
 	}
 }
+
+@media (forced-colors: active) {
+	.project-api .agent-instructions {
+		border: 1px solid CanvasText;
+	}
+}

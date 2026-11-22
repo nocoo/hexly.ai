@@ -454,7 +454,7 @@ test("project tabs restore history, keep canonical metadata, and respect reduced
 		"href",
 		"https://hexly.ai/projects/frogie",
 	);
-	await page.getByRole("button", { name: "Brand", exact: true }).click();
+	await page.getByRole("link", { name: "Brand", exact: true }).click();
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
 		"href",
 		"https://hexly.ai/brand",

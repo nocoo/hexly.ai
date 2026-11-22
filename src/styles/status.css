@@ -1064,3 +1064,17 @@
 		font-size: 8px;
 	}
 }
+
+@media (forced-colors: active) {
+	.status-filters,
+	.status-period {
+		border: 1px solid CanvasText;
+	}
+	.status-filters button[aria-pressed="true"],
+	.status-period button[aria-pressed="true"] {
+		background: Highlight;
+		color: HighlightText;
+		outline: 2px solid Highlight;
+		outline-offset: -2px;
+	}
+}

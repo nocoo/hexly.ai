@@ -841,3 +841,23 @@
 		flex-wrap: wrap;
 	}
 }
+
+@media (prefers-contrast: more) {
+	.project-picker {
+		scrollbar-width: auto;
+		scrollbar-color: auto;
+	}
+}
+
+@media (forced-colors: active) {
+	.view-switch {
+		border: 1px solid CanvasText;
+	}
+	.picker-item[aria-pressed="true"],
+	.view-switch button[aria-pressed="true"] {
+		background: Highlight;
+		color: HighlightText;
+		outline: 2px solid Highlight;
+		outline-offset: -2px;
+	}
+}

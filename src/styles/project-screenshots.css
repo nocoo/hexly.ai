@@ -375,3 +375,10 @@
 		transition: none;
 	}
 }
+
+@media (prefers-contrast: more) {
+	.screenshot-thumbnails,
+	.screenshot-gallery {
+		scrollbar-width: auto;
+	}
+}
