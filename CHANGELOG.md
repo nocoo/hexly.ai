@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.10.1] - 2026-11-22
+
+### Documentation
+
+- fix README links and bilingual parity ([83b8fd7](https://github.com/nocoo/hexly.ai/commit/83b8fd78f5c2d76520044087d437db9285934f19))
+
+### Fixes
+
+- add COOP/CORP headers and harden worker JSON responses ([ed1ef98](https://github.com/nocoo/hexly.ai/commit/ed1ef988341295081016c51b84cf7de3aeb63655))
+- sync HeroArtwork with manual theme and add LCP metadata ([b8b286d](https://github.com/nocoo/hexly.ai/commit/b8b286d2608af37e87071d61cd0a124b009d83ad))
+- use semantic nav links and add forced-colors and contrast rules ([3d8e5e6](https://github.com/nocoo/hexly.ai/commit/3d8e5e64cb6c1b4bfb4cf612768a3faac253d685))
+- improve modal scroll lock, search landmark, copy button, and theme-color sync ([b86b28d](https://github.com/nocoo/hexly.ai/commit/b86b28d4c7698c84242708639b926e1b3564dbeb))
+- prevent duplicate CORP headers across _headers rules ([1e845fc](https://github.com/nocoo/hexly.ai/commit/1e845fc5c65bbf355c6b209ab5ce72e2aeeb1dab))
+
+### Maintenance
+
+- convert CSS font sizes from px to rem for text scaling ([ebd278f](https://github.com/nocoo/hexly.ai/commit/ebd278f3afafaff3d25b05ec0679716892d12494))
+
 ## [1.10.0] - 2026-11-21
 
 ### Maintenance
