@@ -19,9 +19,21 @@ function isKnownHtmlPath(path: string): boolean {
 	return /^\/(brands|textures|artwork\/logo-family|logos\/family)\//.test(path);
 }
 
+function sameOriginDocument(response: Response): Response {
+	if (!response.headers.get("Content-Type")?.includes("text/html"))
+		return response;
+	const headers = new Headers(response.headers);
+	headers.set("Cross-Origin-Resource-Policy", "same-origin");
+	return new Response(response.body, {
+		status: response.status,
+		headers,
+	});
+}
+
 function notFoundResponse(response: Response, method: string): Response {
 	const headers = new Headers(response.headers);
 	headers.set("Cache-Control", "no-store");
+	headers.set("Cross-Origin-Resource-Policy", "same-origin");
 	headers.set("X-Robots-Tag", "noindex");
 	headers.delete("ETag");
 	return new Response(method === "HEAD" ? null : response.body, {
@@ -97,7 +109,9 @@ export default {
 		}
 		if (host === "status.hexly.ai" && originalPath === "/") {
 			url.pathname = "/status";
-			return env.ASSETS.fetch(new Request(url, request));
+			return sameOriginDocument(
+				await env.ASSETS.fetch(new Request(url, request)),
+			);
 		}
 		const legacy = legacyRoute(originalPath);
 		if (legacy) {
@@ -190,6 +204,7 @@ export default {
 		if (reviewDocument) {
 			response = new Response(response.body, response);
 			response.headers.append("Vary", "Accept, Sec-Fetch-Dest");
+			response.headers.set("Cross-Origin-Resource-Policy", "same-origin");
 		}
 		if (
 			request.method === "GET" &&
@@ -213,6 +228,6 @@ export default {
 			enhanced.headers.set("Cache-Control", "no-store");
 			return enhanced;
 		}
-		return response;
+		return sameOriginDocument(response);
 	},
 } satisfies ExportedHandler<Env>;
