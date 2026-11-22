@@ -8,7 +8,7 @@ import {
 	useState,
 } from "react";
 import { statusCopy } from "../data/status-copy";
-import type { Locale, Project } from "../model/project";
+import type { Locale, Project, Theme } from "../model/project";
 import {
 	currentStatus,
 	type DisplayStatus,
@@ -268,6 +268,7 @@ function ServiceRow({
 export function StatusPage({
 	projects,
 	locale,
+	theme,
 	timeZonePreference,
 	onTimeZone,
 	query,
@@ -277,6 +278,7 @@ export function StatusPage({
 }: {
 	projects: Project[];
 	locale: Locale;
+	theme: Theme;
 	timeZonePreference: string;
 	onTimeZone: (timeZone: string) => void;
 	query: string;
@@ -451,10 +453,7 @@ export function StatusPage({
 						className="hero-art hero-art-diorama hero-art-status-diorama"
 						aria-hidden="true"
 					>
-						<HeroArtwork
-							page="status"
-							alt="Network pulse observatory paper diorama"
-						/>
+						<HeroArtwork page="status" theme={theme} />
 					</div>
 				}
 			>

@@ -351,11 +351,12 @@ export function App() {
 					</div>
 				</main>
 			) : state.view === "brand" ? (
-				<BrandPage locale={locale} projects={projects} />
+				<BrandPage locale={locale} theme={theme} projects={projects} />
 			) : state.view === "status" ? (
 				<StatusPage
 					projects={projects}
 					locale={locale}
+					theme={theme}
 					timeZonePreference={timeZone}
 					onTimeZone={switchTimeZone}
 					query={state.query}
@@ -372,6 +373,7 @@ export function App() {
 					visible={visible}
 					state={state}
 					locale={locale}
+					theme={theme}
 					searchRef={searchRef}
 					onChange={change}
 					onProject={(id, anchor) => {

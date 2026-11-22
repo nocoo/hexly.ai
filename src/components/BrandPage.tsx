@@ -1,6 +1,6 @@
 import { brandCopy, brandSizes } from "../data/brand-copy";
 import { agentGuide } from "../model/agent-guide";
-import type { Locale, Project } from "../model/project";
+import type { Locale, Project, Theme } from "../model/project";
 import { BrandMark, BrandWordmark } from "./BrandIdentity";
 import { CopyButton } from "./CopyButton";
 import { HeroArtwork } from "./HeroArtwork";
@@ -9,9 +9,11 @@ import "../styles/brand-page.css";
 
 export function BrandPage({
 	locale,
+	theme,
 	projects,
 }: {
 	locale: Locale;
+	theme: Theme;
 	projects: Project[];
 }) {
 	const t = brandCopy[locale];
@@ -38,10 +40,7 @@ export function BrandPage({
 						className="hero-art hero-art-diorama hero-art-brand-diorama"
 						aria-hidden="true"
 					>
-						<HeroArtwork
-							page="brand"
-							alt="Hexly visual system paper specimen"
-						/>
+						<HeroArtwork page="brand" theme={theme} />
 					</div>
 				}
 			>

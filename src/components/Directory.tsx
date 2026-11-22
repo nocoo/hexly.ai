@@ -3,7 +3,7 @@ import { categoryLabels, copy } from "../data/copy";
 import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import { navigationPath } from "../model/navigation";
-import type { Locale, Project } from "../model/project";
+import type { Locale, Project, Theme } from "../model/project";
 import { HeroArtwork } from "./HeroArtwork";
 import { Icon } from "./Icon";
 import { PageHero } from "./PageHero";
@@ -15,6 +15,7 @@ export function Directory({
 	visible,
 	state,
 	locale,
+	theme,
 	searchRef,
 	onChange,
 	onProject,
@@ -23,6 +24,7 @@ export function Directory({
 	visible: Project[];
 	state: DirectoryState;
 	locale: Locale;
+	theme: Theme;
 	searchRef: RefObject<HTMLInputElement | null>;
 	onChange: (patch: Partial<DirectoryState>) => void;
 	onProject: (id: string, anchor?: string) => void;
@@ -47,8 +49,11 @@ export function Directory({
 				}
 				description={t.heroDescription}
 				artwork={
-					<div className="hero-art hero-art-candidate hero-art-diorama">
-						<HeroArtwork page="projects" alt="Paper diorama artwork" />
+					<div
+						className="hero-art hero-art-candidate hero-art-diorama"
+						aria-hidden="true"
+					>
+						<HeroArtwork page="projects" theme={theme} />
 					</div>
 				}
 			/>
