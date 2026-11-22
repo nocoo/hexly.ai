@@ -137,8 +137,7 @@ img {
 	display: block;
 	max-width: 100%;
 }
-button,
-a {
+button {
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -665,8 +664,11 @@ select.control-select optgroup {
 	font-size: 11px;
 }
 .search-field button {
-	width: var(--space-24);
-	height: var(--space-24);
+	display: grid;
+	place-items: center;
+	width: var(--control-height);
+	height: var(--control-height);
+	margin-right: calc(-1 * var(--space-12));
 	flex-shrink: 0;
 	background: none;
 	border: 0;

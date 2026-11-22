@@ -210,6 +210,8 @@ export function App() {
 			const target = event.target;
 			if (
 				event.key === "/" &&
+				!event.isComposing &&
+				!event.altKey &&
 				!event.metaKey &&
 				!event.ctrlKey &&
 				!(

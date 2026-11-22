@@ -36,13 +36,10 @@ function ScreenshotLightbox({
 		const dialog = dialogRef.current;
 		if (!dialog) return;
 		const trigger = document.activeElement;
-		const previousOverflow = document.documentElement.style.overflow;
 		dialog.showModal();
 		closeRef.current?.focus({ preventScroll: true });
-		document.documentElement.style.overflow = "hidden";
 		return () => {
 			dialog.close();
-			document.documentElement.style.overflow = previousOverflow;
 			if (trigger instanceof HTMLElement && trigger.isConnected)
 				trigger.focus({ preventScroll: true });
 		};

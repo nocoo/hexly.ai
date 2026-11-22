@@ -14,6 +14,8 @@
 	}
 	page.dataset.theme = theme;
 	page.lang = locale === "zh" ? "zh-CN" : "en";
+	const themeMeta = document.querySelector('meta[name="theme-color"]');
+	themeMeta?.setAttribute("content", theme === "dark" ? "#1e2824" : "#f0f0e9");
 
 	let stylesheetFailed = false;
 	const showError = () => {

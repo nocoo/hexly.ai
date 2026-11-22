@@ -69,6 +69,7 @@ export function VideoPlayer({
 							alt=""
 							width={1920}
 							height={1080}
+							loading="lazy"
 							decoding="async"
 							aria-hidden="true"
 						/>

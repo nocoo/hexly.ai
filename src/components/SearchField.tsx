@@ -16,7 +16,7 @@ export function SearchField({
 }) {
 	const t = copy[locale];
 	return (
-		<div className="search-field">
+		<search className="search-field">
 			<Icon name="search" />
 			<label className="sr-only" htmlFor="project-search">
 				{t.search}
@@ -25,6 +25,7 @@ export function SearchField({
 				ref={inputRef}
 				id="project-search"
 				type="search"
+				enterKeyHint="search"
 				placeholder={t.searchPlaceholder}
 				autoComplete="off"
 				value={value}
@@ -45,8 +46,10 @@ export function SearchField({
 					<Icon name="close" />
 				</button>
 			) : (
-				<kbd>/</kbd>
+				<span aria-hidden="true">
+					<kbd>/</kbd>
+				</span>
 			)}
-		</div>
+		</search>
 	);
 }

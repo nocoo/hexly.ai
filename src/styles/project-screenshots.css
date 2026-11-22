@@ -98,6 +98,9 @@
 	font-size: 10px;
 	color: var(--muted);
 }
+html:has(dialog:modal) {
+	overflow: hidden;
+}
 .screenshot-lightbox {
 	position: fixed;
 	inset: 0;
@@ -113,6 +116,7 @@
 	color: var(--ink);
 	box-shadow: 0 24px 100px #0005;
 	overflow: hidden;
+	overscroll-behavior: contain;
 }
 .screenshot-lightbox[open] {
 	display: grid;
@@ -221,6 +225,7 @@
 	margin: 0;
 	max-height: 4.8em;
 	overflow-y: auto;
+	overscroll-behavior: contain;
 }
 .screenshot-thumbnails {
 	position: relative;
@@ -231,6 +236,7 @@
 	margin: 16px auto 0;
 	padding: 4px;
 	overflow-x: auto;
+	overscroll-behavior: contain;
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
 }
