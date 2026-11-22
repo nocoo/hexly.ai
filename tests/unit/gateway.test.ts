@@ -285,6 +285,10 @@ describe("the static asset gateway", () => {
 		);
 		expect(missing.status).toBe(404);
 		expect(missing.headers.get("Access-Control-Allow-Origin")).toBe("*");
+		expect(missing.headers.get("Cross-Origin-Resource-Policy")).toBe(
+			"cross-origin",
+		);
+		expect(missing.headers.get("X-Content-Type-Options")).toBe("nosniff");
 	});
 	it("moves legacy pages and manifests with their query, leaving logo files intact", async () => {
 		for (const [before, after] of [

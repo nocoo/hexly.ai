@@ -53,6 +53,8 @@ function shareResponse(
 		headers: {
 			"Content-Type": contentType,
 			"Access-Control-Allow-Origin": "*",
+			"Cross-Origin-Resource-Policy": "cross-origin",
+			"X-Content-Type-Options": "nosniff",
 			"X-Robots-Tag": "noindex",
 		},
 	});
@@ -131,7 +133,12 @@ export default {
 					{ error: "Method not allowed" },
 					{
 						status: 405,
-						headers: { Allow: "GET, HEAD", "X-Robots-Tag": "noindex" },
+						headers: {
+							Allow: "GET, HEAD",
+							"Cross-Origin-Resource-Policy": "same-origin",
+							"X-Content-Type-Options": "nosniff",
+							"X-Robots-Tag": "noindex",
+						},
 					},
 				);
 			const key = new Request(`${url.origin}/api/status`);

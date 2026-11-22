@@ -4,6 +4,8 @@
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Resource-Policy: same-origin
   Content-Security-Policy: default-src 'self'; script-src 'self' https://track-collect.nocoo.cloud 'sha256-Apyzt1EpGImBZ7ejqdbP0EdZSg2gjnmTWTspG2Sq68s='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://h.no.mt; font-src 'self' https://h.no.mt; connect-src 'self' https://h.no.mt https://track-collect.nocoo.cloud; media-src 'self' https://h.no.mt; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
   Link: </llms.txt>; rel="service-doc"; type="text/plain"
 
@@ -18,15 +20,30 @@
 
 /brands/*
   Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: cross-origin
 
 /templates/*.json
   Cache-Control: public, max-age=0, must-revalidate
 
 /logos/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Cross-Origin-Resource-Policy: cross-origin
+
+/textures/*
+  Cross-Origin-Resource-Policy: cross-origin
+
+/icons/*
+  Cross-Origin-Resource-Policy: cross-origin
+
+/og/*
+  Cross-Origin-Resource-Policy: cross-origin
+
+/og.jpg
+  Cross-Origin-Resource-Policy: cross-origin
 
 /api/*
   X-Robots-Tag: noindex
+  Cross-Origin-Resource-Policy: cross-origin
 
 /api/live
   Content-Type: application/json; charset=utf-8
@@ -60,3 +77,4 @@
 
 /og.png
   Content-Type: image/png
+  Cross-Origin-Resource-Policy: cross-origin

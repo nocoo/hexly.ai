@@ -284,6 +284,7 @@ export async function statusResponse(env: Env): Promise<Response> {
 			headers: {
 				"Cache-Control":
 					env.STATUS_MODE === "live" ? "public, max-age=60" : "no-store",
+				"Cross-Origin-Resource-Policy": "same-origin",
 				"X-Content-Type-Options": "nosniff",
 			},
 		});
@@ -300,6 +301,7 @@ export async function statusResponse(env: Env): Promise<Response> {
 				status: 503,
 				headers: {
 					"Cache-Control": "no-store",
+					"Cross-Origin-Resource-Policy": "same-origin",
 					"X-Content-Type-Options": "nosniff",
 				},
 			},

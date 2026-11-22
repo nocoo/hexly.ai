@@ -2,6 +2,7 @@ const headers = {
 	"Content-Type": "application/json; charset=utf-8",
 	"Access-Control-Allow-Origin": "*",
 	"Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+	"Cross-Origin-Resource-Policy": "cross-origin",
 	"X-Content-Type-Options": "nosniff",
 };
 

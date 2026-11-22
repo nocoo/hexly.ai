@@ -26,6 +26,12 @@ test("serves the built document and security policy through Workers HTTP", async
 	expect(response.headers()["strict-transport-security"]).toContain(
 		"max-age=31536000",
 	);
+	expect(response.headers()["cross-origin-opener-policy"]).toBe(
+		"same-origin-allow-popups",
+	);
+	expect(response.headers()["cross-origin-resource-policy"]).toBe(
+		"same-origin",
+	);
 	const html = await response.text();
 	expect(html).toContain('href="https://hexly.ai/"');
 	expect(html).toContain('id="root"');
@@ -188,6 +194,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	const share = await request.get("/api/share/pew.json");
 	expect(share.status()).toBe(200);
 	expect(share.headers()["access-control-allow-origin"]).toBe("*");
+	expect(share.headers()["cross-origin-resource-policy"]).toBe("cross-origin");
 	expect(share.headers()["content-type"]).toContain("application/json");
 	const card = await share.json();
 	expect(card).toMatchObject({
