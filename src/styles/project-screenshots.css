@@ -12,17 +12,17 @@
 	display: flex;
 	align-items: center;
 	gap: 12px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 500;
 	margin: 0;
 }
 .screenshot-gallery-heading h3 .mono {
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: var(--muted);
 }
 .screenshot-gallery-heading p {
 	margin: 0;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	color: var(--muted);
 }
 .screenshot-gallery {
@@ -89,13 +89,13 @@
 	align-items: baseline;
 	gap: 12px;
 	padding: var(--space-16) 0 0;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.7;
 	color: var(--muted);
 }
 .screenshot-gallery figcaption .mono {
 	flex-shrink: 0;
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: var(--muted);
 }
 html:has(dialog:modal) {
@@ -136,12 +136,12 @@ html:has(dialog:modal) {
 }
 .screenshot-lightbox-heading .eyebrow {
 	margin: 0 0 4px;
-	font-size: 9px;
+	font-size: 0.5625rem;
 	color: var(--muted);
 }
 .screenshot-lightbox-heading h2 {
 	margin: 0;
-	font-size: 19px;
+	font-size: 1.1875rem;
 	font-weight: 450;
 	line-height: 1.35;
 	overflow-wrap: anywhere;
@@ -157,7 +157,7 @@ html:has(dialog:modal) {
 	align-items: center;
 	gap: 8px;
 	min-height: 44px;
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 .screenshot-lightbox-actions a .icon {
 	width: 14px;
@@ -199,7 +199,7 @@ html:has(dialog:modal) {
 }
 .screenshot-focus > p {
 	padding: 24px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 1.8;
 	text-align: center;
 	color: var(--muted);
@@ -213,11 +213,11 @@ html:has(dialog:modal) {
 	justify-content: center;
 	align-items: baseline;
 	gap: 16px;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.7;
 }
 .screenshot-lightbox-caption .mono {
-	font-size: 10px;
+	font-size: 0.625rem;
 	white-space: nowrap;
 	color: var(--muted);
 }
@@ -263,7 +263,7 @@ html:has(dialog:modal) {
 .screenshot-keyboard-hint {
 	margin: 12px 0 0;
 	text-align: center;
-	font-size: 9px;
+	font-size: 0.5625rem;
 	color: var(--muted);
 }
 @keyframes screenshot-appear {
@@ -305,7 +305,7 @@ html:has(dialog:modal) {
 		gap: 12px;
 	}
 	.screenshot-gallery figcaption {
-		font-size: 11px;
+		font-size: 0.6875rem;
 		gap: 8px;
 	}
 	.screenshot-lightbox {
@@ -323,7 +323,7 @@ html:has(dialog:modal) {
 		gap: var(--space-16);
 	}
 	.screenshot-lightbox-actions a {
-		font-size: 10px;
+		font-size: 0.625rem;
 	}
 	.screenshot-lightbox-stage {
 		position: relative;
@@ -352,7 +352,7 @@ html:has(dialog:modal) {
 	}
 	.screenshot-lightbox-caption {
 		gap: 12px;
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	.screenshot-thumbnails {
 		margin-top: 12px;

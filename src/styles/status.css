@@ -96,7 +96,7 @@
 .hero-observation-note {
 	flex-basis: 100%;
 	margin: 0;
-	font: var(--control-meta-size) / 16px var(--mono);
+	font: var(--control-meta-size) / 1rem var(--mono);
 	color: var(--muted);
 }
 .status-timezone {
@@ -110,7 +110,7 @@
 	align-items: center;
 	gap: var(--space-8);
 	color: var(--muted);
-	font: var(--control-meta-size) / 16px var(--mono);
+	font: var(--control-meta-size) / 1rem var(--mono);
 	white-space: nowrap;
 }
 .status-timezone label .icon {
@@ -138,7 +138,7 @@
 	border: 1px dashed var(--line);
 	border-radius: 8px;
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 0.6875rem;
 	line-height: 1.8;
 }
 .status-demo .icon {
@@ -147,7 +147,7 @@
 	height: 15px;
 }
 .status-demo strong {
-	font: 9px var(--mono);
+	font: 0.5625rem var(--mono);
 	white-space: nowrap;
 	color: var(--status-warning);
 }
@@ -179,7 +179,7 @@
 }
 .status-summary h2 {
 	margin: 0 0 var(--space-8);
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-weight: 500;
 	line-height: 1.25;
 	letter-spacing: -0.65px;
@@ -187,7 +187,7 @@
 .status-summary p {
 	margin: 0;
 	color: var(--muted);
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.7;
 }
 .status-summary-stamp {
@@ -195,7 +195,7 @@
 	align-self: flex-start;
 	padding-top: var(--space-4);
 	color: var(--muted);
-	font: 8px var(--mono);
+	font: 0.5rem var(--mono);
 	letter-spacing: 0.12em;
 	white-space: nowrap;
 }
@@ -214,28 +214,28 @@
 	border-left: 1px solid var(--line);
 }
 .status-metrics .status-metric-label {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	color: var(--muted);
 }
 .status-metrics strong {
-	font: 450 34px / 1.3 var(--mono);
+	font: 450 2.125rem / 1.3 var(--mono);
 	letter-spacing: -0.075em;
 	color: var(--ink);
 }
 .status-metric-denominator {
-	font-size: 23px;
+	font-size: 1.4375rem;
 	color: var(--muted);
 	font-weight: 350;
 	letter-spacing: -0.055em;
 }
 .status-metric-unit {
-	font-size: 17px;
+	font-size: 1.0625rem;
 	font-weight: 400;
 	color: var(--muted);
 	letter-spacing: -0.03em;
 }
 .status-metrics > div > span:last-child {
-	font: 9px / 1.5 var(--mono);
+	font: 0.5625rem / 1.5 var(--mono);
 	color: var(--muted);
 }
 .status-collection {
@@ -250,14 +250,14 @@
 .status-section-heading p {
 	margin: var(--space-8) 0 0;
 	color: var(--muted);
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 .status-update {
 	display: flex;
 	align-items: center;
 	gap: 8px;
 	color: var(--muted);
-	font: 9px / 1.5 var(--mono);
+	font: 0.5625rem / 1.5 var(--mono);
 }
 .status-update-dot,
 .status-dot {
@@ -320,7 +320,7 @@
 	color: var(--control-ink);
 }
 .status-filters button > span {
-	font: var(--control-meta-size) / 16px var(--sans);
+	font: var(--control-meta-size) / 1rem var(--sans);
 }
 .status-filters button[aria-pressed="true"] {
 	background: var(--control-selected);
@@ -344,7 +344,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: var(--space-16);
-	font: 8px var(--mono);
+	font: 0.5rem var(--mono);
 	color: var(--muted);
 }
 .status-legend > span {
@@ -439,7 +439,7 @@
 	align-items: center;
 	gap: var(--space-8);
 	margin: 0 0 var(--space-8);
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 1.2;
 	font-weight: 550;
 	letter-spacing: -0.45px;
@@ -458,7 +458,7 @@
 .status-host {
 	display: block;
 	color: var(--muted);
-	font: 9px / 1.4 var(--mono);
+	font: 0.5625rem / 1.4 var(--mono);
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -530,11 +530,11 @@
 	box-shadow: 0 5px 20px color-mix(in srgb, var(--shadow) 20%, transparent);
 }
 .status-history-tooltip > span {
-	font: 9px var(--mono);
+	font: 0.5625rem var(--mono);
 	opacity: 0.85;
 }
 .status-history-tooltip > strong {
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 500;
 }
 .status-history-meta {
@@ -544,7 +544,7 @@
 	gap: 12px;
 	margin-top: var(--space-8);
 	color: var(--muted);
-	font: 8px / 1.5 var(--mono);
+	font: 0.5rem / 1.5 var(--mono);
 }
 .status-history-meta strong {
 	color: var(--ink);
@@ -561,7 +561,7 @@
 	border: 0;
 	border-radius: 4px;
 	background: none;
-	font-size: 10px;
+	font-size: 0.625rem;
 	white-space: nowrap;
 	min-height: 34px;
 }
@@ -589,12 +589,12 @@
 	grid-template-columns: 2fr 1.4fr 0.7fr 0.7fr;
 	gap: var(--space-24);
 	margin: 0;
-	font: 10px / 1.6 var(--mono);
+	font: 0.625rem / 1.6 var(--mono);
 }
 .status-service-detail dt {
 	color: var(--muted);
 	margin-bottom: var(--space-4);
-	font-size: 9px;
+	font-size: 0.5625rem;
 }
 .status-service-detail dd {
 	margin: 0;
@@ -618,7 +618,7 @@
 	align-items: center;
 	margin: 0 0 16px;
 	color: var(--status-color);
-	font-size: 11px;
+	font-size: 0.6875rem;
 	line-height: 1.7;
 }
 .status-detail-reason .icon {
@@ -631,7 +631,7 @@
 	gap: 16px;
 	padding: 12px 1px 0;
 	color: var(--muted);
-	font: 8px var(--mono);
+	font: 0.5rem var(--mono);
 }
 .status-empty {
 	display: flex;
@@ -639,7 +639,7 @@
 	align-items: center;
 	padding: var(--space-56) var(--space-20);
 	color: var(--muted);
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 .status-empty p {
 	margin-bottom: var(--space-4);
@@ -669,13 +669,13 @@
 	display: flex;
 	align-items: center;
 	gap: var(--space-8);
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 500;
 	letter-spacing: -0.25px;
 }
 .status-coverage > summary > span > span {
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 0.6875rem;
 	line-height: 1.7;
 }
 .status-coverage > summary > .icon {
@@ -713,7 +713,7 @@
 }
 .status-coverage-content p {
 	color: var(--muted);
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.8;
 	margin: 0 0 var(--space-16);
 }
@@ -730,7 +730,7 @@
 	border-radius: 7px;
 	background: var(--surface);
 	padding: var(--space-8) var(--space-12) var(--space-8) var(--space-8);
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 .status-coverage-content a > .icon {
 	width: 10px;
@@ -750,7 +750,7 @@
 }
 .status-method .eyebrow {
 	font-family: var(--sans);
-	font-size: 12px;
+	font-size: 0.75rem;
 	letter-spacing: -0.1px;
 	color: var(--ink);
 }
@@ -762,7 +762,7 @@
 .status-method p {
 	margin: var(--space-8) 0 0;
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 0.6875rem;
 	line-height: 1.9;
 	max-width: 560px;
 	text-wrap: pretty;
@@ -843,13 +843,13 @@
 		height: 17px;
 	}
 	.status-summary h2 {
-		font-size: 18px;
+		font-size: 1.125rem;
 		letter-spacing: -0.5px;
 		line-height: 1.4;
 		margin-bottom: var(--space-4);
 	}
 	.status-summary p {
-		font-size: 11px;
+		font-size: 0.6875rem;
 		line-height: 1.8;
 	}
 	.status-metrics {
@@ -864,17 +864,17 @@
 		display: none;
 	}
 	.status-metrics strong {
-		font-size: 29px;
+		font-size: 1.8125rem;
 	}
 	.status-metric-denominator {
-		font-size: 19px;
+		font-size: 1.1875rem;
 	}
 	.status-metrics .status-metric-label {
-		font-size: 9px;
+		font-size: 0.5625rem;
 		line-height: 1.7;
 	}
 	.status-metrics > div > span:last-child {
-		font-size: 8px;
+		font-size: 0.5rem;
 	}
 	.status-collection {
 		margin-top: var(--space-32);
@@ -885,13 +885,13 @@
 		gap: var(--space-12);
 	}
 	.status-section-heading .collection-title-row h2 {
-		font-size: 23px;
+		font-size: 1.4375rem;
 	}
 	.status-section-heading p {
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	.status-update {
-		font-size: 8px;
+		font-size: 0.5rem;
 		width: 100%;
 	}
 	.status-update .icon-button {
@@ -919,7 +919,7 @@
 	}
 	.status-legend {
 		gap: 12px;
-		font-size: 7px;
+		font-size: 0.4375rem;
 	}
 	.status-period {
 		margin-left: auto;
@@ -940,17 +940,17 @@
 		height: 37px;
 	}
 	.status-service-identity h3 {
-		font-size: 15px;
+		font-size: 0.9375rem;
 		gap: var(--space-4);
 	}
 	.status-service-identity h3 .icon {
 		display: none;
 	}
 	.status-host {
-		font-size: 8px;
+		font-size: 0.5rem;
 	}
 	.status-service-state {
-		font-size: 9px;
+		font-size: 0.5625rem;
 		gap: var(--space-4);
 	}
 	.status-service-state > .icon {
@@ -967,7 +967,7 @@
 		height: 25px;
 	}
 	.status-history-meta {
-		font-size: 7px;
+		font-size: 0.4375rem;
 		margin-top: var(--space-8);
 	}
 	.status-service-detail {
@@ -976,23 +976,23 @@
 	.status-service-detail dl {
 		gap: 16px;
 		grid-template-columns: 1fr 1fr;
-		font-size: 9px;
+		font-size: 0.5625rem;
 	}
 	.status-service-detail dl > div:first-child {
 		grid-column: 1 / -1;
 	}
 	.status-service-detail dt {
-		font-size: 8px;
+		font-size: 0.5rem;
 	}
 	.status-detail-reason {
-		font-size: 10px;
+		font-size: 0.625rem;
 		align-items: flex-start;
 	}
 	.status-detail-reason .icon {
 		margin-top: 2px;
 	}
 	.status-timeline-labels {
-		font-size: 7px;
+		font-size: 0.4375rem;
 	}
 	.status-coverage {
 		margin-top: var(--space-24);
@@ -1002,11 +1002,11 @@
 		gap: var(--space-12);
 	}
 	.status-coverage > summary strong {
-		font-size: 13px;
+		font-size: 0.8125rem;
 		gap: 8px;
 	}
 	.status-coverage > summary > span > span {
-		font-size: 10px;
+		font-size: 0.625rem;
 	}
 	.status-coverage-icon {
 		width: 32px;
@@ -1017,20 +1017,20 @@
 		padding: 0 var(--space-16) var(--space-20);
 	}
 	.status-coverage-content p {
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	.status-method {
 		display: block;
 		padding-top: 24px;
 	}
 	.status-method .eyebrow {
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	.status-method > div:last-child {
 		padding-top: 0;
 	}
 	.status-method p {
-		font-size: 10px;
+		font-size: 0.625rem;
 		line-height: 1.9;
 	}
 }
@@ -1039,10 +1039,10 @@
 		padding-inline: var(--space-16);
 	}
 	.status-metrics strong {
-		font-size: 25px;
+		font-size: 1.5625rem;
 	}
 	.status-metric-denominator {
-		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 	.status-service-main {
 		padding-inline: 12px;
@@ -1055,13 +1055,13 @@
 		gap: 8px;
 	}
 	.status-service-identity h3 {
-		font-size: 13px;
+		font-size: 0.8125rem;
 	}
 	.status-host {
-		font-size: 7px;
+		font-size: 0.4375rem;
 	}
 	.status-service-state {
-		font-size: 8px;
+		font-size: 0.5rem;
 	}
 }
 

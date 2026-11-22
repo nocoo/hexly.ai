@@ -71,7 +71,7 @@
 	padding: var(--space-16) var(--space-24);
 	background-image: var(--brand-texture);
 	background-size: 480px 480px;
-	font: 11px / 1.7 var(--mono);
+	font: 0.6875rem / 1.7 var(--mono);
 }
 .brand-hero figcaption a {
 	flex-shrink: 0;
@@ -109,13 +109,13 @@
 	padding-block: var(--space-12) var(--space-32);
 }
 .brand-kit-intro > p:not(.eyebrow):not(.brand-scope-note) {
-	font-size: clamp(19px, 2.2vw, 26px);
+	font-size: clamp(1.1875rem, 2.2vw, 1.625rem);
 	line-height: 1.5;
 	letter-spacing: -0.025em;
 	margin: 16px 0 0;
 }
 .brand-kit-intro > .brand-scope-note {
-	font: 12px / 1.8 var(--sans);
+	font: 0.75rem / 1.8 var(--sans);
 	letter-spacing: 0;
 }
 .brand-official-source {
@@ -124,7 +124,7 @@
 	flex-wrap: wrap;
 	gap: 12px;
 	margin: 0 0 var(--space-32);
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.7;
 }
 .brand-official-source img {
@@ -178,7 +178,7 @@
 	color: #a0aa9a;
 }
 .brand-kit-specimens figcaption {
-	font: 10px / 1.7 var(--mono);
+	font: 0.625rem / 1.7 var(--mono);
 	letter-spacing: -0.025em;
 }
 .brand-kit-assets {
@@ -192,7 +192,7 @@
 	gap: var(--space-16);
 	padding-block: var(--space-16);
 	border-bottom: 1px solid var(--line);
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 .brand-kit-assets > div > span {
 	margin-right: auto;
@@ -200,7 +200,7 @@
 .brand-kit-assets small {
 	margin-left: var(--space-4);
 	color: var(--muted);
-	font: 10px var(--mono);
+	font: 0.625rem var(--mono);
 }
 .brand-kit-assets a {
 	padding-block: 8px;
@@ -221,7 +221,7 @@
 	flex-wrap: wrap;
 	gap: 12px;
 	margin-top: 24px;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.7;
 }
 .brand-kit-provenance a {
@@ -245,7 +245,7 @@
 	.brand-hero figcaption {
 		align-items: flex-start;
 		padding: var(--space-16);
-		font-size: 10px;
+		font-size: 0.625rem;
 	}
 	:is(
 			[data-brand-artwork="gpt-image-2"],
@@ -306,7 +306,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 16px 20px;
-	font: 11px / 1.6 var(--mono);
+	font: 0.6875rem / 1.6 var(--mono);
 }
 .brand-texture-specimens a {
 	text-underline-offset: 4px;

@@ -66,7 +66,7 @@
 }
 .logo-wall .project-card h3 {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1rem;
 	letter-spacing: -0.4px;
 }
 .logo-wall .card-meta {
@@ -92,7 +92,7 @@
 	display: flex;
 	align-items: center;
 	gap: 16px;
-	font-size: clamp(32px, 4.6vw, 62px);
+	font-size: clamp(2rem, 4.6vw, 3.875rem);
 	font-weight: 450;
 	letter-spacing: -0.05em;
 	line-height: 1.2;
@@ -221,13 +221,13 @@
 	margin-bottom: var(--space-24);
 }
 .detail-section-heading h2 {
-	font-size: 27px;
+	font-size: 1.6875rem;
 	letter-spacing: -0.8px;
 	font-weight: 450;
 	margin: 0;
 }
 .detail-section-heading p {
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: var(--muted);
 	line-height: 1.8;
 	margin: 8px 0 0;
@@ -237,14 +237,14 @@
 	flex-direction: column;
 	align-items: end;
 	gap: var(--space-8);
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 .brand-metadata .mono {
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: var(--muted);
 }
 .project-overview h2 {
-	font-size: 17px;
+	font-size: 1.0625rem;
 	font-weight: 500;
 	margin: 0 0 var(--space-16);
 }
@@ -297,7 +297,7 @@
 	border: 1px solid var(--line);
 	background: var(--surface);
 	color: var(--ink);
-	font-size: 14px;
+	font-size: 0.875rem;
 	box-shadow: 0 8px 32px #0002;
 	transition:
 		background 180ms,
@@ -318,7 +318,7 @@
 	border-radius: 5px;
 	background: #101712e6;
 	color: #f0f0e9;
-	font: 11px var(--mono);
+	font: 0.6875rem var(--mono);
 }
 .project-film figcaption {
 	display: flex;
@@ -326,18 +326,18 @@
 	gap: 20px;
 	align-items: baseline;
 	padding-top: 16px;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 .project-film figcaption strong {
 	font-weight: 500;
 }
 .project-film figcaption .mono {
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: var(--muted);
 	white-space: nowrap;
 }
 .project-video-error {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	line-height: 1.8;
 	color: var(--muted);
 }
@@ -376,13 +376,13 @@
 	justify-content: space-between;
 	gap: var(--space-8);
 	padding: var(--space-12) var(--space-2) var(--space-2);
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 .project-video-list strong {
 	font-weight: 500;
 }
 .project-video-list .mono {
-	font-size: 9px;
+	font-size: 0.5625rem;
 	color: var(--muted);
 }
 
@@ -418,7 +418,7 @@
 		padding: var(--card-padding);
 	}
 	.logo-wall .project-card h3 {
-		font-size: 14px;
+		font-size: 0.875rem;
 		line-height: 24px;
 	}
 	.logo-wall .card-meta .palette-mini {
@@ -441,18 +441,18 @@
 		height: 52px;
 	}
 	.project-detail-main .identity-heading h1 {
-		font-size: clamp(25px, 6vw, 36px);
+		font-size: clamp(1.5625rem, 6vw, 2.25rem);
 		gap: 8px;
 	}
 	.project-detail-main .identity-category {
 		margin-bottom: var(--space-8);
-		font-size: 9px;
+		font-size: 0.5625rem;
 	}
 	.project-detail-main .identity-emoji {
 		display: none;
 	}
 	.project-detail-main .identity-description {
-		font-size: 12px;
+		font-size: 0.75rem;
 		margin-top: 8px;
 	}
 	.project-detail-main .identity-meta {
@@ -498,16 +498,16 @@
 		margin-bottom: 20px;
 	}
 	.detail-section-heading h2 {
-		font-size: 23px;
+		font-size: 1.4375rem;
 	}
 	.detail-section-heading p {
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	.brand-metadata {
 		gap: 8px;
 	}
 	.brand-metadata .mono {
-		font-size: 9px;
+		font-size: 0.5625rem;
 		text-align: right;
 		max-width: 105px;
 		line-height: 1.6;
@@ -519,21 +519,21 @@
 		min-height: 44px;
 		padding: var(--space-12) var(--space-16);
 		gap: 8px;
-		font-size: 12px;
+		font-size: 0.75rem;
 		white-space: nowrap;
 	}
 	.project-video-duration {
 		bottom: 12px;
 		right: 12px;
-		font-size: 9px;
+		font-size: 0.5625rem;
 		padding: var(--space-4) var(--space-8);
 	}
 	.project-film figcaption {
-		font-size: 12px;
+		font-size: 0.75rem;
 		gap: 12px;
 	}
 	.project-film figcaption .mono {
-		font-size: 9px;
+		font-size: 0.5625rem;
 	}
 	.project-video-list {
 		gap: 12px;
@@ -575,7 +575,7 @@
 	border-bottom: 1px solid var(--line);
 	border-radius: 0;
 	background: transparent;
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 .project-downloads .download-links a > span {
 	display: flex;
@@ -583,7 +583,7 @@
 	gap: var(--space-4);
 }
 .project-downloads .download-links small {
-	font: 11px var(--mono);
+	font: 0.6875rem var(--mono);
 	color: var(--muted);
 }
 .download-provenance {
@@ -593,7 +593,7 @@
 }
 .download-provenance h4 {
 	margin: 0;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 500;
 }
 .download-provenance .brand-kit-provenance {

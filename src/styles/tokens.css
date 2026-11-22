@@ -32,10 +32,10 @@
 	--control-muted: var(--ink);
 	--control-selected-ink: var(--ink);
 	--control-icon-ink: var(--headline-secondary);
-	--control-font-size: 13px;
+	--control-font-size: 0.8125rem;
 	--control-font-weight: 500;
 	--control-line-height: 20px;
-	--control-meta-size: 11px;
+	--control-meta-size: 0.6875rem;
 	--control-recess: inset 0 0 0 1px var(--control-edge);
 	--control-relief: inset 0 1px 0 var(--surface), inset 0 -1px 0 var(--line);
 	--control-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath d='M0 0h128v128H0z' filter='url(%23grain)' opacity='.008'/%3E%3C/svg%3E");
@@ -74,6 +74,6 @@
 	:root {
 		--site-gutter: var(--space-16);
 		--section-space: var(--space-32);
-		--control-font-size: 12px;
+		--control-font-size: 0.75rem;
 	}
 }
