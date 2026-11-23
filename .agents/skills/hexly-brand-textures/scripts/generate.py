@@ -64,13 +64,13 @@ def generate_one(row, theme, attempt):
               else (study / theme / "prompt.txt")).read_text()
     if not (run / "prompt.txt").exists():
         (run / "prompt.txt").write_text(prompt)
-    installed_helper = (Path.home() / ".agents/skills/image-generation-gpt/scripts/generate.py").resolve()
-    helper = installed_helper if installed_helper.is_file() else (repo.parent / "system/system0/skills/image-generation-gpt/scripts/generate.py")
+    installed_helper = (Path.home() / ".agents/skills/system0-image-generation-gpt/scripts/generate.py").resolve()
+    helper = installed_helper if installed_helper.is_file() else (repo.parent / "system/system0/skills/system0-image-generation-gpt/scripts/generate.py")
     if not helper.is_file():
-        raise SystemExit("The actual system0 image-generation-gpt helper is required; no substitute API.")
+        raise SystemExit("The actual system0-image-generation-gpt helper is required; no substitute API.")
     system_repo = helper.parents[4]
     helper_revision = subprocess.check_output(
-        ["git", "-C", str(system_repo), "log", "-1", "--format=%H", "--", "system0/skills/image-generation-gpt/scripts/generate.py"],
+        ["git", "-C", str(system_repo), "log", "-1", "--format=%H", "--", "system0/skills/system0-image-generation-gpt/scripts/generate.py"],
         text=True).strip()
     generation = runpy.run_path(str(helper))["generate_image"]
     native_open = urllib.request.urlopen
@@ -84,7 +84,7 @@ def generate_one(row, theme, attempt):
             "parameters": {k: v for k, v in payload.items() if k != "prompt"},
             "promptFile": "prompt.txt", "promptSha256": sha(payload["prompt"].encode()),
             "referenceImages": [], "attempt": attempt,
-            "helper": "system0/skills/image-generation-gpt/scripts/generate.py",
+            "helper": "system0/skills/system0-image-generation-gpt/scripts/generate.py",
             "helperRevision": helper_revision, "helperSha256": sha(helper.read_bytes()),
             "helperModified": False,
             "recorder": ".agents/skills/hexly-brand-textures/scripts/generate.py",

@@ -52,8 +52,8 @@ See [the project contract](29-project-maintenance.md#按产品类型选择品牌
 
 For new image requests, the owner selected `gpt-image-2.5-sunburst` for Logos and
 primary identities and `gpt-image-2.5-flare` for secondary decorative assets such
-as background textures on 2026-09-14. Use the current `system0`
-`image-generation-gpt` skill and record the actual selected deployment, prompt,
+as background textures on 2026-09-14. Use the current
+`system0-image-generation-gpt` skill and record the actual selected deployment, prompt,
 response and untouched raster hash. Flare is already authorized for this scope;
 do not silently substitute models or reinterpret historical `gpt-image-2`
 generations as Sunburst. Generated raster textures remain distinct from authored

@@ -71,8 +71,8 @@ hashes. Reference numbering in the prompt must match the submitted order.
 
 ### 3. Generate
 
-Credentials and the endpoint contract live in the installed `system0`
-`image-generation-gpt` skill (`~/.agents/skills/image-generation-gpt/SKILL.md`),
+Credentials and the endpoint contract live in the installed
+`system0-image-generation-gpt` skill (`~/.agents/skills/system0-image-generation-gpt/SKILL.md`),
 with local credentials in `~/.config/system0/image-generation.json`. If that file
 or its `gpt` credentials are absent on the current machine, image generation is
 not supported there and the helper exits with a clear failure.
