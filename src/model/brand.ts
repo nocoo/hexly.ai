@@ -11,7 +11,7 @@ export function brandFormat(
 	kit: Kit,
 	asset: "mark" | "wordmark" | "lockup" | "icon",
 ) {
-	return rasterBrand(kit) && asset !== "wordmark" ? "png" : "svg";
+	return rasterBrand(kit) && asset !== "wordmark" ? "webp" : "svg";
 }
 
 export function brandAsset(
@@ -19,7 +19,11 @@ export function brandAsset(
 	asset: "mark" | "wordmark" | "lockup" | "icon",
 	theme: Theme,
 ) {
-	return `${kit.root}/${asset}-${theme}.${brandFormat(kit, asset)}`;
+	if (!rasterBrand(kit) || asset === "wordmark")
+		return `${kit.root}/${asset}-${theme}.svg`;
+	if (asset === "mark") return `${kit.root}/mark-512.webp`;
+	if (asset === "icon") return `${kit.root}/icon-${theme}-512.webp`;
+	return `${kit.root}/lockup-${theme}.webp`;
 }
 
 export function projectTexture(

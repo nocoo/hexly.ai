@@ -3,7 +3,7 @@ import { readProjects } from "../../src/data/read-projects";
 import socialCards from "../../src/data/social-cards.json" with {
 	type: "json",
 };
-import { assetUrl } from "../../src/model/assets";
+import { assetUrl, cdnImage } from "../../src/model/assets";
 import { filterProjects } from "../../src/model/catalogue";
 import {
 	absoluteUrl,
@@ -233,7 +233,9 @@ describe("crawler discovery documents", () => {
 		expect(pageForPath("/videos/launch", projects)).toEqual(
 			pageForPath("/templates/launch", projects),
 		);
-		expect(page.bodyHtml).toContain(`href="${assetUrl(frogie.logo.original)}"`);
+		expect(page.bodyHtml).toContain(
+			`href="${assetUrl(cdnImage(frogie.logo.original, frogie.logo.display))}"`,
+		);
 		expect(page.bodyHtml).toContain(
 			`href="${escapeHtml(frogie.logo.sourceUrl)}"`,
 		);

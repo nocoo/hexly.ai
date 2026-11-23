@@ -5,6 +5,7 @@ import manifest from "../package.json";
 import identity from "../src/data/projects/hexly-ai.json";
 import { readProjects } from "../src/data/read-projects";
 import { parseStatusSnapshot, statusTargets } from "../src/model/status";
+import { readInventory } from "./asset-storage";
 
 export async function verifyDeployment(
 	origin: URL,
@@ -85,13 +86,18 @@ export async function verifyDeployment(
 				}
 			}),
 		);
-		const logo = await (await get(identity.logo.original)).arrayBuffer();
+		const logoEntry = readInventory().files.find(
+			(file) => file.path === identity.logo.display,
+		);
+		if (!logoEntry)
+			throw new Error("The site display logo is missing from inventory.");
+		const logo = await (await get(identity.logo.display)).arrayBuffer();
 		if (
 			createHash("sha256").update(new Uint8Array(logo)).digest("hex") !==
-			identity.logo.sha256
+			logoEntry.sha256
 		) {
 			throw new Error(
-				"The production logo does not match the archived original.",
+				"The production logo does not match the inventoried CDN asset.",
 			);
 		}
 	}

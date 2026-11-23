@@ -39,8 +39,12 @@ test.describe(colorScheme, () => {
 			});
 
 		await expect(
-			section.locator(".api-logo-variant").filter({ hasText: "16 × 16" }),
-		).toContainText("Transparent");
+			section
+				.locator(".api-logo-variant")
+				.filter({ hasText: "1024 × 1024" })
+				.filter({ hasText: "Transparent" })
+				.first(),
+		).toBeVisible();
 		await section.getByText("View JSON response", { exact: true }).click();
 		await expect(section.locator("textarea").first()).toHaveValue(
 			/"repo": "life.ai"/,

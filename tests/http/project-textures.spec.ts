@@ -35,7 +35,7 @@ test("discovers current independent textures for active and archived entries wit
 	).text();
 	expect(archivedGuide).toContain("Catalogue state: archived");
 	expect(archivedGuide).toContain(
-		"https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark.png",
+		"https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark.webp",
 	);
 	const untouchedGuide = await (
 		await request.get("/agents/projects/feedmaid.md")
@@ -53,7 +53,7 @@ test("serves exact texture downloads and preserves raw review HTML while enhanci
 	const manifest = await response.json();
 	expect(textureManifestProblems(manifest)).toEqual([]);
 	const files = manifest.files.filter((file: { path: string }) =>
-		file.path.endsWith("/texture-light.png"),
+		file.path.endsWith("/texture-light.webp"),
 	);
 	expect(files).toHaveLength(1);
 	for (const file of files) {

@@ -7,7 +7,7 @@ import {
 	useRef,
 } from "react";
 import { categoryLabels, copy } from "../data/copy";
-import { assetUrl } from "../model/assets";
+import { assetUrl, cdnImage } from "../model/assets";
 import { brandSourceLabel, brandTexture } from "../model/brand";
 import {
 	categories,
@@ -498,7 +498,10 @@ export function ProjectDetail({
 									{!project.family && (
 										<AssetLink
 											className="button button-secondary"
-											href={project.logo.original}
+											href={cdnImage(
+												project.logo.original,
+												project.logo.display,
+											)}
 											download
 										>
 											<Icon name="download" />

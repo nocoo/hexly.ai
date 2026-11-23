@@ -26,15 +26,14 @@ for (const [project, version] of [["frogie", "1.0.0"]]) {
 		request,
 	}) => {
 		const path = `/brands/${project}/v${version}`;
-		const html = readInventory().files.find(
-			(file) => file.path === `${path}/review.html`,
-		);
 		const icon = readInventory().files.find(
 			(file) => file.path === `${path}/favicon.ico`,
 		);
-		if (!html || !icon) throw new Error("Missing archive fixture");
+		if (!icon) throw new Error("Missing archive fixture");
 		const raw = await request.get(`${path}/review.html`);
-		expect(digest(await raw.body())).toBe(html.sha256);
+		expect(digest(await raw.body())).toBe(
+			digest(await readFile(`public${path}/review.html`)),
+		);
 		await page.goto(`${path}/review.html`);
 		await expect(
 			page.locator('script[src="/material-downloads.js"]'),

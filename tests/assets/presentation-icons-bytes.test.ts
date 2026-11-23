@@ -5,8 +5,8 @@ import { readProjects } from "../../src/data/read-projects";
 
 const projects = readProjects();
 
-describe("approved textured icon bytes", () => {
-	it("delivers square opaque iOS masters and continuous transparent corners at native size", async () => {
+describe("approved textured icon CDN bytes", () => {
+	it("delivers lean WebP square/rounded icons, opaque apple-touch icons, and multi-size ICOs", async () => {
 		const selected = projects.filter(
 			(p) =>
 				p.presentationIcon &&
@@ -16,24 +16,17 @@ describe("approved textured icon bytes", () => {
 		for (const project of selected) {
 			const icon = project.presentationIcon;
 			if (!icon) throw new Error(project.id);
-			const square = sharp(`public${icon.root}/icon.png`);
-			expect((await square.metadata()).width).toBe(icon.width);
+			const square = sharp(`public${icon.root}/icon-1024.webp`);
+			expect((await square.metadata()).width).toBe(1024);
 			expect((await square.stats()).isOpaque).toBe(true);
-			const rounded = sharp(`public${icon.root}/rounded.png`);
-			expect((await rounded.metadata()).width).toBe(icon.width);
+			const rounded = sharp(`public${icon.root}/rounded-1024.webp`);
+			expect((await rounded.metadata()).width).toBe(1024);
 			const pixels = await rounded.ensureAlpha().raw().toBuffer();
 			expect(pixels[3]).toBe(0);
-			expect(
-				pixels[
-					(Math.floor(icon.width / 2) * icon.width +
-						Math.floor(icon.width / 2)) *
-						4 +
-						3
-				],
-			).toBe(255);
-			const ios = sharp(`public${icon.root}/icon-1024.png`);
-			expect((await ios.metadata()).width).toBe(1024);
-			expect((await ios.stats()).isOpaque).toBe(true);
+			expect(pixels[(512 * 1024 + 512) * 4 + 3]).toBe(255);
+			const apple = sharp(`public${icon.root}/apple-touch-icon.png`);
+			expect((await apple.metadata()).width).toBe(180);
+			expect((await apple.stats()).isOpaque).toBe(true);
 			const ico = await readFile(`public${icon.root}/favicon.ico`);
 			expect(ico.readUInt16LE(2)).toBe(1);
 			expect(ico.readUInt16LE(4)).toBe(6);

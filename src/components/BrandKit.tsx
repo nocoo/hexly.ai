@@ -1,4 +1,4 @@
-import { assetUrl } from "../model/assets";
+import { assetUrl, cdnImage } from "../model/assets";
 import {
 	brandAsset,
 	brandFormat,
@@ -55,7 +55,7 @@ export function BrandHero({
 					<AssetLink
 						key={theme}
 						className={kit.hero?.themed ? `logo-theme-${theme}` : undefined}
-						href={`${kit.root}/hero${theme === "dark" ? "-dark" : ""}.png`}
+						href={`${kit.root}/hero${theme === "dark" ? "-dark" : ""}.webp`}
 						download
 					>
 						{locale === "zh" ? "下载图像" : "Download artwork"} ↗
@@ -97,7 +97,9 @@ export function BrandKit({
 			{collected && (
 				<p className="brand-official-source">
 					<img
-						src={assetUrl(project.logo.original)}
+						src={assetUrl(
+							cdnImage(project.logo.original, project.logo.display),
+						)}
 						alt=""
 						width={32}
 						height={32}
@@ -106,7 +108,10 @@ export function BrandKit({
 					<span>
 						{zh ? "项目身份 · 原始文件" : "Project identity · Original bytes"}
 					</span>
-					<AssetLink href={project.logo.original} download>
+					<AssetLink
+						href={cdnImage(project.logo.original, project.logo.display)}
+						download
+					>
 						{zh ? "下载原始 Logo" : "Download original Logo"} ↓
 					</AssetLink>
 				</p>
@@ -200,7 +205,7 @@ export function BrandDownloads({
 						<AssetLink
 							href={
 								file === "icon" && project.presentationIcon
-									? `${project.presentationIcon.root}/rounded.png`
+									? `${project.presentationIcon.root}/rounded-1024.webp`
 									: brandAsset(kit, file, "light")
 							}
 							download
@@ -212,7 +217,7 @@ export function BrandDownloads({
 						<AssetLink
 							href={
 								file === "icon" && project.presentationIcon
-									? `${project.presentationIcon.root}/rounded.png`
+									? `${project.presentationIcon.root}/rounded-1024.webp`
 									: brandAsset(kit, file, "dark")
 							}
 							download
@@ -228,27 +233,25 @@ export function BrandDownloads({
 				{[
 					...(raster
 						? [
-								["logo.png", zh ? "透明主文件" : "Transparent master"],
-								["hero.png", zh ? "原幅 Hero" : "Full-frame hero"],
+								["mark-512.webp", zh ? "透明主文件" : "Transparent master"],
+								["hero.webp", zh ? "原幅 Hero" : "Full-frame hero"],
 								[
-									`texture-light.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+									`texture-light.${project.brandTexture ? "webp" : kit.texture?.model ? "webp" : (kit.texture?.format ?? "svg")}`,
 									zh ? "浅色底纹" : "Paper texture",
 								],
 								[
-									`texture-dark.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+									`texture-dark.${project.brandTexture ? "webp" : kit.texture?.model ? "webp" : (kit.texture?.format ?? "svg")}`,
 									zh ? "深色底纹" : "Night texture",
 								],
 							]
 						: [["favicon.svg", "Favicon SVG"]]),
 					["favicon.ico", "Favicon ICO"],
-					["logo-light.png", zh ? "浅色 PNG" : "Light PNG"],
-					["logo-dark.png", zh ? "深色 PNG" : "Dark PNG"],
 					["apple-touch-icon.png", "Apple touch"],
 					["manifest.json", zh ? "全部文件与 SHA-256" : "All files & SHA-256"],
 				].map(([file = "", name]) => (
 					<AssetLink
 						key={file}
-						href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${project.brandTexture && file.startsWith("texture-") ? file.replace(/\.(svg|webp)$/, ".png") : file}`}
+						href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${file}`}
 						download
 					>
 						<Icon name={file.endsWith("json") ? "file-text" : "image"} />
@@ -301,20 +304,9 @@ export function BrandDownloads({
 			</p>
 			{kit.previousVersion && (
 				<p className="review-caption">
-					<AssetLink
-						href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
-					>
-						{zh
-							? "历史版本"
-							: collected
-								? "Previous archive"
-								: "Previous identity"}{" "}
-						· v{kit.previousVersion} ↗
-					</AssetLink>
-					{" · "}
 					{zh
-						? "原始资产与来源记录完整保留。"
-						: "Original assets and provenance preserved."}
+						? `历史版本 v${kit.previousVersion} 已冷备归档，原始资产与来源哈希记录完整保留。`
+						: `Previous archive v${kit.previousVersion} is preserved in cold storage with its original checksums and provenance.`}
 				</p>
 			)}
 		</div>

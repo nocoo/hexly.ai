@@ -62,20 +62,16 @@ export function LogoArchive({
 			</div>
 			<div className="download-links">
 				{[
-					[t.download, family.foreground.original],
+					[t.download, family.foreground.display],
 					[
 						t.squareDownload,
-						`${project.presentationIcon?.root ?? family.root}/icon.png`,
-					],
-					[
-						t.roundedDownload,
-						`${project.presentationIcon?.root ?? family.root}/rounded.png`,
+						`${project.presentationIcon?.root ?? family.root}/icon-1024.webp`,
 					],
 					...(project.presentationIcon
 						? [
 								[
-									"iOS App Icon · 1024 px",
-									`${project.presentationIcon.root}/icon-1024.png`,
+									t.roundedDownload,
+									`${project.presentationIcon.root}/rounded-1024.webp`,
 								],
 								[
 									locale === "zh"
@@ -85,14 +81,9 @@ export function LogoArchive({
 								],
 							]
 						: []),
-					[t.whiteDownload, `${family.root}/white.png`],
 					[
-						adapted
-							? t.adaptedSource
-							: retained
-								? t.retainedSource
-								: t.rawDownload,
-						`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : (family.rawFile ?? "raw.png")}`,
+						locale === "zh" ? "背景图 WebP" : "Background WebP",
+						`${family.root}/background-1024.webp`,
 					],
 					[
 						supplied ? t.briefDownload : t.promptDownload,

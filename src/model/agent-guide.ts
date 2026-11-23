@@ -1,5 +1,5 @@
 import { brandCopy, brandSizes } from "../data/brand-copy";
-import { assetUrl } from "./assets";
+import { assetUrl, cdnImage } from "./assets";
 import { projectTexture } from "./brand";
 import { isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
@@ -35,8 +35,8 @@ export function agentGuide(
 			`Project ID: ${project.id}. Catalogue state: ${project.archived ? "archived" : "active"}. This is not a product release or health assertion.`,
 			`Repository: ${project.repository}\n${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ?? "not listed"}`,
 			project.logo.kind === "candidate"
-				? `Hexly review candidate (not adopted by the source project): ${assetUrl(project.logo.original)}\nCandidate SHA-256: ${project.logo.sha256}\nStudy: ${project.logo.sourceUrl}`
-				: `Original project identity: ${assetUrl(project.logo.original)}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
+				? `Hexly review candidate (not adopted by the source project): ${assetUrl(cdnImage(project.logo.original, project.logo.display))}\nCandidate SHA-256: ${project.logo.sha256}\nStudy: ${project.logo.sourceUrl}`
+				: `Original project identity: ${assetUrl(cdnImage(project.logo.original, project.logo.display))}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
 			"Reuse the approved downloadable files. Preserve the original Logo geometry, proportions, colors and bytes. Hexly campaign styling belongs to this archive and Hexly promotional material; the product's own palette and UI remain independent.",
 		);
 		if (project.archived)
@@ -47,7 +47,7 @@ export function agentGuide(
 			const family = project.family;
 			const supplied = !!family.method;
 			instructions.push(
-				`Family artwork: ${assetUrl(family.foreground.original)}\nFamily SHA-256: ${family.foreground.sha256}\nRecorded adoption state: ${family.status}. Do not treat a review candidate as an adopted product identity.`,
+				`Family artwork: ${assetUrl(cdnImage(family.foreground.original, family.foreground.display))}\nFamily SHA-256: ${family.foreground.sha256}\nRecorded adoption state: ${family.status}. Do not treat a review candidate as an adopted product identity.`,
 			);
 			resources.push({
 				label: supplied ? "Presentation brief" : "Exact generation prompt",
@@ -85,8 +85,8 @@ export function agentGuide(
 			for (const theme of ["light", "dark"])
 				resources.push(
 					{
-						label: `${theme} surface: original PNG`,
-						href: assetUrl(`${texture.root}/texture-${theme}.png`),
+						label: `${theme} surface: full WebP`,
+						href: assetUrl(`${texture.root}/texture-${theme}.webp`),
 					},
 					{
 						label: `Exact ${theme} surface prompt`,

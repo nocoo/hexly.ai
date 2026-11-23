@@ -9,7 +9,7 @@ const socialCards = socialCardsJson as {
 
 import identity from "../data/projects/hexly-ai.json" with { type: "json" };
 import { agentGuide, agentGuidePath } from "./agent-guide";
-import { assetUrl } from "./assets";
+import { assetUrl, cdnImage } from "./assets";
 import { filterProjects, isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { legacyRoute, siteOrigin } from "./routes";
@@ -599,7 +599,7 @@ function snapshotHtml(
 			? `<section id="media"><h2>${copy.en.projectMedia}</h2>${videoHtml}${screenshotsHtml}</section>`
 			: "";
 	const brandHtml = project
-		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.presentationIcon ? `${project.presentationIcon.root}/rounded-512.webp` : (project.family?.foreground.display ?? project.logo.display)))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">${project.logo.kind === "candidate" ? "Download review candidate" : "Download original"}</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a>${project.logo.kind === "candidate" ? " · Source adoption pending" : ""}</p></section>`
+		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.presentationIcon ? `${project.presentationIcon.root}/rounded-512.webp` : (project.family?.foreground.display ?? project.logo.display)))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(cdnImage(project.logo.original, project.logo.display)))}">${project.logo.kind === "candidate" ? "Download review candidate" : "Download original"}</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a>${project.logo.kind === "candidate" ? " · Source adoption pending" : ""}</p></section>`
 		: "";
 	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/brand">Brand</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
 }

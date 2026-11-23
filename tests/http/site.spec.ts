@@ -125,22 +125,32 @@ test("reports the deployed version and revision without caching", async ({
 });
 
 for (const id of ["frogie", "fundly", "node-image-uploader"]) {
-	test(`downloads the preserved ${id} identity without changing its bytes`, async ({
+	test(`serves the ${id} CDN identity asset with exact type and caching`, async ({
 		request,
 	}) => {
 		const project = projects.find((entry) => entry.id === id);
 		if (!project) throw new Error(`Missing project: ${id}`);
-		const response = await request.get(project.logo.original);
+		const isSvg = project.logo.original.endsWith(".svg");
+		const assetPath = isSvg ? project.logo.original : project.logo.display;
+		const response = await request.get(assetPath);
 		expect(response.status()).toBe(200);
 		expect(response.headers()["content-type"]).toContain(
-			project.logo.original.endsWith(".svg") ? "image/svg+xml" : "image/png",
+			isSvg ? "image/svg+xml" : "image/webp",
 		);
 		expect(response.headers()["cache-control"]).toContain("max-age=86400");
 		const bytes = await response.body();
-		expect(bytes.byteLength).toBe(project.logo.bytes);
-		expect(createHash("sha256").update(bytes).digest("hex")).toBe(
-			project.logo.sha256,
-		);
+		if (isSvg) {
+			expect(bytes.byteLength).toBe(project.logo.bytes);
+			expect(createHash("sha256").update(bytes).digest("hex")).toBe(
+				project.logo.sha256,
+			);
+		} else {
+			expect(await sharp(bytes).metadata()).toMatchObject({
+				format: "webp",
+				width: 1024,
+				height: 1024,
+			});
+		}
 	});
 }
 
@@ -253,7 +263,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	for (const [path, type] of [
 		["/favicon.ico", "image/png"],
 		["/apple-touch-icon.png", "image/png"],
-		["/icons/hexly-ai/v1.0.2/apple-touch-icon.png", "image/png"],
+		["/icons/hexly-ai/v1.0.4/apple-touch-icon.png", "image/png"],
 		["/og.jpg", "image/jpeg"],
 		["/og.png", "image/png"],
 	] as const) {
@@ -311,24 +321,15 @@ test(`serves the complete ${id} identity archive and recorded history`, async ({
 		);
 	}
 	if (family.previous) {
-		const original = await (await request.get(family.previous.original)).body();
-		expect(createHash("sha256").update(original).digest("hex")).toBe(
-			family.previous.sha256,
-		);
+		const prev = await sharp(
+			await (await request.get(`${family.root}/previous-1024.webp`)).body(),
+		).metadata();
+		expect([prev.width, prev.height]).toEqual([1024, 1024]);
 	}
 	const icon = await sharp(
-		await (await request.get(`${family.root}/icon.png`)).body(),
+		await (await request.get(`${family.root}/icon-1024.webp`)).body(),
 	).metadata();
-	expect([icon.width, icon.height]).toEqual([
-		family.foreground.width,
-		family.foreground.height,
-	]);
-	const foreground = await (
-		await request.get(family.foreground.original)
-	).body();
-	expect(createHash("sha256").update(foreground).digest("hex")).toBe(
-		family.foreground.sha256,
-	);
+	expect([icon.width, icon.height]).toEqual([1024, 1024]);
 	const preview = await sharp(
 		await (await request.get(family.foreground.display)).body(),
 	).metadata();

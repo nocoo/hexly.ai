@@ -62,7 +62,9 @@ for (const project of readProjects().filter((p) => ids.includes(p.id))) {
 		const download = await pending;
 		const path = await download.path();
 		if (!path) throw new Error("Download missing");
-		expect(digest(await readFile(path))).toBe(project.logo.sha256);
+		expect(digest(await readFile(path))).toBe(
+			digest(await readFile(`public${family.foreground.display}`)),
+		);
 	});
 }
 

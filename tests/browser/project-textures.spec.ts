@@ -93,7 +93,7 @@ for (const [id, options, opacity] of [
 			}
 			const downloaded = page.waitForEvent("download");
 			await page.locator("#texture a[download]").first().click();
-			expect((await downloaded).suggestedFilename()).toBe("texture-light.png");
+			expect((await downloaded).suggestedFilename()).toBe("texture-light.webp");
 			expect(errors).toEqual([]);
 		});
 	});
@@ -115,6 +115,6 @@ test("independent texture review keeps download enhancement and contrasting capt
 	);
 	expect((await scanAccessibility(page)).violations).toEqual([]);
 	const pending = page.waitForEvent("download");
-	await page.getByRole("link", { name: "Original PNG" }).first().click();
-	expect((await pending).suggestedFilename()).toBe("texture-light.png");
+	await page.getByRole("link", { name: "Full WebP" }).first().click();
+	expect((await pending).suggestedFilename()).toBe("texture-light.webp");
 });

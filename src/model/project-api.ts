@@ -1,4 +1,4 @@
-import { assetUrl } from "./assets";
+import { assetUrl, cdnImage } from "./assets";
 import type { Locale, Project } from "./project";
 import { siteOrigin } from "./routes";
 
@@ -49,11 +49,13 @@ export function projectApi(project: Project) {
 		});
 	};
 	const candidate = project.logo.kind === "candidate";
+	const originalPath = cdnImage(project.logo.original, project.logo.display);
+	const originalIsSvg = originalPath.endsWith(".svg");
 	add(
 		"original",
-		project.logo.original,
-		project.logo.width,
-		project.logo.height,
+		originalPath,
+		originalIsSvg ? project.logo.width : 1024,
+		originalIsSvg ? project.logo.height : 1024,
 		candidate ? "transparent" : "original",
 		candidate ? "hexly-campaign" : "project-identity",
 		"original",
@@ -77,15 +79,6 @@ export function projectApi(project: Project) {
 				? "project-identity"
 				: "hexly-campaign";
 		add(
-			"foreground-original",
-			family.foreground.original,
-			family.foreground.width,
-			family.foreground.height,
-			"transparent",
-			role,
-			"navigation",
-		);
-		add(
 			"foreground-1024",
 			family.foreground.display,
 			1024,
@@ -105,53 +98,10 @@ export function projectApi(project: Project) {
 				"presentation",
 			);
 		}
-		add(
-			"background-original",
-			`${presentation?.root ?? family.root}/icon.png`,
-			family.foreground.width,
-			family.foreground.height,
-			"opaque",
-			"hexly-campaign",
-			"presentation",
-		);
-		add(
-			"white-original",
-			`${family.root}/white.png`,
-			family.foreground.width,
-			family.foreground.height,
-			"opaque",
-			"hexly-campaign",
-			"presentation",
-			"light",
-		);
-		if (project.brandKit?.method === "archived-artwork") {
-			const root = project.brandKit.root;
-			for (const size of [16, 24, 32, 48, 64, 128, 256, 512]) {
-				add(
-					`transparent-${size}`,
-					`${root}/mark-${size}.png`,
-					size,
-					size,
-					"transparent",
-					role,
-					"navigation",
-				);
-			}
-			for (const theme of presentation ? [] : (["light", "dark"] as const)) {
-				add(
-					`tile-${theme}-512`,
-					`${root}/icon-${theme}-512.png`,
-					512,
-					512,
-					"opaque",
-					"hexly-campaign",
-					"presentation",
-					theme,
-				);
-			}
+		if (project.brandKit?.method === "archived-artwork" || presentation) {
 			add(
 				"apple-touch-icon",
-				`${presentation?.root ?? root}/apple-touch-icon.png`,
+				`${presentation?.root ?? project.brandKit?.root}/apple-touch-icon.png`,
 				180,
 				180,
 				"opaque",
@@ -173,15 +123,6 @@ export function projectApi(project: Project) {
 				"presentation",
 			);
 		}
-		add(
-			"ios-app-icon",
-			`${presentation.root}/icon-1024.png`,
-			1024,
-			1024,
-			"opaque",
-			"hexly-campaign",
-			"presentation",
-		);
 	}
 	const icon = (size: number) =>
 		presentation

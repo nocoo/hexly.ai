@@ -47,7 +47,7 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	expect(await page.evaluate(() => scrollY)).toBe(beforeTab);
 	await expect(page.locator("#panel-downloads")).toBeVisible();
 	await expect(page.locator(".brand-kit-assets a[download]")).toHaveCount(8);
-	await expect(page.locator(".identity-archive a[download]")).toHaveCount(8);
+	await expect(page.locator(".identity-archive a[download]")).toHaveCount(6);
 	await expect(
 		page.getByRole("link", { name: "License & source" }),
 	).toBeVisible();
@@ -175,9 +175,9 @@ test("switches identity presentations and downloads the preserved original", asy
 		await expect(page.locator(".current-artwork .review-tile")).toHaveAttribute(
 			"href",
 			assetUrl(
-				view === "transparent"
-					? family.foreground.original
-					: `${view === "icon" ? project.presentationIcon.root : family.root}/${view}.png`,
+				view === "icon"
+					? `${project.presentationIcon.root}/rounded-1024.webp`
+					: family.foreground.display,
 			),
 		);
 	}
@@ -194,7 +194,7 @@ test("switches identity presentations and downloads the preserved original", asy
 		.getByRole("link", { name: "Download original", exact: true })
 		.click();
 	const download = await downloading;
-	expect(download.suggestedFilename()).toBe("frogie-transparent.png");
+	expect(download.suggestedFilename()).toBe("frogie-transparent-1024.webp");
 	expect(await download.failure()).toBeNull();
 	await expect(
 		page.getByRole("link", { name: "View asset source" }),
@@ -581,7 +581,10 @@ test.describe("searches the gallery, labels emoji identities, and recovers from 
 		);
 		await expect(
 			page.getByRole("link", { name: "Download identity" }),
-		).toHaveAttribute("href", assetUrl("/logos/emoji/uptime-kuma-skill.png"));
+		).toHaveAttribute(
+			"href",
+			assetUrl("/logos/display/uptime-kuma-skill-1024.webp"),
+		);
 		expect(
 			await page.evaluate(
 				() => document.documentElement.scrollWidth <= innerWidth,

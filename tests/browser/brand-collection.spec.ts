@@ -65,7 +65,14 @@ for (const [id, options] of [
 				);
 				await expect(
 					page.locator(".brand-official-source img"),
-				).toHaveAttribute("src", assetUrl(project.logo.original));
+				).toHaveAttribute(
+					"src",
+					assetUrl(
+						project.logo.original.endsWith(".svg")
+							? project.logo.original
+							: project.logo.display,
+					),
+				);
 				await expect(page.locator(".brand-official-source img")).toHaveCSS(
 					"opacity",
 					"1",
@@ -134,13 +141,9 @@ for (const [id, options] of [
 					await button.click();
 					await expect(button).toHaveAttribute("aria-pressed", "true");
 					const image =
-						view === "Icon" ? `icon-${theme}-512.png` : "logo-light.png";
+						view === "Icon" ? `icon-${theme}-512.webp` : "mark-512.webp";
 					const original =
-						view === "Icon"
-							? `icon-${theme}.png`
-							: view === "White"
-								? "white.png"
-								: "logo.png";
+						view === "Icon" ? `icon-${theme}-512.webp` : "mark-512.webp";
 					await expect(page.locator("#candidate")).toHaveAttribute(
 						"src",
 						`./${image}`,

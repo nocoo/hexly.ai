@@ -2,7 +2,7 @@ import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { readProjects } from "../src/data/read-projects";
-import { assetUrl } from "../src/model/assets";
+import { assetUrl, cdnImage } from "../src/model/assets";
 import {
 	brandAsset,
 	brandSourceLabel,
@@ -77,7 +77,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 - ${texture.description.zh}
 - Model: \`${texture.model}\`; independently generated light/dark full canvases, no crop or repeat.
 - ${project.brandTexture ? `Independent texture pack v${project.brandTexture.version}; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity ${project.brandTexture.surfaceOpacity}.` : "Approved surface retained in the current identity kit."}
-- [Paper PNG](${sourceLink(`${texture.root}/texture-light.png`)}) · [Night PNG](${sourceLink(`${texture.root}/texture-dark.png`)}) · [Exact paper prompt](${sourceLink(`${texture.root}/texture-light-prompt.txt`)}) · [Exact night prompt](${sourceLink(`${texture.root}/texture-dark-prompt.txt`)})
+- [Paper WebP](${sourceLink(`${texture.root}/texture-light.webp`)}) · [Night WebP](${sourceLink(`${texture.root}/texture-dark.webp`)}) · [Exact paper prompt](${sourceLink(`${texture.root}/texture-light-prompt.txt`)}) · [Exact night prompt](${sourceLink(`${texture.root}/texture-dark-prompt.txt`)})
 - [Manifest and hashes](${sourceLink(`${texture.root}/manifest.json`)}) · [Usage/rights](${sourceLink(`${texture.root}/guide.md`)}) · [Full-canvas specimens](${sourceLink(`${texture.root}/review.html`)})
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -96,7 +96,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 
 ![${project.title} current icon](${sourceLink(`${icon.root}/rounded-160.webp`)})
 
-- [Native square PNG](${sourceLink(`${icon.root}/icon.png`)}) · [Native continuous-corner PNG](${sourceLink(`${icon.root}/rounded.png`)}) · [iOS 1024 px square](${sourceLink(`${icon.root}/icon-1024.png`)}) · [Favicon ICO](${sourceLink(`${icon.root}/favicon.ico`)}) · [Apple touch](${sourceLink(`${icon.root}/apple-touch-icon.png`)})
+- [1024 px square WebP](${sourceLink(`${icon.root}/icon-1024.webp`)}) · [1024 px rounded WebP](${sourceLink(`${icon.root}/rounded-1024.webp`)}) · [Favicon ICO](${sourceLink(`${icon.root}/favicon.ico`)}) · [Apple touch](${sourceLink(`${icon.root}/apple-touch-icon.png`)})
 - [Manifest and checksums](${sourceLink(`${icon.root}/manifest.json`)}) · [Usage, resampling and source rights](${sourceLink(`${icon.root}/guide.md`)})
 - Native canvas ${icon.width} × ${icon.height}; zero new image generation. ${iconManifest?.texture.sourceMethod === "authored-family-background" ? "Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing." : `Unchanged foreground colors over the approved light texture at ${(iconManifest?.texture.opacity ?? 0) * 100}% opacity.`} Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
 - ${family?.status === "review" ? "Local Hexly presentation preview; source adoption and publication are not implied." : "Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state."} Original identity archives below remain available.
@@ -126,10 +126,10 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en}\n` : ""}- Site path: \`/projects/${project.id}#brand\`; [local gallery](https://index.dev.hexly.ai/projects/${project.id}#brand)
 - [Static review HTML](../../artwork/logo-family/${relative("/logos/family", dirname(family.root))}/review.html)
 - [Full process archive](${family.archive.startsWith("artwork/") ? `../../${family.archive}` : family.archive})
-- [Transparent foreground](${sourceLink(family.foreground.original)}); SHA-256: \`${family.foreground.sha256}\`
-- [Square icon](${sourceLink(`${family.root}/icon.png`)}), [rounded icon](${sourceLink(`${family.root}/rounded.png`)}), [white version](${sourceLink(`${family.root}/white.png`)})
-- [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](${sourceLink(`${family.root}/${sourceFile}`)}), [${supplied ? "presentation brief" : "exact prompt"}](${sourceLink(`${family.root}/${supplied ? "brief" : "prompt"}.txt`)}), [public asset checksums](${sourceLink(`${family.root}/manifest.json`)})
-${family.previous ? `- [Previous original](${sourceLink(family.previous.original)}), copied from [${family.previous.sourceUrl.startsWith("/") ? "its preserved local source" : "its immutable source"}](${sourceLink(family.previous.sourceUrl)})\n- Previous SHA-256: \`${family.previous.sha256}\`` : "- First project identity; no earlier independent Logo existed at intake."}
+- [Transparent foreground](${sourceLink(cdnImage(family.foreground.original, family.foreground.display))}); SHA-256: \`${family.foreground.sha256}\`
+- [Square icon WebP](${sourceLink(`${family.root}/icon-1024.webp`)}), [rounded icon WebP](${sourceLink(`${family.root}/rounded-1024.webp`)}), [transparent foreground WebP](${sourceLink(`${family.root}/transparent-1024.webp`)})
+- [${supplied ? "Presentation brief" : "Exact prompt"}](${sourceLink(`${family.root}/${supplied ? "brief" : "prompt"}.txt`)}), [public asset checksums](${sourceLink(`${family.root}/manifest.json`)}) (raw \`${sourceFile}\` master cold-archived in Google Drive \`My Drive/hexly.ai/04-masters-png/\`)
+${family.previous ? `- Previous original: ${family.previous.original.endsWith(".svg") ? `[${family.previous.original}](${sourceLink(family.previous.original)})` : `\`${family.previous.original}\` (cold-archived in Google Drive)`}, from [${family.previous.sourceUrl.startsWith("/") ? "its preserved local source" : "its immutable source"}](${sourceLink(family.previous.sourceUrl)})\n- Previous SHA-256: \`${family.previous.sha256}\`` : "- First project identity; no earlier independent Logo existed at intake."}
 - ${adapted ? `The owner-supplied illustration is extracted and uniformly reframed at native ${family.foreground.width} × ${family.foreground.height}. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.` : retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model ?? "built-in image tool; model unrecorded"}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native master retains its recorded resolution.` : ""}
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
@@ -204,7 +204,7 @@ ${screenshotsSection}${overviewSection}## Current logo
 - Type: ${project.logo.kind === "candidate" ? "Owner-approved Hexly review candidate; source-project identity and adoption are pending" : firstGeneratedIdentity ? (project.family?.rawFile === "raw.jpg" ? "Owner-approved generated raster identity; model unrecorded, source-adopted bytes and native JPEG provenance preserved" : "Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved") : generatedKit ? "Preserved source identity; the current Hexly GPT Image animal is documented separately below" : collected ? "Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights" : kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
 - [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
-- [Preserved asset](${sourceLink(project.logo.original)})
+- [Preserved asset](${sourceLink(cdnImage(project.logo.original, project.logo.display))})
 - Original dimensions: ${project.logo.width} × ${project.logo.height}
 - Original size: ${project.logo.bytes} bytes
 - SHA-256: \`${project.logo.sha256}\`

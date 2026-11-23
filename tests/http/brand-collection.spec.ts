@@ -40,11 +40,9 @@ test(`${project.id} serves exact campaign files, original identity and compatibl
 	const manifest = await response.json();
 	expect(brandManifestProblems(manifest)).toEqual([]);
 	const files = manifest.files.filter((file: { path: string }) =>
-		["/logo.png", "/wordmark-light.svg"].some((suffix) =>
-			file.path.endsWith(suffix),
-		),
+		file.path.endsWith("/wordmark-light.svg"),
 	);
-	expect(files).toHaveLength(2);
+	expect(files).toHaveLength(1);
 	for (const file of files) {
 		const asset = await request.get(file.path);
 		expect(asset.status(), file.path).toBe(200);
@@ -54,17 +52,20 @@ test(`${project.id} serves exact campaign files, original identity and compatibl
 		expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
 			file.sha256,
 		);
-		if (file.path.endsWith(".svg"))
-			expect(asset.headers()["content-type"]).toContain("image/svg+xml");
+		expect(asset.headers()["content-type"]).toContain("image/svg+xml");
 		await asset.dispose();
 	}
-	const original = await request.get(project.logo.original);
-	expect(original.status()).toBe(200);
-	expect(
-		createHash("sha256")
-			.update(await original.body())
-			.digest("hex"),
-	).toBe(project.logo.sha256);
+	for (const webp of [
+		`${kit.root}/mark-512.webp`,
+		`${kit.root}/lockup-light.webp`,
+		`${kit.root}/hero.webp`,
+		project.logo.display,
+	]) {
+		const asset = await request.get(webp);
+		expect(asset.status(), webp).toBe(200);
+		expect(asset.headers()["content-type"], webp).toContain("image/webp");
+		await asset.dispose();
+	}
 	const historical = await request.get(`${project.family.root}/manifest.json`);
 	expect(historical.status()).toBe(200);
 	const page = await request.get(`/projects/${project.id}`);

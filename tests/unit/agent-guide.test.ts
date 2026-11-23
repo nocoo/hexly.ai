@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
 import { agentGuide, agentGuidePath } from "../../src/model/agent-guide";
-import { assetUrl } from "../../src/model/assets";
+import { assetUrl, cdnImage } from "../../src/model/assets";
 import {
 	agentFiles,
 	applyPageToHtml,
@@ -87,7 +87,9 @@ describe("page-specific agent handoffs", () => {
 	it("keeps original identities, their hashes and actual prompt/brief provenance distinct", () => {
 		for (const project of projects) {
 			const guide = agentGuide(`/projects/${project.id}`, projects);
-			expect(guide.body).toContain(assetUrl(project.logo.original));
+			expect(guide.body).toContain(
+				assetUrl(cdnImage(project.logo.original, project.logo.display)),
+			);
 			expect(guide.body).toContain(project.logo.sha256);
 			expect(guide.body).toContain(
 				project.archived ? "state: archived" : "state: active",

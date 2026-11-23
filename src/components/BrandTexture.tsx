@@ -42,18 +42,8 @@ export function BrandTexture({
 										? "夜纸"
 										: "Night"}
 							</span>
-							<AssetLink
-								href={
-									texture.model
-										? `${texture.root}/texture-${theme}.png`
-										: brandTextureAsset(texture, theme)
-								}
-								download
-							>
-								{texture.model
-									? "PNG"
-									: (texture.format ?? "svg").toUpperCase()}{" "}
-								↓
+							<AssetLink href={brandTextureAsset(texture, theme)} download>
+								{(texture.format ?? "svg").toUpperCase()} ↓
 							</AssetLink>
 						</figcaption>
 					</figure>

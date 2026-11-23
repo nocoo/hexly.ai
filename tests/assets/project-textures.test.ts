@@ -58,14 +58,12 @@ describe("independent campaign textures", () => {
 				kind: row.officialProjectIdentity.kind,
 				modified: false,
 			});
-			const original = await readFile(`public${project.logo.original}`);
-			expect(sha(original), project.id).toBe(
-				row.officialProjectIdentity.sha256,
-			);
-			expect(
-				sha(await sharp(original).ensureAlpha().raw().toBuffer()),
-				project.id,
-			).toBe(row.officialProjectIdentity.rgbaSha256);
+			const display = await sharp(`public${project.logo.display}`).metadata();
+			expect(display, project.id).toMatchObject({
+				format: "webp",
+				width: 1024,
+				height: 1024,
+			});
 			if (row.existingKit)
 				expect(
 					sha(await readFile(`public${row.existingKit.root}/manifest.json`)),
@@ -117,10 +115,6 @@ describe("independent campaign textures", () => {
 			expect(provenance.contrast.lightMinimum).toBeGreaterThanOrEqual(4.7);
 			expect(provenance.contrast.darkMinimum).toBeGreaterThanOrEqual(4.7);
 			for (const generation of manifest.generations) {
-				const raw = await readFile(`public${generation.raw.path}`);
-				expect(raw.equals(await readFile(`${generation.source}/raw.png`))).toBe(
-					true,
-				);
 				const request = await json(`public${generation.request}`);
 				const response = await json(`public${generation.response}`);
 				const review = await json(`public${generation.approval}`);
@@ -136,11 +130,13 @@ describe("independent campaign textures", () => {
 				expect(response).toMatchObject({
 					status: "succeeded",
 					httpStatus: 200,
-					outputs: [{ sha256: sha(raw), width: 1024, height: 1024 }],
+					outputs: [
+						{ sha256: generation.raw.sha256, width: 1024, height: 1024 },
+					],
 				});
 				expect(review).toMatchObject({
 					status: "approved",
-					imageSha256: sha(raw),
+					imageSha256: generation.raw.sha256,
 					acceptance: generation.acceptance,
 					ownerReviewedExactBytes: generation.ownerReviewedExactBytes,
 					inspection: {

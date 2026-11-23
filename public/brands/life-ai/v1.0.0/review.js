@@ -7,13 +7,13 @@ function updateArtwork() {
 	const theme = document.body.dataset.theme;
 	const view = candidateLink.dataset.view;
 	candidate.src =
-		view === "icon" ? `./icon-${theme}-512.png` : "./logo-light.png";
+		view === "icon" ? `./icon-${theme}-512.webp` : "./mark-512.webp";
 	candidateLink.href =
 		view === "icon"
-			? `./icon-${theme}.png`
+			? `./icon-${theme}-512.webp`
 			: view === "white"
-				? "./white.png"
-				: "./logo.png";
+				? "./mark-512.webp"
+				: "./mark-512.webp";
 }
 
 themeSwitch.addEventListener("click", () => {

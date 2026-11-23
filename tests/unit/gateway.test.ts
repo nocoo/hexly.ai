@@ -185,8 +185,8 @@ describe("the static asset gateway", () => {
 		}) as Env;
 		for (const host of ["hexly.ai", "www.hexly.ai", "status.hexly.ai"]) {
 			for (const path of [
-				"/logos/originals/pew.png",
-				"/brands/snail/v2.0.0/manifest.json",
+				"/logos/display/pew-1024.webp",
+				"/brands/frogie/v1.0.0/manifest.json",
 				"/textures/frogie/v1.0.0/texture-light.webp",
 				"/video-kit/1.0.0/hexly/space-grotesk.woff2",
 			]) {

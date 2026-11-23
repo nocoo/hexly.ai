@@ -1,6 +1,6 @@
 import { type CSSProperties, useState } from "react";
 import { categoryLabels, copy } from "../data/copy";
-import { assetUrl } from "../model/assets";
+import { assetUrl, cdnImage } from "../model/assets";
 import { destination } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
@@ -40,9 +40,9 @@ export function LogoReview({
 				: `${family.root}/icon-1024.webp`
 			: foreground.display;
 	const currentDownload =
-		family && view !== "transparent"
-			? `${view === "icon" ? (project.presentationIcon?.root ?? family.root) : family.root}/${view === "icon" ? "icon" : "white"}.png`
-			: foreground.original;
+		family && view === "icon"
+			? currentImage
+			: cdnImage(foreground.original, foreground.display);
 	const familyStatus =
 		family?.status === "adopted"
 			? t.approved
@@ -95,7 +95,7 @@ export function LogoReview({
 									<AssetLink
 										className="review-tile previous-tile"
 										style={tileStyle}
-										href={family.previous.original}
+										href={`${family.root}/previous-1024.webp`}
 										target="_blank"
 										rel="noreferrer"
 										aria-label={`${t.openOriginal}: ${t.previousArtwork}`}
@@ -111,7 +111,11 @@ export function LogoReview({
 								<figcaption>
 									<strong>{t.previousArtwork}</strong>
 									<AssetLink
-										href={family.previous.sourceUrl}
+										href={
+											family.previous.sourceUrl.startsWith("/logos/")
+												? `${family.root}/previous-1024.webp`
+												: family.previous.sourceUrl
+										}
 										target="_blank"
 										rel="noreferrer"
 									>
@@ -290,7 +294,7 @@ export function LogoReview({
 								href={
 									project.brandKit && !family
 										? `${project.brandKit.root}/mark-${surface}.svg`
-										: foreground.original
+										: cdnImage(foreground.original, foreground.display)
 								}
 								target="_blank"
 								rel="noreferrer"

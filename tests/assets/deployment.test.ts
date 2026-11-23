@@ -9,7 +9,7 @@ import { statusTargets } from "../../src/model/status";
 const origin = new URL("https://deployment.example.test");
 const revision = "a".repeat(40);
 const retry = { attempts: 3, delayMs: 0 };
-const logoPath = identity.logo.original;
+const logoPath = identity.logo.display;
 const logo = readFileSync(`public${logoPath}`);
 const status = {
 	mode: "live",
@@ -155,7 +155,8 @@ describe("production deployment verification", () => {
 			verifyDeployment(origin, revision, retry),
 		).rejects.toMatchObject({
 			cause: {
-				message: "The production logo does not match the archived original.",
+				message:
+					"The production logo does not match the inventoried CDN asset.",
 			},
 		});
 	});

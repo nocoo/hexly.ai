@@ -26,12 +26,15 @@ describe("R2 material delivery", () => {
 	it("keeps independently versioned texture packs on R2 and review documents on the Worker", () => {
 		const path = "/textures/frogie/v1.0.0/texture-light-320.webp";
 		const iconPath = "/icons/frogie/v1.0.0/rounded-64.webp";
-		expect(assetKeyForPath(iconPath)).toBe(
-			"projects/frogie/icons/v1.0.0/rounded-64.webp",
+		expect(assetKeyForPath(iconPath)).toMatch(
+			/^projects\/frogie\/icons\/v1\.0\.0\/rounded-64-[a-f0-9]{12}\.webp$/,
 		);
 		expect(assetKey(iconPath, "a".repeat(64), "frogie")).toBe(
-			assetKeyForPath(iconPath),
+			"projects/frogie/icons/v1.0.0/rounded-64-aaaaaaaaaaaa.webp",
 		);
+		expect(
+			assetKey("/icons/frogie/v1.0.0/favicon.ico", "a".repeat(64), "frogie"),
+		).toBe("projects/frogie/icons/v1.0.0/favicon.ico");
 		expect(assetUrl(assetUrl(iconPath), true)).toBe(iconPath);
 		const key = "projects/frogie/textures/v1.0.0/texture-light-320.webp";
 		expect(assetKey(path, "a".repeat(64), "frogie")).toBe(key);
@@ -175,32 +178,36 @@ describe("R2 material delivery", () => {
 			])
 				write(path, `font fixture ${path}`);
 			write(
-				"public/brands/pi-agent-policy/v1.0.0/logo.png",
+				"public/brands/pi-agent-policy/v1.0.0/mark-512.webp",
 				"same image fixture",
 			);
 			write("artwork/old/logo.png", "same image fixture");
 			const previous = inventory().files.find(
-				(f: { source: string }) => f.source === "artwork/old/logo.png",
+				(f: { source: string }) =>
+					f.source === "public/brands/pi-agent-policy/v1.0.0/mark-512.webp",
 			);
-			expect(previous.key).toBe("brands/pi-agent-policy/v1.0.0/logo.png");
+			expect(previous.key).toBe("brands/pi-agent-policy/v1.0.0/mark-512.webp");
+			// Untracked artwork/ intermediates are never inventoried into R2.
+			expect(
+				inventory().files.some(
+					(f: { source: string }) => f.source === "artwork/old/logo.png",
+				),
+			).toBe(false);
 			write(
-				"public/brands/pi-agent-policy/v1.0.1/logo.png",
+				"public/brands/pi-agent-policy/v1.0.1/mark-512.webp",
 				"same image fixture",
 			);
-			write("artwork/new/logo.png", "same image fixture");
 			const next = inventory();
+			// Identical binary bytes across namespaces deduplicate to one canonical R2 key.
 			expect(
 				next.files.find(
-					(f: { source: string }) => f.source === previous.source,
-				),
-			).toEqual(previous);
-			expect(
-				next.files.find(
-					(f: { source: string }) => f.source === "artwork/new/logo.png",
+					(f: { source: string }) =>
+						f.source === "public/brands/pi-agent-policy/v1.0.1/mark-512.webp",
 				).key,
-			).toBe("brands/pi-agent-policy/v1.0.1/logo.png");
+			).toBe("brands/pi-agent-policy/v1.0.0/mark-512.webp");
 			const retired = next.files.filter(
-				(file: { key: string }) => file.key === previous.key,
+				(file: { source: string }) =>
+					file.source === "public/brands/pi-agent-policy/v1.0.0/mark-512.webp",
 			);
 			write("docs/assets/retired.json", JSON.stringify({ files: retired }));
 			const rejected = () =>
@@ -220,6 +227,9 @@ describe("R2 material delivery", () => {
 				}),
 			);
 			for (const file of retired) rmSync(join(directory, file.source));
+			rmSync(
+				join(directory, "public/brands/pi-agent-policy/v1.0.1/mark-512.webp"),
+			);
 			expect(
 				inventory().files.some(
 					(file: { key: string }) => file.key === previous.key,
@@ -231,7 +241,7 @@ describe("R2 material delivery", () => {
 			rmSync(directory, { recursive: true, force: true });
 		}
 	});
-	it("keeps retired materials discoverable without reopening project publication", () => {
+	it("rejects retired or unregistered projects for R2 publication", () => {
 		expect(readProjects().some((project) => project.id === "snail")).toBe(
 			false,
 		);
@@ -239,21 +249,9 @@ describe("R2 material delivery", () => {
 			spawnSync("bun", ["scripts/asset-storage.ts", ...args], {
 				encoding: "utf8",
 			});
-		const plan = run("plan", "--project", "snail");
-		expect(plan.status).toBe(0);
-		expect(JSON.parse(plan.stdout).objects).toBeGreaterThan(0);
-		const url = run(
-			"url",
-			"/brands/snail/v2.0.0/favicon.ico",
-			"--project",
-			"snail",
-		);
-		expect(url.status).toBe(0);
-		expect(url.stdout).toContain(
-			"https://h.no.mt/brands/snail/v2.0.0/favicon.ico",
-		);
 		for (const [command, project] of [
 			["publish", "snail"],
+			["plan", "snail"],
 			["plan", "unregistered-project"],
 		] as const) {
 			const rejected = run(command, "--project", project);
@@ -507,9 +505,6 @@ describe("R2 material delivery", () => {
 		const documents = reviewDocuments();
 		expect(documents).toContain("artwork/logo-family/review.css");
 		expect(documents).toContain("artwork/logo-family/review.mjs");
-		expect(documents).toContain(
-			"artwork/logo-family/dotty/2026-09-07-01/prompt.txt",
-		);
 		expect(documents.some((file) => file.endsWith("/tool-snapshot.mjs"))).toBe(
 			false,
 		);

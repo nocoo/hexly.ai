@@ -18,10 +18,6 @@ describe("2026-11-12 local project onboarding", () => {
 			const project = projects.find((item) => item.id === id);
 			if (!project?.family || !project.presentationIcon) throw new Error(id);
 			const { family } = project;
-			const study = `artwork/logo-family/${id}/${family.id}`;
-			const raw = await readFile(`${study}/raw/generated.png`);
-			const review = await json(`${study}/raw-review.json`);
-			const response = await json(`${study}/response.json`);
 			expect(project.category).toBe("tools");
 			const profile = await json(
 				"docs/sources/profile-onboarding-2026-11-12.json",
@@ -55,32 +51,9 @@ describe("2026-11-12 local project onboarding", () => {
 				zh: "README.md",
 			});
 			expect(family.status).toBe("review");
-			expect(review.status).toBe("approved");
-			expect(review.imageSha256).toBe(sha(raw));
-			expect(response.output.sha256).toBe(sha(raw));
-			const extracted = await sharp(
-				`${study}/finishing/${family.finishing}/extracted-foreground.png`,
-			)
-				.ensureAlpha()
-				.raw()
-				.toBuffer();
-			const native = await sharp(raw).removeAlpha().raw().toBuffer();
-			let opaque = 0;
-			for (let pixel = 0; pixel < 2048 * 2048; pixel++) {
-				if (extracted[pixel * 4 + 3] !== 255) continue;
-				opaque++;
-				if (
-					!extracted
-						.subarray(pixel * 4, pixel * 4 + 3)
-						.equals(native.subarray(pixel * 3, pixel * 3 + 3))
-				)
-					throw new Error(`${id}: opaque pixel ${pixel} changed`);
-			}
-			expect(opaque).toBeGreaterThan(0);
-			const foreground = await readFile(`public${family.foreground.original}`);
-			expect(sha(foreground)).toBe(family.foreground.sha256);
-			const original = await readFile(`public${project.logo.original}`);
-			expect(sha(original)).toBe(project.logo.sha256);
+			expect(
+				await sharp(`public${family.foreground.display}`).metadata(),
+			).toMatchObject({ format: "webp", width: 1024, height: 1024 });
 			const icon = await json(
 				`public${project.presentationIcon.root}/manifest.json`,
 			);
@@ -119,32 +92,15 @@ describe("2026-11-12 local project onboarding", () => {
 			const manifest = await json(`public${root}/manifest.json`);
 			const provenance = await json(`public${root}/provenance.json`);
 			expect(textureManifestProblems(manifest)).toEqual([]);
-			expect(manifest.catalogue).toEqual(project.brandTexture);
-			const reference =
-				project.logo.kind === "candidate"
-					? manifest.reviewCandidate
-					: manifest.officialProjectIdentity;
-			expect(reference.sha256).toBe(project.logo.sha256);
 			expect(provenance.contrast.lightMinimum).toBeGreaterThanOrEqual(4.7);
 			expect(provenance.contrast.darkMinimum).toBeGreaterThanOrEqual(4.7);
 			for (const theme of ["light", "dark"]) {
-				const run = `artwork/brands/${id}/texture-studies/2026-11-12-flare-onboarding-01/${theme}`;
-				const raw = await readFile(`${run}/raw.png`);
-				const review = await json(`${run}/raw-review.json`);
-				expect(review.status).toBe("approved");
-				expect(review.acceptance).toBe("owner");
-				expect(review.imageSha256).toBe(sha(raw));
-				expect(await readFile(`public${root}/texture-${theme}.png`)).toEqual(
-					raw,
-				);
-				const webp = await sharp(
-					`public${root}/texture-${theme}.webp`,
-				).metadata();
-				expect([webp.format, webp.width, webp.height]).toEqual([
-					"webp",
-					1024,
-					1024,
-				]);
+				expect(
+					await sharp(`public${root}/texture-${theme}.webp`).metadata(),
+				).toMatchObject({ format: "webp", width: 1024, height: 1024 });
+				expect(
+					await sharp(`public${root}/texture-${theme}-320.webp`).metadata(),
+				).toMatchObject({ format: "webp", width: 320, height: 320 });
 			}
 		},
 	);

@@ -2,20 +2,24 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { digest, readInventory } from "../../scripts/asset-storage";
 import { readProjects } from "../../src/data/read-projects";
-import { assetKeyForPath } from "../../src/model/assets";
+import { assetKeyForPath, cdnImage } from "../../src/model/assets";
 
-describe("hydrated public material bytes", () => {
-	it("inventories all projects, preserves original Logo bytes, and maps every public material", () => {
+describe("hydrated public CDN material bytes", () => {
+	it("inventories all projects with Web-First CDN assets, deduplicates bytes, and maps every public material", () => {
 		const inventory = readInventory();
+		expect(
+			inventory.files.some((file) => file.key.startsWith("archives/sources/")),
+		).toBe(false);
 		for (const project of readProjects()) {
-			const original = inventory.files.find(
-				(f) => f.path === project.logo.original,
+			const delivery = cdnImage(project.logo.original, project.logo.display);
+			const entry = inventory.files.find((f) => f.path === delivery);
+			expect(entry, project.id).toBeDefined();
+			expect(digest(readFileSync(`public${delivery}`)), project.id).toBe(
+				entry?.sha256,
 			);
-			expect(original?.sha256, project.id).toBe(project.logo.sha256);
-			expect(
-				digest(readFileSync(`public${project.logo.original}`)),
-				project.id,
-			).toBe(project.logo.sha256);
+			if (delivery.endsWith(".svg")) {
+				expect(entry?.sha256, project.id).toBe(project.logo.sha256);
+			}
 		}
 		for (const file of inventory.files.filter(
 			(f) => f.path && !/\.(html|css|js)$/.test(f.path),

@@ -200,8 +200,12 @@ export function reviewFiles(): string[] {
 	return [...files].sort();
 }
 
-/** Published package-relative paths remain byte compatible; loose assets get immutable keys. */
+/** Published package-relative paths remain byte compatible; loose assets and optimized icon WebPs get content-hashed keys. */
 export function assetKey(path: string, sha256: string, project: string) {
+	const extension = extname(path).toLowerCase();
+	const stem = basename(path, extname(path))
+		.toLowerCase()
+		.replace(/[^a-z0-9-]+/g, "-");
 	const pack = path.match(
 		/^\/(textures|icons)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
 	);
@@ -210,14 +214,12 @@ export function assetKey(path: string, sha256: string, project: string) {
 			throw new Error(
 				`Texture/icon path and catalogue project disagree: ${path}`,
 			);
+		if (pack[1] === "icons" && extension === ".webp")
+			return `projects/${project}/icons/v${pack[3]}/${stem}-${sha256.slice(0, 12)}.webp`;
 		return `projects/${project}/${pack[1]}/v${pack[3]}/${pack[4]}`;
 	}
 	if (/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/)/.test(path))
 		return path.slice(1);
-	const extension = extname(path).toLowerCase();
-	const stem = basename(path, extname(path))
-		.toLowerCase()
-		.replace(/[^a-z0-9-]+/g, "-");
 	const screenshot = path.match(
 		/^\/screenshots\/([a-z0-9-]+)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//,
 	);
@@ -233,7 +235,17 @@ export function assetKey(path: string, sha256: string, project: string) {
 	return `${prefix}/v1.0.0/${stem}-${sha256.slice(0, 12)}${extension}`;
 }
 
-export async function inventory() {
+function defaultDirectKey(path: string): string | null {
+	const pack = path.match(
+		/^\/(textures|icons)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
+	);
+	if (pack) return `projects/${pack[2]}/${pack[1]}/v${pack[3]}/${pack[4]}`;
+	if (/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/)/.test(path))
+		return path.slice(1);
+	return null;
+}
+
+export async function inventory(options: { prune?: boolean } = {}) {
 	const projects = readProjects();
 	const previous = existsSync(inventoryPath) ? readInventory() : undefined;
 	const previousSources = new Map(
@@ -242,29 +254,18 @@ export async function inventory() {
 	const retired = retiredAssets();
 	const retiredSources = new Set(retired.map((file) => file.source));
 	const retiredKeys = new Set(retired.map((file) => file.key));
-	const tracked = execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" })
-		.split("\0")
-		.filter(Boolean);
 	const sources = new Map<string, string | undefined>();
 	for (const source of reviewFiles())
 		if (binary.test(source) || source.endsWith(".svg"))
 			sources.set(source, `/${source}`);
 	for (const source of filesIn("public"))
-		if (!appFiles.has(source.slice(7)))
+		if (!appFiles.has(source.slice(7)) && !/\.(html|css|js)$/.test(source))
 			sources.set(source, `/${source.slice(7)}`);
-	for (const source of tracked)
-		if (binary.test(source)) sources.set(source, sources.get(source));
-	// These approved source directories also contain new, intentionally untracked originals.
-	for (const directory of ["artwork", "docs", "src/fonts"])
-		for (const source of filesIn(directory))
-			if (
-				binary.test(source) &&
-				!source.startsWith("artwork/icon-texture-review/")
-			)
-				sources.set(source, sources.get(source));
-	for (const source of previousSources.keys())
-		if (!sources.has(source))
-			sources.set(source, previousSources.get(source)?.path);
+	if (!options.prune) {
+		for (const source of previousSources.keys())
+			if (!sources.has(source) && previousSources.get(source)?.path)
+				sources.set(source, previousSources.get(source)?.path);
+	}
 	for (const [source, path] of [
 		["src/fonts/journey-cjk.woff2", "/fonts/journey-cjk.woff2"],
 		[
@@ -281,6 +282,7 @@ export async function inventory() {
 	for (const [source, path] of [...sources].sort(([a], [b]) =>
 		a.localeCompare(b),
 	)) {
+		if (!path) continue;
 		if (retiredSources.has(source))
 			throw new Error(`Retired asset reintroduced: ${source}`);
 		const old = previousSources.get(source);
@@ -291,45 +293,48 @@ export async function inventory() {
 		}
 		const bytes = await readFile(source);
 		const sha256 = digest(bytes);
-		if (old && old.sha256 !== sha256)
+		const keepOld = old && old.sha256 === sha256 && !retiredKeys.has(old.key);
+		if (
+			old &&
+			old.sha256 !== sha256 &&
+			!options.prune &&
+			!/\.(html|css|js)$/.test(source)
+		)
 			throw new Error(
 				`Published source changed: ${source}. Add a version instead.`,
 			);
 		const project =
 			projects.find(
 				(p) =>
-					path &&
-					(path === p.logo.original ||
-						path.startsWith(`/logos/display/${p.id}-`) ||
-						path === socialCards.projects[p.id]?.path ||
-						path.startsWith(`/brands/${p.id}/`) ||
-						path.startsWith(`/textures/${p.id}/`) ||
-						path.startsWith(`/icons/${p.id}/`) ||
-						(p.family && path.startsWith(`${p.family.root}/`))),
+					path === p.logo.original ||
+					path.startsWith(`/logos/display/${p.id}-`) ||
+					path === socialCards.projects[p.id]?.path ||
+					path.startsWith(`/brands/${p.id}/`) ||
+					path.startsWith(`/textures/${p.id}/`) ||
+					path.startsWith(`/icons/${p.id}/`) ||
+					(p.family && path.startsWith(`${p.family.root}/`)),
 			) ??
 			projects.find((p) => source.includes(`/${p.id}/`)) ??
 			identity;
 		const official =
 			(path === project.logo.original && project.logo.kind !== "candidate") ||
 			/\/official-logo\./.test(source);
-		const screenshot = path?.match(
+		const screenshot = path.match(
 			/^\/screenshots\/([a-z0-9-]+)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//,
 		);
-		const badge = path?.match(/^\/badges\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//);
+		const badge = path.match(/^\/badges\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//);
 		files.push(
-			old
+			keepOld
 				? { ...old, ...(path && !old.path ? { path } : {}) }
 				: {
 						source,
-						...(path ? { path } : {}),
-						version: path?.startsWith("/logos/family/")
+						path,
+						version: path.startsWith("/logos/family/")
 							? "historical"
-							: (path?.match(/\/v(\d+\.\d+\.\d+)\//)?.[1] ?? "1.0.0"),
+							: (path.match(/\/v(\d+\.\d+\.\d+)\//)?.[1] ?? "1.0.0"),
 						bytes: bytes.length,
 						sha256,
-						key: path
-							? assetKey(path, sha256, project.id)
-							: `archives/sources/v1.0.0/${sha256}${extname(source).toLowerCase()}`,
+						key: assetKey(path, sha256, project.id),
 						contentType:
 							mediaTypes[extname(source).toLowerCase()] ??
 							"application/octet-stream",
@@ -342,33 +347,31 @@ export async function inventory() {
 									? "project-media"
 									: /\.(woff2?|ttf|otf)$/.test(source)
 										? "licensed-font"
-										: path
-											? "hexly-campaign"
-											: "source-archive",
+										: "hexly-campaign",
 						provenance: official
 							? project.logo.sourceUrl
 							: badge
 								? `docs/assets/hexly-ai/badges/${badge[1]}/v${badge[2]}.json`
 								: screenshot
 									? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
-									: path &&
-											/^\/(?:brands|textures|icons)\/[^/]+\/v\d+\.\d+\.\d+\//.test(
+									: /^\/(?:brands|textures|icons)\/[^/]+\/v\d+\.\d+\.\d+\//.test(
 												path,
 											)
 										? `${dirname(path)}/provenance.json`
-										: path?.startsWith("/textures/")
+										: path.startsWith("/textures/")
 											? "docs/27-project-textures.md"
 											: "docs/02-identity-rules.md",
 					},
 		);
 	}
-	// New source copies may reuse exports; existing recovery URLs stay frozen.
-	const publicByHash = new Map(
-		files.filter((f) => f.path).map((f) => [f.sha256, f.key]),
-	);
-	for (const file of files)
-		if (!file.path && !previousSources.has(file.source))
-			file.key = publicByHash.get(file.sha256) ?? file.key;
+	// Content-addressed dedup: reuse one R2 key for identical binary bytes across non-document paths.
+	const canonicalByHash = new Map<string, string>();
+	for (const file of files) {
+		if (/\.(html|css|js)$/.test(file.source)) continue;
+		const existing = canonicalByHash.get(file.sha256);
+		if (existing) file.key = existing;
+		else canonicalByHash.set(file.sha256, file.key);
+	}
 	for (const file of files)
 		if (retiredKeys.has(file.key))
 			throw new Error(`Retired object reintroduced: ${file.key}`);
@@ -386,13 +389,11 @@ export async function inventory() {
 		files.flatMap((file) =>
 			[file.path, ...(file.aliases ?? [])]
 				.filter(
-					(path) =>
-						path &&
-						file.key !== path.slice(1) &&
-						!/^\/(?:textures|icons)\/[a-z0-9-]+\/v\d+\.\d+\.\d+\/[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(
-							path,
-						) &&
-						!/\.(html|css|js)$/.test(path),
+					(path): path is string =>
+						typeof path === "string" &&
+						path.length > 0 &&
+						!/\.(html|css|js)$/.test(path) &&
+						file.key !== defaultDirectKey(path),
 				)
 				.map((path) => [path, file.key]),
 		),
@@ -716,6 +717,106 @@ export async function hydrate(files: StoredAsset[], concurrency: number) {
 	);
 }
 
+export async function retireObjects(
+	keys: string[],
+	execute: boolean,
+	concurrency: number,
+) {
+	const activeKeys = new Set(readInventory().files.map((f) => f.key));
+	const externalPath = "docs/assets/external-consumers.json";
+	const externalKeys = new Set<string>(
+		existsSync(externalPath)
+			? (
+					JSON.parse(readFileSync(externalPath, "utf8")) as {
+						objects: { key: string }[];
+					}
+				).objects.map((o) => o.key)
+			: [],
+	);
+	const mediaKeys = new Set<string>();
+	for (const file of filesIn("docs/media")) {
+		if (!file.endsWith(".json")) continue;
+		const txt = readFileSync(file, "utf8");
+		for (const m of txt.matchAll(/"key"\s*:\s*"([^"]+)"/g))
+			if (m[1]) mediaKeys.add(m[1]);
+		for (const m of txt.matchAll(/https:\/\/h\.no\.mt\/([^"'\s]+)/g))
+			if (m[1]) mediaKeys.add(m[1]);
+	}
+	const uniqueKeys = [...new Set(keys)].sort();
+	for (const key of uniqueKeys) {
+		if (activeKeys.has(key))
+			throw new Error(`Refusing to retire active inventory key: ${key}`);
+		if (externalKeys.has(key))
+			throw new Error(`Refusing to retire external-consumer key: ${key}`);
+		if (mediaKeys.has(key))
+			throw new Error(`Refusing to retire active media-receipt key: ${key}`);
+	}
+	if (!execute) {
+		console.info(
+			JSON.stringify(
+				{
+					mode: "dry-run",
+					bucket: storage.bucket,
+					retireCount: uniqueKeys.length,
+					sample: uniqueKeys.slice(0, 10),
+				},
+				null,
+				2,
+			),
+		);
+		return;
+	}
+	let auth = credentials();
+	let authenticatedAt = Date.now();
+	let deleted = 0;
+	let absent = 0;
+	const logPath = "docs/assets/r2-retirements.jsonl";
+	await pool(
+		uniqueKeys,
+		async (key) => {
+			if (Date.now() - authenticatedAt > 30 * 60_000) {
+				const refreshed = credentials();
+				if (refreshed.account !== auth.account)
+					throw new Error("Authenticated account changed; stopped.");
+				auth = refreshed;
+				authenticatedAt = Date.now();
+			}
+			const response = await authenticatedRequest(auth, (token) =>
+				retry(() =>
+					request(
+						`https://api.cloudflare.com/client/v4/accounts/${auth.account}/r2/buckets/${storage.bucket}/objects/${key}`,
+						{
+							method: "DELETE",
+							headers: { Authorization: `Bearer ${token}` },
+						},
+					),
+				),
+			);
+			await response.arrayBuffer();
+			if (response.status === 404) {
+				absent++;
+			} else if (response.ok) {
+				deleted++;
+			} else {
+				throw new Error(`R2 delete HTTP ${response.status}: ${key}`);
+			}
+			await appendFile(
+				logPath,
+				`${JSON.stringify({ key, status: response.status === 404 ? "already-absent" : "deleted", retiredAt: new Date().toISOString() })}\n`,
+			);
+			const done = deleted + absent;
+			if (done % 200 === 0 || done === uniqueKeys.length)
+				console.info(
+					`Retired ${done}/${uniqueKeys.length} (deleted=${deleted}, already-absent=${absent})`,
+				);
+		},
+		concurrency,
+	);
+	console.info(
+		`R2 retirement complete: ${uniqueKeys.length} keys processed (deleted=${deleted}, already-absent=${absent}).`,
+	);
+}
+
 if (import.meta.main) {
 	const { positionals, values } = parseArgs({
 		args: process.argv.slice(2).filter((s) => s !== "--"),
@@ -726,6 +827,9 @@ if (import.meta.main) {
 			limit: { type: "string" },
 			concurrency: { type: "string", default: "8" },
 			upload: { type: "boolean", default: false },
+			prune: { type: "boolean", default: false },
+			plan: { type: "string" },
+			execute: { type: "boolean", default: false },
 		},
 	});
 	const command = positionals[0];
@@ -747,8 +851,20 @@ if (import.meta.main) {
 	if (limit !== undefined && (!Number.isSafeInteger(limit) || limit < 1))
 		throw new Error("Limit must be a positive integer.");
 	if (command === "check-tracked") checkTrackedAssets();
-	else if (command === "inventory") await inventory();
-	else {
+	else if (command === "inventory") await inventory({ prune: values.prune });
+	else if (command === "retire") {
+		if (!values.plan)
+			throw new Error("Required: --plan <retire-plan.json> [--execute]");
+		const plan = JSON.parse(readFileSync(values.plan, "utf8")) as {
+			keys?: string[];
+		};
+		if (!Array.isArray(plan.keys))
+			throw new Error("Retirement plan JSON must contain a keys[] array.");
+		const concurrency = Number(values.concurrency);
+		if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16)
+			throw new Error("Concurrency must be 1–16.");
+		await retireObjects(plan.keys, values.execute, concurrency);
+	} else {
 		const data = readInventory();
 		const selected = data.files.filter(
 			(f) =>

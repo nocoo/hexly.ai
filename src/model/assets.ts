@@ -32,6 +32,9 @@ export function assetKeyForPath(path: string): string | null {
 	);
 }
 
+export const cdnImage = (original: string, display: string) =>
+	original.endsWith(".svg") ? original : display;
+
 export function assetUrl(value: string, local = localMaterials()): string {
 	if (local && value.startsWith(`${storage.origin}/`)) {
 		const remote = value.slice(storage.origin.length + 1);

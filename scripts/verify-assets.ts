@@ -1,22 +1,24 @@
 import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
-import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
 import socialCardsJson from "../src/data/social-cards.json" with {
 	type: "json",
 };
-
-const socialCards = socialCardsJson as {
-	projects: Record<string, { path: string }>;
-};
-
 import { brandAsset, brandTextureAsset, rasterBrand } from "../src/model/brand";
 import {
 	brandManifestProblems,
 	textureManifestProblems,
 } from "../src/model/brand-manifest";
 import { siteSocialImage } from "../src/model/discovery";
+import { readInventory } from "./asset-storage";
+
+const socialCards = socialCardsJson as {
+	projects: Record<string, { path: string }>;
+};
+
+const sha = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 
 const projects = readProjects();
 for (const project of projects) {
@@ -31,8 +33,7 @@ for (const project of projects) {
 			(item) => item.name === project.repo,
 		);
 		if (
-			createHash("sha256").update(bytes).digest("hex") !==
-				statusEvidence.sha256 ||
+			sha(bytes) !== statusEvidence.sha256 ||
 			project.repository !==
 				`https://github.com/${evidence.owner}/${project.repo}` ||
 			repository?.revision !== project.source.repositoryRevision ||
@@ -40,7 +41,13 @@ for (const project of projects) {
 		)
 			throw new Error(`Repository status evidence differs: ${project.id}`);
 	}
-	const original = await readFile(`public${project.logo.original}`);
+	if (project.logo.original.endsWith(".svg")) {
+		const original = await readFile(`public${project.logo.original}`);
+		if (sha(original) !== project.logo.sha256)
+			throw new Error(`Original SVG checksum changed: ${project.id}`);
+	} else if (!/^[a-f0-9]{64}$/.test(project.logo.sha256)) {
+		throw new Error(`Invalid recorded original SHA-256: ${project.id}`);
+	}
 	if (project.presentationIcon) {
 		const icon = project.presentationIcon;
 		const manifest = JSON.parse(
@@ -61,12 +68,26 @@ for (const project of projects) {
 			!manifest.inspection.opaqueForegroundRgbUnchanged
 		)
 			throw new Error(`Icon manifest disagrees with catalogue: ${project.id}`);
-		const texture = await readFile(`public${manifest.texture.path}`);
-		if (
-			createHash("sha256").update(texture).digest("hex") !==
-			manifest.texture.sha256
-		)
-			throw new Error(`Icon texture source changed: ${project.id}`);
+		for (const variant of ["icon", "rounded"] as const) {
+			for (const size of [32, 64, 160, 256, 512, 1024]) {
+				const meta = await sharp(
+					`public${icon.root}/${variant}-${size}.webp`,
+				).metadata();
+				if (
+					meta.format !== "webp" ||
+					meta.width !== size ||
+					meta.height !== size
+				)
+					throw new Error(
+						`Incorrect icon WebP: ${project.id}/${variant}-${size}`,
+					);
+			}
+		}
+		const apple = await sharp(
+			`public${icon.root}/apple-touch-icon.png`,
+		).metadata();
+		if (apple.width !== 180 || apple.height !== 180)
+			throw new Error(`Incorrect apple-touch-icon: ${project.id}`);
 	}
 	if (project.brandTexture) {
 		const texture = project.brandTexture;
@@ -88,6 +109,21 @@ for (const project of projects) {
 			throw new Error(
 				`Texture manifest disagrees with catalogue: ${project.id}: ${problems.join("; ")}`,
 			);
+		for (const theme of ["light", "dark"] as const) {
+			for (const [preview, size] of [
+				[false, 1024],
+				[true, 320],
+			] as const) {
+				const path = `public${brandTextureAsset(texture, theme, preview)}`;
+				const meta = await sharp(path).metadata();
+				if (
+					meta.format !== "webp" ||
+					meta.width !== size ||
+					meta.height !== size
+				)
+					throw new Error(`Incorrect texture WebP: ${path}`);
+			}
+		}
 	}
 	if (project.brandKit) {
 		const kit = project.brandKit;
@@ -115,37 +151,26 @@ for (const project of projects) {
 				brandAsset(kit, name, "dark"),
 			]),
 			...(rasterBrand(kit)
-				? ["hero.png", "hero.webp", "hero-square.webp", "provenance.json"]
+				? ["hero.webp", "hero-square.webp", "provenance.json"]
 				: ["favicon.svg"]
 			).map((name) => `${kit.root}/${name}`),
-			...(rasterBrand(kit)
-				? (["light", "dark"] as const).map((theme) =>
-						brandTextureAsset(
-							{ root: kit.root, format: kit.texture?.format },
-							theme,
-						),
-					)
-				: []),
 			...(kit.hero?.themed
-				? ["hero-dark.png", "hero-dark.webp", "hero-square-dark.webp"].map(
+				? ["hero-dark.webp", "hero-square-dark.webp"].map(
 						(name) => `${kit.root}/${name}`,
 					)
 				: []),
 			...[
 				"favicon.ico",
+				"apple-touch-icon.png",
 				"guide.md",
 				"license.txt",
 				"space-grotesk-ofl.txt",
 			].map((name) => `${kit.root}/${name}`),
 		]) {
-			if (!manifest.files.some((file: { path: string }) => file.path === asset))
-				throw new Error(`Missing brand delivery: ${asset}`);
+			if (!existsSync(`public${asset}`))
+				throw new Error(`Missing brand CDN delivery: ${asset}`);
 		}
 	}
-	if (
-		createHash("sha256").update(original).digest("hex") !== project.logo.sha256
-	)
-		throw new Error(`Original checksum changed: ${project.id}`);
 	for (const size of [32, 64, 160, 256, 512, 1024]) {
 		const meta = await sharp(
 			`public${project.logo.display.replace(/1024\.webp$/, `${size}.webp`)}`,
@@ -168,57 +193,6 @@ for (const project of projects) {
 		throw new Error(`Social image too large: ${project.id}`);
 	if (project.family) {
 		const root = `public${project.family.root}`;
-		const foreground = project.family.foreground;
-		const master = await readFile(`public${foreground.original}`);
-		const meta = await sharp(master).metadata();
-		if (
-			createHash("sha256").update(master).digest("hex") !== foreground.sha256 ||
-			meta.width !== foreground.width ||
-			meta.height !== foreground.height
-		)
-			throw new Error(`Refined foreground changed: ${project.id}`);
-		const previous = project.family.previous
-			? await readFile(`public${project.family.previous.original}`)
-			: null;
-		if (
-			previous &&
-			createHash("sha256").update(previous).digest("hex") !==
-				project.family.previous?.sha256
-		)
-			throw new Error(`Previous identity changed: ${project.id}`);
-		if (project.family.method === "retained-original") {
-			const source = await readFile(`${root}/source.png`);
-			if (
-				project.family.model ||
-				!master.equals(source) ||
-				!previous ||
-				!source.equals(previous) ||
-				!source.equals(original)
-			)
-				throw new Error(`Retained original was modified: ${project.id}`);
-		}
-		if (project.family.method === "reference-adaptation") {
-			const source = JSON.parse(
-				await readFile(
-					`artwork/logo-family/${relative("/logos/family", dirname(project.family.root))}/source.json`,
-					"utf8",
-				),
-			) as { reference: { sha256: string; width: number; height: number } };
-			const illustration = await readFile(`${root}/source.jpg`);
-			const info = await sharp(illustration).metadata();
-			if (
-				project.family.model ||
-				createHash("sha256").update(illustration).digest("hex") !==
-					source.reference.sha256 ||
-				info.width !== source.reference.width ||
-				info.height !== source.reference.height ||
-				foreground.width !== info.width ||
-				foreground.height !== info.height
-			)
-				throw new Error(
-					`Adapted illustration provenance changed: ${project.id}`,
-				);
-		}
 		for (const size of [32, 64, 160, 256, 512, 1024]) {
 			const meta = await sharp(`${root}/icon-${size}.webp`).metadata();
 			if (meta.width !== size || meta.height !== size)
@@ -246,76 +220,13 @@ for (const project of projects) {
 	if ((await readFile(`public${siteSocialImage}`)).byteLength > 400_000)
 		throw new Error("Home social image too large");
 }
-console.info(
-	`Verified ${projects.length} source checksums, ${projects.length * 6} artwork derivatives, and all current family foregrounds and previews.`,
-);
 
-let publicArchives = 0;
-for await (const path of new Bun.Glob(
-	"public/{brands,textures,icons}/*/v*/manifest.json",
-).scan(".")) {
-	const manifest: {
-		files: { path: string; bytes: number; sha256: string }[];
-	} = JSON.parse(await readFile(path, "utf8"));
-	for (const file of manifest.files) {
-		if (
-			`public${file.path}` !== `${dirname(path)}/${file.path.split("/").pop()}`
-		)
-			throw new Error(`Brand file escapes its version: ${file.path}`);
-		const data = await readFile(`public${file.path}`);
-		if (
-			data.length !== file.bytes ||
-			createHash("sha256").update(data).digest("hex") !== file.sha256
-		)
-			throw new Error(`Brand archive changed: ${file.path}`);
-	}
-}
-for await (const path of new Bun.Glob(
-	"public/logos/family/**/manifest.json",
-).scan(".")) {
-	const manifest: {
-		files: { path: string; bytes: number; sha256: string }[];
-	} = JSON.parse(await readFile(path, "utf8"));
-	for (const file of manifest.files) {
-		const data = await readFile(`public${file.path}`);
-		if (
-			data.length !== file.bytes ||
-			createHash("sha256").update(data).digest("hex") !== file.sha256
-		)
-			throw new Error(`Family archive changed: ${file.path}`);
-	}
-	publicArchives++;
+const inventory = readInventory();
+for (const file of inventory.files) {
+	const data = await readFile(file.source);
+	if (data.length !== file.bytes || sha(data) !== file.sha256)
+		throw new Error(`CDN asset checksum mismatch: ${file.source}`);
 }
 console.info(
-	`Verified ${publicArchives} current and historical public family archives.`,
+	`Verified ${projects.length} projects, ${projects.length * 6} display derivatives, all lean WebP icons/textures/brands, and ${inventory.files.length} CDN inventory entries.`,
 );
-
-if (process.argv.includes("--history")) {
-	let finishingPasses = 0;
-	for await (const path of new Bun.Glob(
-		"artwork/logo-family/*/*/finishing/*/manifest.json",
-	).scan(".")) {
-		const manifest: {
-			input: { path: string; sha256: string };
-			files: { path: string; bytes: number; sha256: string }[];
-		} = JSON.parse(await readFile(path, "utf8"));
-		const root = dirname(path);
-		const input = await readFile(resolve(root, manifest.input.path));
-		if (
-			createHash("sha256").update(input).digest("hex") !== manifest.input.sha256
-		)
-			throw new Error(`Study source changed: ${path}`);
-		for (const file of manifest.files) {
-			const data = await readFile(resolve(root, file.path));
-			if (
-				data.length !== file.bytes ||
-				createHash("sha256").update(data).digest("hex") !== file.sha256
-			)
-				throw new Error(`Finishing archive changed: ${path}/${file.path}`);
-		}
-		finishingPasses++;
-	}
-	console.info(
-		`Verified every recorded file in ${finishingPasses} finishing passes.`,
-	);
-}

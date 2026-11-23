@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
-import { assetUrl } from "../../src/model/assets";
+import { assetUrl, cdnImage } from "../../src/model/assets";
 import {
 	projectApi,
 	projectApiPath,
@@ -47,8 +47,8 @@ describe("single-project integration contract", () => {
 			small: assetUrl(`${p.presentationIcon?.root}/rounded-64.webp`),
 			large: assetUrl(`${p.presentationIcon?.root}/rounded-512.webp`),
 		});
-		expect(result.logos.find((l) => l.id === "transparent-16")).toMatchObject({
-			width: 16,
+		expect(result.logos.find((l) => l.id === "foreground-1024")).toMatchObject({
+			width: 1024,
 			background: "transparent",
 			role: "project-identity",
 		});
@@ -56,12 +56,14 @@ describe("single-project integration contract", () => {
 			result.logos
 				.filter((l) => l.id.startsWith("background-"))
 				.map((l) => l.width),
-		).toEqual([32, 64, 160, 256, 512, 1024, 2048]);
-		expect(result.logos.find((l) => l.id === "ios-app-icon")).toMatchObject({
-			background: "opaque",
-			theme: "any",
-			role: "hexly-campaign",
-		});
+		).toEqual([32, 64, 160, 256, 512, 1024]);
+		expect(result.logos.find((l) => l.id === "apple-touch-icon")).toMatchObject(
+			{
+				background: "opaque",
+				theme: "light",
+				role: "hexly-campaign",
+			},
+		);
 	});
 	it("does not promote review artwork to a product identity", () => {
 		const p = project("basalt");
@@ -73,9 +75,9 @@ describe("single-project integration contract", () => {
 			"hexly-campaign",
 		);
 		expect(result.logos.find((l) => l.id === "original")?.url).toBe(
-			assetUrl(p.logo.original),
+			assetUrl(cdnImage(p.logo.original, p.logo.display)),
 		);
-		expect(result.logos.find((l) => l.id === "transparent-32")?.role).toBe(
+		expect(result.logos.find((l) => l.id === "foreground-1024")?.role).toBe(
 			"hexly-campaign",
 		);
 	});
@@ -103,7 +105,7 @@ describe("single-project integration contract", () => {
 			role: "hexly-campaign",
 		});
 		expect(
-			result.logos.find((logo) => logo.id === "foreground-original")?.role,
+			result.logos.find((logo) => logo.id === "foreground-1024")?.role,
 		).toBe("hexly-campaign");
 		expect(result.logos.find((logo) => logo.id === "identity-64")?.role).toBe(
 			"hexly-campaign",

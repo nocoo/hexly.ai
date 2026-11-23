@@ -91,7 +91,13 @@ describe("versioned brand identities", () => {
 		expect(brandAsset(nativeKit, "mark", "dark")).toBe(
 			"/brands/snail/v1.0.0/mark-dark.svg",
 		);
-		expect(brandAsset(kit, "mark", "light")).toBe(`${kit.root}/mark-light.png`);
+		expect(brandAsset(kit, "mark", "light")).toBe(`${kit.root}/mark-512.webp`);
+		expect(brandAsset(kit, "icon", "dark")).toBe(
+			`${kit.root}/icon-dark-512.webp`,
+		);
+		expect(brandAsset(kit, "lockup", "light")).toBe(
+			`${kit.root}/lockup-light.webp`,
+		);
 		expect(brandAsset(kit, "wordmark", "dark")).toBe(
 			`${kit.root}/wordmark-dark.svg`,
 		);

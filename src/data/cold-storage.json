@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"provider": "google-drive",
+	"account": "architie@gmail.com",
+	"rootFolderName": "hexly.ai",
+	"rootFolderId": "1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx",
+	"rootFolderUrl": "https://drive.google.com/drive/folders/1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx",
+	"folders": {
+		"manifests": "1PvEUG6eOeVYBgnOAhtfkxQ-tcinmELOI",
+		"archivesSources": "1FPC6nJZtI0MvTk9YQY6kDfP6f-WcD4zY",
+		"supersededAndRetired": "1N8vwJpikf5SPQeKB2xmKwmiZ7HWZ7_ra",
+		"reviewArtwork": "1YJD4t6E6VLX7NZGfVVeQGtWlqjGPUAKW",
+		"mastersPng": "1ZDjH6-hT9m_fvPry0vxNXfeArh5KVSFx",
+		"losslessWebpIcons": "1Kjv7veoCNgjZlT7HjUuBBjLr1RJqp7PR",
+		"futureColdBackups": "1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD"
+	},
+	"policy": {
+		"r2Role": "cdn-delivery-only",
+		"coldArchiveRole": "masters-sources-history-backup",
+		"r2AllowedFormats": [
+			"webp",
+			"svg",
+			"ico",
+			"woff2",
+			"jpg",
+			"mp4",
+			"vtt",
+			"json",
+			"txt",
+			"md",
+			"html",
+			"css",
+			"js",
+			"png-small-platform-only"
+		],
+		"r2Forbidden": [
+			"archives/sources/*",
+			"2048px master/raw PNGs",
+			"lossless 1024px/512px icon WebPs",
+			"superseded brand/icon/texture/family versions",
+			"unreferenced artwork/ working intermediates",
+			"byte-identical duplicate R2 keys"
+		]
+	}
+}
