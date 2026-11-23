@@ -37,7 +37,7 @@ Provide TypeScript CLIs with config storage, browser OAuth login, package-update
 - Type: Owner-approved generated raster identity; model unrecorded, source-adopted bytes and native JPEG provenance preserved
 - Subject: Amber resin screwdriver with steel bit
 - [Source](https://github.com/nocoo/base-cli/blob/4fd686d49ed15473ef9d0c3436c90e601c2723d4/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/base-cli/identity/v1.0.0/base-cli-family-2026-10-18-01-01-d33fca8b5f82.png)
+- [Preserved asset](https://h.no.mt/projects/base-cli/identity/v1.0.0/base-cli-family-2026-10-18-1024-68eee89bbfab.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 225682 bytes
 - SHA-256: `d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9`
@@ -56,9 +56,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Base CLI current icon](https://h.no.mt/projects/base-cli/icons/v1.0.2/rounded-160.webp)
+![Base CLI current icon](https://h.no.mt/projects/base-cli/icons/v1.0.2/rounded-160-e271ad5fbec5.webp)
 
-- [Native square PNG](https://h.no.mt/projects/base-cli/icons/v1.0.2/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/base-cli/icons/v1.0.2/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/base-cli/icons/v1.0.2/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/base-cli/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/base-cli/icons/v1.0.2/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/base-cli/icons/v1.0.2/icon-1024-2824974fb73a.webp) · [1024 px rounded WebP](https://h.no.mt/projects/base-cli/icons/v1.0.2/rounded-1024-433f054418b6.webp) · [Favicon ICO](https://h.no.mt/projects/base-cli/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/base-cli/icons/v1.0.2/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/base-cli/icons/v1.0.2/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/base-cli/icons/v1.0.2/guide.md)
 - Native canvas 1024 × 1024; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细颗粒维修胶垫与浅模块槽，承托可复用的命令行工具箱。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/base-cli/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/base-cli/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/base-cli/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/base-cli/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -82,10 +82,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Amber resin screwdriver with steel bit
 - Site path: `/projects/base-cli#brand`; [local gallery](https://index.dev.hexly.ai/projects/base-cli#brand)
 - [Static review HTML](../../artwork/logo-family/base-cli/2026-10-18-01/review.html)
-- [Full process archive](../../artwork/logo-family/base-cli/2026-10-18-01)
-- [Transparent foreground](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/transparent.png); SHA-256: `d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9`
-- [Square icon](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/rounded.png), [white version](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/raw.jpg), [exact prompt](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/manifest.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/base-cli/2026-10-18-01)
+- [Transparent foreground](https://h.no.mt/projects/base-cli/identity/v1.0.0/base-cli-family-2026-10-18-1024-68eee89bbfab.webp); SHA-256: `d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9`
+- [Square icon WebP](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/base-cli/identity/v1.0.0/base-cli-family-2026-10-18-1024-68eee89bbfab.webp)
+- [Exact prompt](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/base-cli/2026-10-18-01/01/manifest.json) (raw `raw.jpg` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: built-in image tool; model unrecorded, native 1024 × 1024; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 1024 px are explicitly recorded upscales; the native master retains its recorded resolution.

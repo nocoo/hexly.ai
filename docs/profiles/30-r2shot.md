@@ -53,7 +53,7 @@ Capture visible or vertically stitched web pages, upload them to your own R2 buc
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Blue dolphin
 - [Source](https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/r2shot/identity/v1.0.0/r2shot-17e2f07d03a8.png)
+- [Preserved asset](https://h.no.mt/projects/r2shot/identity/v1.0.0/r2shot-1024-be1aa9a98f1c.webp)
 - Original dimensions: 920 × 920
 - Original size: 668704 bytes
 - SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`
@@ -74,9 +74,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![R2Shot current icon](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded-160.webp)
+![R2Shot current icon](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded-160-c406638a942b.webp)
 
-- [Native square PNG](https://h.no.mt/projects/r2shot/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/r2shot/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/r2shot/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/r2shot/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/r2shot/icons/v1.0.0/icon-1024-680d8e4c54cb.webp) · [1024 px rounded WebP](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded-1024-05edb8f02451.webp) · [Favicon ICO](https://h.no.mt/projects/r2shot/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/r2shot/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/r2shot/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/r2shot/icons/v1.0.0/guide.md)
 - Native canvas 920 × 920; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. 1024 px variants are explicitly resampled upscales.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -87,14 +87,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 长长鳗草叶带与少量海带叶尖顺着潮流弯折，给海豚留出开阔的浅海水域。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
-- [Paper PNG](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/r2shot/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/r2shot/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/r2shot/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/r2shot/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/r2shot#brand).
-- [Light lockup](https://h.no.mt/brands/r2shot/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/r2shot/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/r2shot/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/r2shot/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/r2shot/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/r2shot/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/r2shot/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/r2shot/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/r2shot/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -130,10 +130,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥86px wide; lockup ≥160px.
 - Site path: `/projects/r2shot#brand`; [local gallery](https://index.dev.hexly.ai/projects/r2shot#brand)
 - [Static review HTML](../../artwork/logo-family/r2shot/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/r2shot/2026-09-07-01)
-- [Transparent foreground](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/transparent.png); SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`
-- [Square icon](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/white.png)
-- [Untouched original](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/source.png), [presentation brief](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/manifest.json)
-- [Previous original](https://h.no.mt/projects/r2shot/identity/v1.0.0/r2shot-17e2f07d03a8.png), copied from [its immutable source](https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png)
+- [Transparent foreground](https://h.no.mt/projects/r2shot/identity/v1.0.0/r2shot-1024-be1aa9a98f1c.webp); SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`
+- [Square icon WebP](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/r2shot/identity/v1.0.0/r2shot-1024-be1aa9a98f1c.webp)
+- [Presentation brief](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/r2shot/2026-09-07-01/01/manifest.json) (raw `source.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: `/logos/originals/r2shot.png` (cold-archived in Google Drive), from [its immutable source](https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png)
 - Previous SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`
 - Original artwork retained byte-for-byte at native 920 × 920. Zero image-generation calls; only background, grain, and shadow layers were composed.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 920 px are explicitly recorded upscales; the native master retains its recorded resolution.

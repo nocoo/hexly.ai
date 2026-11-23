@@ -41,7 +41,7 @@ Turn scripted interactions with real webpages into product demo movies on macOS.
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge
 - [Source](https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-family-2026-09-10-02-03-2e797a60a634.png)
+- [Preserved asset](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-1024-1ff0827d6648.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 3865252 bytes
 - SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
@@ -60,9 +60,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Showtime current icon](https://h.no.mt/projects/showtime/icons/v1.0.0/rounded-160.webp)
+![Showtime current icon](https://h.no.mt/projects/showtime/icons/v1.0.0/rounded-160-52df58a073d2.webp)
 
-- [Native square PNG](https://h.no.mt/projects/showtime/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/showtime/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/showtime/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/showtime/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/showtime/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/showtime/icons/v1.0.0/icon-1024-c3ad756fa8ee.webp) · [1024 px rounded WebP](https://h.no.mt/projects/showtime/icons/v1.0.0/rounded-1024-671feb9e1019.webp) · [Favicon ICO](https://h.no.mt/projects/showtime/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/showtime/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/showtime/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/showtime/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -73,14 +73,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 缎面胶片肌理、斜向标记压纹与成对齿孔痕迹铺展于纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/showtime/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/showtime/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/showtime/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/showtime#brand).
-- [Light lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/showtime/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/showtime/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/showtime/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/showtime/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/showtime/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -116,10 +116,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥116px wide; lockup ≥160px
 - Site path: `/projects/showtime#brand`; [local gallery](https://index.dev.hexly.ai/projects/showtime#brand)
 - [Static review HTML](../../artwork/logo-family/showtime/2026-09-10-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/showtime/2026-09-10-02)
-- [Transparent foreground](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/transparent.png); SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
-- [Square icon](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/icon.png), [rounded icon](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/rounded.png), [white version](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/raw.png), [exact prompt](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/showtime-initial-8fe319552849.png), copied from [its preserved local source](https://h.no.mt/shared/site/v1.0.0/showtime-initial-8fe319552849.png)
+- [Transparent foreground](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-1024-1ff0827d6648.webp); SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
+- [Square icon WebP](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-1024-1ff0827d6648.webp)
+- [Exact prompt](https://h.no.mt/brands/showtime/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: `/logos/originals/showtime-initial.png` (cold-archived in Google Drive), from [its preserved local source](https://hexly.ai/logos/originals/showtime-initial.png)
 - Previous SHA-256: `8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

@@ -20,7 +20,7 @@
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](https://h.no.mt/projects/uptime-kuma-skill/identity/v1.0.0/uptime-kuma-skill-c75d48ae2f84.png)
+- [Preserved asset](https://h.no.mt/projects/uptime-kuma-skill/identity/v1.0.0/uptime-kuma-skill-1024-275a9e8c1cb6.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 271935 bytes
 - SHA-256: `c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5`
@@ -45,7 +45,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 压实纤维纸与两道不完整听诊弧呼应监控诊断，以安静材质表达观察，不伪造健康读数。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/uptime-kuma-skill/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/uptime-kuma-skill/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 

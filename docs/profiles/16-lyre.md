@@ -45,7 +45,7 @@ Manage recordings, transcribe speech and follow the text during audio playback.
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Lyrebird portrait
 - [Source](https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/lyre/identity/v1.0.0/lyre-1ba1c2482286.png)
+- [Preserved asset](https://h.no.mt/projects/lyre/identity/v1.0.0/lyre-1024-6aa283b0b4e8.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 3656299 bytes
 - SHA-256: `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`
@@ -66,9 +66,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Lyre current icon](https://h.no.mt/projects/lyre/icons/v1.0.0/rounded-160.webp)
+![Lyre current icon](https://h.no.mt/projects/lyre/icons/v1.0.0/rounded-160-f5173ae2fbbf.webp)
 
-- [Native square PNG](https://h.no.mt/projects/lyre/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/lyre/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/lyre/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/lyre/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/lyre/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/lyre/icons/v1.0.0/icon-1024-829c91a99d30.webp) · [1024 px rounded WebP](https://h.no.mt/projects/lyre/icons/v1.0.0/rounded-1024-63ee93960b62.webp) · [Favicon ICO](https://h.no.mt/projects/lyre/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/lyre/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/lyre/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/lyre/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -79,14 +79,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 林间蕨褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
-- [Paper PNG](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/lyre/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/lyre/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/lyre/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/lyre#brand).
-- [Light lockup](https://h.no.mt/brands/lyre/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/lyre/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/lyre/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/lyre/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/lyre/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/lyre/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/lyre/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/lyre/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/lyre/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -122,10 +122,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥45px wide; lockup ≥160px.
 - Site path: `/projects/lyre#brand`; [local gallery](https://index.dev.hexly.ai/projects/lyre#brand)
 - [Static review HTML](../../artwork/logo-family/lyre/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/lyre/2026-09-07-03)
-- [Transparent foreground](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/transparent.png); SHA-256: `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`
-- [Square icon](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/icon.png), [rounded icon](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/rounded.png), [white version](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/white.png)
-- [Untouched original](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/source.png), [presentation brief](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/manifest.json)
-- [Previous original](https://h.no.mt/projects/lyre/identity/v1.0.0/lyre-1ba1c2482286.png), copied from [its immutable source](https://github.com/nocoo/lyre/blob/c2c5cf883fef4cf775c98eba6dce883c56653fe7/logo.png)
+- [Transparent foreground](https://h.no.mt/projects/lyre/identity/v1.0.0/lyre-1024-6aa283b0b4e8.webp); SHA-256: `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`
+- [Square icon WebP](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/lyre/identity/v1.0.0/lyre-1024-6aa283b0b4e8.webp)
+- [Presentation brief](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/lyre/2026-09-07-03/01/manifest.json) (raw `source.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: `/logos/originals/lyre.png` (cold-archived in Google Drive), from [its immutable source](https://github.com/nocoo/lyre/blob/c2c5cf883fef4cf775c98eba6dce883c56653fe7/logo.png)
 - Previous SHA-256: `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`
 - Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

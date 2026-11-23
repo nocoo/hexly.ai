@@ -62,11 +62,14 @@ bun run assets:r2 publish --project <id> --upload
 ## Removing a card
 
 Delete the JPEG from `public/og/`, drop its row from `src/data/social-cards.json`
-(the generator rewrites the registry from what it rendered), and rerun the
-inventory. Move the retired inventory row to `docs/assets/retired.json` so a
-retired filename cannot be reintroduced. Removing a project from the catalogue
-means removing its registry entry too; the test asserts the registry matches the
-catalogue exactly.
+(the generator rewrites the registry from what it rendered), and rerun
+`bun run assets:r2 -- inventory --prune`. Archive if needed to Google Drive
+(`architie@gmail.com` → `My Drive/hexly.ai/06-future-cold-backups/`, Folder ID
+`1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`, configured in `src/data/cold-storage.json`),
+then retire the replaced R2 key after production release via
+`bun run assets:r2 -- retire --plan <plan.json> --execute` so stale OG cards do
+not accumulate in `hexlyai`. Removing a project from the catalogue means removing
+its registry entry too; the test asserts the registry matches the catalogue exactly.
 
 ## Rules
 

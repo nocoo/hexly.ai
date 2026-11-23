@@ -23,7 +23,7 @@ bun run gate:push  # pre-push (pushed commits)
 bun run verify  # full local sweep (600s; not CI gate)
 ```
 
-Maintenance/release: `bun run assets:hydrate`, `assets:check`, `social:check`, `check:purity`, `verify:production`, `release -- --dry-run`. Share cards: [social-cards.md](.agents/skills/hexly-r2-media/references/social-cards.md).
+- Maintenance/release: `bun run assets:hydrate`, `assets:check`, `assets:cold-backup`, `social:check`, `check:purity`, `verify:production`, `release -- --dry-run`. Share cards: [social-cards.md](.agents/skills/hexly-r2-media/references/social-cards.md).
 
 ## Invariants
 
@@ -35,7 +35,8 @@ Maintenance/release: `bun run assets:hydrate`, `assets:check`, `social:check`, `
 - Original identity bytes/colors/geometry/licenses are authoritative; Hexly styling never redesigns products. Enforce exact-byte raw approval & defaults ([Identity](docs/02-identity-rules.md)).
 - Archived projects get basic support only (no enrichment unless named). Keep `src/model/` pure (no React/DOM), effects in views, routes thin.
 - Keep canonical routes, discovery metadata, bilingual/theme/keyboard UX, local TZ, and share cards (`src/data/social-cards.json`) aligned ([Maintenance](docs/29-project-maintenance.md)).
-- Serve materials from immutable R2 `hexlyai` (`h.no.mt`); hydrate via `docs/assets/inventory.json`. Never commit binaries/retired history or overwrite versions; Worker < 20 MiB ([Assets](docs/21-asset-storage.md)).
+- Serve lean Web-First CDN materials (WebP/SVG/ICO/WOFF2/OG JPEG/MP4/screenshots/metadata + small platform PNGs) from R2 `hexlyai` (`h.no.mt`); hydrate via `docs/assets/inventory.json` with SHA-256 deduplication. Never store 2048px raw PNGs, lossless icon WebPs, `archives/sources/`, or superseded versions on R2 or in Git; Worker < 20 MiB ([Assets](docs/21-asset-storage.md)).
+- Cold-archive all 2048px original PNG masters, `artwork/` working sources, and retired R2 versions to Google Drive (`architie@gmail.com` → `My Drive/hexly.ai/`, Folder ID `1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx`; future batches → `06-future-cold-backups/`, ID `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`), configured in `src/data/cold-storage.json` via `bun run assets:cold-backup`. Protect external consumers (`nocoo/zeppelin`) registered in `docs/assets/external-consumers.json`.
 - Repo purity (`bun run check:purity`): disallow external code/configs/docs in `docs/sources/` and `artwork/`; allow only top-level JSON receipts and approved brand files.
 - Releases need authorization via `bun run release` on clean `main` (CI + D1-first Deploy -> prod check -> tag); keep `--frozen-lockfile` so mirrors never rewrite `bun.lock` ([Release](docs/05-release.md)).
 - Temp-repo tests must strip `git rev-parse --local-env-vars` (cwd alone fails in linked worktrees). Pause if another writer's file ownership is unclear.

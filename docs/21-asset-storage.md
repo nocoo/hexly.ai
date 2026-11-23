@@ -1,154 +1,72 @@
-# Site materials: R2, local source files and recovery
+# Site materials: Lean R2 CDN, Google Drive Cold Archive, and Recovery
 
-All independently served website materials use the existing `hexlyai` R2 bucket
-and `https://h.no.mt`. Read the [project skill](../.agents/skills/hexly-r2-media/SKILL.md)
-before publishing or recovering material. The reviewed migration and its
-completion evidence are recorded in [the execution plan](20-r2-assets-execution.md).
+`hexly.ai` separates **hot Web CDN delivery** from **cold master/source archiving**:
 
-## The boundary
+- **Hot Web CDN (Cloudflare R2 `hexlyai` → `https://h.no.mt`)**: Configured in `src/data/media-storage.json`. Serves ONLY lean web-delivery assets required by browsers and `/api/projects/<owner>/<repo>`: WebP (display logos, q90 presentation icons, full/320px textures, heroes, brand lockups/marks), SVG, ICO, WOFF2, OG JPEG, MP4/VTT, screenshots, metadata JSON/TXT/MD, and small platform PNGs (`apple-touch-icon.png` 180px, `chrome-web-store.png`, and `hexly-ai` `transparent-{32,64,128,512}.png`).
+- **Cold Archive (Google Drive `architie@gmail.com` → `My Drive/hexly.ai/`)**: Configured in `src/data/cold-storage.json`. Holds all 2048×2048 original/master PNGs, `artwork/` working studies/intermediates, historical review artwork, lossless WebP backups, and retired/superseded R2 versions as checksummed `.tar.zst` bundles.
 
-The Worker serves HTML, application JavaScript/CSS, APIs, catalogue and template
-configuration, sitemap, robots and llms. It redirects old material URLs to R2.
-Main-site image, font and material-download references use the CDN directly.
-Texture-only packs use `public/textures/<project>/v<version>/` locally and
-`projects/<project>/textures/v<version>/` on R2. `Project.brandTexture` selects
-them independently of identity kits; see [the texture guide](27-project-textures.md).
-Historical comparison HTML and its JS/CSS remain on hexly.ai, preserving their
-exact bytes, relative references and canonical project navigation.
+Read [the R2 & cold-backup skill](../.agents/skills/hexly-r2-media/SKILL.md) before publishing, retiring, or backing up materials.
 
-Browser navigation to a standalone brand review receives a streamed module tag
-for the shared CDN download handler. This view uses `no-store` and varies by
-`Accept`/`Sec-Fetch-Dest`; ordinary raw fetches keep the original HTML bytes and
-hashes. The source files and their R2 archive copies are never edited. This
-keeps native download buttons usable after cross-origin redirects without a
-Worker media proxy or modifications to a frozen brand package.
+## Storage Destinations (Single Source of Truth)
 
-R2 serves images, textures, fonts, videos/audio/captions and downloadable brand
-packages. Package source copies may include HTML/code, but these are not new page
-canonicals. Public manifests retain their original root and original checksums;
-canonical identity and delivery origin are distinct. Never rewrite a frozen
-manifest or recolor an official project Logo during an infrastructure migration.
+| Layer | Service & Account | Destination / Root | Contract File |
+| --- | --- | --- | --- |
+| **Hot CDN** | Cloudflare R2 (`hexlyai`, APAC Standard) | `https://h.no.mt` | `src/data/media-storage.json` |
+| **Cold Archive** | Google Drive (`architie@gmail.com`) | `My Drive/hexly.ai/` (`1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx`) | `src/data/cold-storage.json` |
+| **External R2 Consumers** | Cloudflare R2 (`hexlyai`) | `projects/hexly-ai/{documents,screenshots,textures,fonts}/zep*` (`nocoo/zeppelin`, 43 objects) | `docs/assets/external-consumers.json` |
 
-Git retains source code, SVG source geometry, project/brand manifests, provenance,
-prompts, licenses, inventory and publication receipts. After the verified
-v0.11.0 R2 release, binary materials were removed from the index while preserving
-every local working file. Immutable R2 objects and the verified external Git
-bundle retain their bytes. The [history recovery guide](23-git-history-recovery.md)
-records the source-history boundary and old/new revision maps. The local material
-tree can be hydrated for authoring and tests. No movie, render cache or newly
-generated material binary belongs in a commit.
+### Google Drive Cold Archive Layout
 
-## One inventory and one transport configuration
+URL: `https://drive.google.com/drive/folders/1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx`
 
-- `src/data/media-storage.json`: bucket and CDN origin.
-- `docs/assets/inventory.json`: source path, public identity path (where present),
-  immutable key, bytes, complete SHA-256, MIME, project, role and provenance.
-- `src/data/asset-routes.json`: generated mappings for loose files. Versioned
-  brand, family and template-font paths preserve their package-relative keys.
-- `docs/assets/publication.jsonl`: append-only successful CDN verification
-  receipts. Each includes exact URL, checksum, byte count, MIME and observation
-  time. A past receipt proves the checked upload, not current availability.
-- `docs/media/`: existing finished-film receipts with production/version details;
-  active recordings stay in the catalogue's optional `media.videos`.
+| Folder | Folder ID | Contents |
+| --- | --- | --- |
+| `hexly.ai/` | `1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx` | Root directory + `README.md` |
+| `hexly.ai/manifests/` | `1PvEUG6eOeVYBgnOAhtfkxQ-tcinmELOI` | Pre-migration R2 snapshot, full `cold-archive-manifest-*.json` (key/path → bundle + SHA-256), `sha256sums-*.txt`, upload receipts |
+| `hexly.ai/01-archives-sources/` | `1FPC6nJZtI0MvTk9YQY6kDfP6f-WcD4zY` | Migrated `archives/sources/*` (`artwork/` raw candidates, finishing intermediates, texture attempts) |
+| `hexly.ai/02-superseded-and-retired/` | `1N8vwJpikf5SPQeKB2xmKwmiZ7HWZ7_ra` | Superseded `brands/`, `icons/`, `textures/`, `logos/family/`, stale `/og/*`, retired `snail`, orphan objects |
+| `hexly.ai/03-review-artwork/` | `1YJD4t6E6VLX7NZGfVVeQGtWlqjGPUAKW` | Closed historical static review-page `/artwork/*` PNGs |
+| `hexly.ai/04-masters-png/` | `1ZDjH6-hT9m_fvPry0vxNXfeArh5KVSFx` | Deduplicated 2048px original/master PNGs (`brands/`, `logos/family/`, `icons/`, `textures/`, `/logos/originals/`) |
+| `hexly.ai/05-lossless-webp-icons/` | `1Kjv7veoCNgjZlT7HjUuBBjLr1RJqp7PR` | Pre-optimization lossless `presentationIcon` WebP backups |
+| `hexly.ai/06-future-cold-backups/` | `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD` | **Default target** for all new project raw 2048px PNGs, `artwork/` working trees, and future retirements |
 
-The inventory's source-archive entries preserve public historical original bytes.
-Repeated local source copies may reference one existing public object with the
-same hash. Frozen public package paths remain distinct when their manifests need
-them, including duplicated licensed fonts; namespace compatibility takes priority
-over a few MiB of deduplication. Source rights are inherited from recorded
-evidence, never inferred from the destination bucket or its public visibility.
+## The Worker / R2 / Git Boundary
 
-## Common commands
+- **Worker (`hexly-ai` + Static Assets)**: Serves HTML (including standalone `brands/*/v*/review.html` and `textures/*/v*/review.html`), application JS/CSS, APIs (`/api/live`, `/api/status`, `/api/share`, `/api/projects/<owner>/<repo>`), sitemap, robots, and llms. Redirects legacy material paths to `https://h.no.mt`. Worker deploy stays strictly `< 20 MiB`.
+- **R2 (`hexlyai`)**: Serves ONLY lean CDN binaries and package metadata indexed in `docs/assets/inventory.json`, plus video receipts (`docs/media/`) and registered external consumers (`docs/assets/external-consumers.json`).
+  - **Content-addressed deduplication**: `scripts/asset-storage.ts` automatically deduplicates identical binary bytes across namespaces to one canonical R2 object key and emits alias routes into `src/data/asset-routes.json`.
+  - **Immutable hashed icon WebPs**: `/icons/<id>/v<ver>/*.webp` maps to `projects/<id>/icons/v<ver>/<stem>-<hash12>.webp` via `src/data/asset-routes.json` so re-encoded q90 WebPs never collide with stale edge caches.
+  - **Forbidden on R2**: `archives/sources/*`, `artwork/` working intermediates, 2048px master/raw PNGs, lossless 1024px/512px icon WebPs, superseded brand/icon/texture/family versions, and HTML/CSS/JS documents.
+- **Git**: Retains source code, SVG source geometry, project/brand/texture/icon manifests (preserving exact upstream original SHA-256 provenance!), prompts, licenses, `inventory.json`, `cold-storage.json`, `external-consumers.json`, and retirement/publication receipts. Pre-commit and CI reject tracked material binaries even under `git add -f`.
+
+## Common Commands
 
 ```sh
-bun install --frozen-lockfile
-bun run assets:r2 -- plan
-bun run assets:r2 -- url /brands/snail/v2.0.0/mark-light.png
-bun run assets:r2 -- hydrate --project snail
+# 1. Hydrate lean public CDN assets locally (~176 MB)
 bun run assets:hydrate
 bun run assets:check-tracked
 bun run assets:check
-bun run build
+
+# 2. Inventory & publish new lean CDN assets to R2
+bun run assets:r2 -- inventory
+bun run assets:r2 -- plan
+bun run assets:r2 -- publish --upload
+
+# 3. Cold-backup raw 2048px PNGs / artwork/ studies to Google Drive (hexly.ai/06-future-cold-backups/)
+bun run assets:cold-backup -- --project <id> artwork/logo-family/<id>/<run>              # dry-run
+bun run assets:cold-backup -- --project <id> artwork/logo-family/<id>/<run> --upload     # upload & size-verify
+
+# 4. Safely retire superseded/removed R2 keys (protects inventory, external-consumers, docs/media)
+bun run assets:r2 -- retire --plan <retire-plan.json>            # dry-run
+bun run assets:r2 -- retire --plan <retire-plan.json> --execute  # delete & log to docs/assets/r2-retirements.jsonl
 ```
 
-Hydration restores missing inventoried files and verifies downloaded bytes. It
-preserves any existing local edits; `assets:check` then catches unwanted changed
-identity/archive bytes. `.wrangler/asset-cache` caches content by SHA-256 and is
-never deployed. Authoring commands can hydrate just the project they need.
+## Recovering a Cold-Archived File from Google Drive
 
-The Git index guard runs in pre-commit and before CI hydration. It rejects
-material binaries even when force-added; `.gitignore` alone is not enforcement.
-SVG source and the required PptxGenJS `.tgz` code dependency remain tracked.
+1. Look up the R2 key, local source path, or `sha256` in `My Drive/hexly.ai/manifests/cold-archive-manifest-2026-11-24.json` (or the per-batch `<project>-<YYYY-MM-DD>.manifest.json` in `06-future-cold-backups/`).
+2. Download the matching `.tar.zst` bundle from its Google Drive subfolder and verify its SHA-256 against `sha256sums-*.txt`.
+3. Extract the exact file:
 
-The browser fixtures intercept the real CDN paths and serve local verified
-assets. The local Worker serves an isolated hard-linked material tree outside
-dist; this tree is never part of production. The production gateway redirect
-logic has separate unit/production checks. Local D1 isolation is unchanged.
-
-For an approved local candidate that has not been uploaded, set
-`VITE_LOCAL_MATERIALS=1` in the ignored `.env.development.local` and run the existing Vite
-development server. In development only, material references stay on the local
-origin and the server streams existing `public/` files with `no-store`; missing
-files retain the normal CDN fallback. Production builds and test mode keep CDN
-URLs even when this local flag is present. This is a preview mode, not an upload
-receipt or a change to the Worker deployment boundary. Publish and verify the
-new version before a website release.
-
-`video:render` hydrates and copies the selected project images and licensed fonts
-into an isolated renderer public directory. It rewrites only the temporary render
-configuration to local paths; exported website configurations retain their real
-CDN URLs. Existing local/consumer-supplied images continue to work.
-
-## New projects and changed materials
-
-Optional project screenshots use
-`public/screenshots/<project>/<image-id>/v<X.Y.Z>/{original.<ext>,preview.webp,thumbnail.webp}`
-locally. The inventory assigns role `project-media` and the versioned
-`projects/<project>/screenshots/<image-id>/v<X.Y.Z>/<name>-<hash12>.<ext>` R2 keys.
-Source, rights, checksums, transformations and publication evidence live in
-`docs/assets/<project>/screenshots/<image-id>/v<X.Y.Z>.json`. These original product
-materials keep their colors and complete canvases; they are separate from brand
-identities and Hexly campaign interpretations. See the
-[screenshot runbook](../.agents/skills/hexly-r2-media/references/project-screenshots.md)
-for intake, Lightbox fields and the initial Hooky/R2Shot examples.
-
-Official distribution badges use `public/badges/<badge-id>/v<X.Y.Z>/` for local
-hydration, the existing `shared/site/` hashed R2 delivery keys, and inventory role
-`third-party-badge`. Keep source/rights/version records in
-`docs/assets/hexly-ai/badges/<badge-id>/v<X.Y.Z>.json`. A store badge does not
-inherit the repository's MIT license or become a Hexly campaign identity.
-
-1. Read the catalogue, original identity rules and source rights. Use the stable
-   project ID; prepare source/provenance in versioned directories.
-2. Export public brand material to `public/brands/<id>/v<X.Y.Z>/`. Existing
-   package versions are frozen. Preserve official/campaign roles and licenses.
-3. Run `assets:r2 inventory`, inspect the project plan, upload its named files,
-   and verify. Store only the resulting small records and source code in Git.
-4. Use the shared resolver for images/CSS/metadata and `AssetLink` for downloads.
-   Do not change Vite's global base or copy materials into dist.
-5. Validate the canonical project page, downloads, fonts, themes, mobile layout
-   and old URLs. Complete the authorized catalogue/profile/status onboarding.
-6. Publish the website with its normal exact-SHA release workflow.
-
-Uploads are a bounded single-writer operation. The local lock and immutable
-version/hash keys prevent accidental local overlap; HEAD/PUT does not claim
-distributed atomicity. Stop on conflicting bytes. Published objects have no
-lifecycle expiry. Rollback selects an earlier object/reference; deletion and a
-second history rewrite are separate, explicitly scoped operations.
-
-## Textured icon packages
-
-`public/icons/<project>/v<version>/` maps to
-`projects/<project>/icons/v<version>/` on R2. `Project.presentationIcon` selects
-this independently of immutable family/brand archives. Native square/rounded PNGs,
-lossless WebP delivery sizes, ICO and opaque iOS/Apple touch files share a checksum
-manifest, source provenance and resampling guide. Review-only composites under
-`artwork/icon-texture-review/` are private working binaries, excluded from inventory.
-
-Authorized object retirement is recorded in `docs/assets/retired.json`, separate
-from append-only publication receipts. Remove all active inventory aliases and
-local source copies only after replacement publication and production acceptance.
-The inventory reader and builder reject retired source paths and object keys,
-so a stale local export cannot silently republish or rehydrate deleted materials.
-Retirement receipts record origin existence, full hashes and confirmed deletion;
-a historical publication receipt is not evidence that a retired object survives.
+```sh
+tar --zstd -xf <bundle>.tar.zst "./<memberPath>"
+```

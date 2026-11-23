@@ -38,7 +38,7 @@ Store private memories, tags, versions and attachments through scoped REST and M
 - Type: Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved
 - Subject: Fragmented blue seahorse portrait
 - [Source](https://github.com/nocoo/octo/blob/0d0bcae39f7cb5fd4a22248f63bde57fed29cf01/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/octo/identity/v1.0.0/octo-family-2026-10-18-07-02-99dd018d5be6.png)
+- [Preserved asset](https://h.no.mt/projects/octo/identity/v1.0.0/octo-family-2026-10-18-1024-6a79143efbfa.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 2203787 bytes
 - SHA-256: `99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad`
@@ -58,9 +58,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Octo current icon](https://h.no.mt/projects/octo/icons/v1.0.2/rounded-160.webp)
+![Octo current icon](https://h.no.mt/projects/octo/icons/v1.0.2/rounded-160-e2673a47af0e.webp)
 
-- [Native square PNG](https://h.no.mt/projects/octo/icons/v1.0.2/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/octo/icons/v1.0.2/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/octo/icons/v1.0.2/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/octo/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/octo/icons/v1.0.2/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/octo/icons/v1.0.2/icon-1024-0bda7b688921.webp) · [1024 px rounded WebP](https://h.no.mt/projects/octo/icons/v1.0.2/rounded-1024-297898faa33a.webp) · [Favicon ICO](https://h.no.mt/projects/octo/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/octo/icons/v1.0.2/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/octo/icons/v1.0.2/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/octo/icons/v1.0.2/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细长带状海草叶围出疏朗的近岸栖地，将中央留给海马。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
-- [Paper PNG](https://h.no.mt/projects/octo/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/octo/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/octo/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/octo/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/octo/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/octo/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/octo/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/octo/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/octo/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/octo/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/octo/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -84,10 +84,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Fragmented blue seahorse portrait
 - Site path: `/projects/octo#brand`; [local gallery](https://index.dev.hexly.ai/projects/octo#brand)
 - [Static review HTML](../../artwork/logo-family/octo/2026-10-18-07/review.html)
-- [Full process archive](../../artwork/logo-family/octo/2026-10-18-07)
-- [Transparent foreground](https://h.no.mt/logos/family/octo/2026-10-18-07/02/transparent.png); SHA-256: `99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad`
-- [Square icon](https://h.no.mt/logos/family/octo/2026-10-18-07/02/icon.png), [rounded icon](https://h.no.mt/logos/family/octo/2026-10-18-07/02/rounded.png), [white version](https://h.no.mt/logos/family/octo/2026-10-18-07/02/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/octo/2026-10-18-07/02/raw.png), [exact prompt](https://h.no.mt/logos/family/octo/2026-10-18-07/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/octo/2026-10-18-07/02/manifest.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/octo/2026-10-18-07)
+- [Transparent foreground](https://h.no.mt/projects/octo/identity/v1.0.0/octo-family-2026-10-18-1024-6a79143efbfa.webp); SHA-256: `99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad`
+- [Square icon WebP](https://h.no.mt/logos/family/octo/2026-10-18-07/02/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/octo/2026-10-18-07/02/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/octo/identity/v1.0.0/octo-family-2026-10-18-1024-6a79143efbfa.webp)
+- [Exact prompt](https://h.no.mt/logos/family/octo/2026-10-18-07/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/octo/2026-10-18-07/02/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

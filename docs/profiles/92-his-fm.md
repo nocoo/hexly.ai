@@ -39,7 +39,7 @@ Publish a Mandarin podcast whose collecting, editing, voicing, artwork and produ
 - Type: Original project artwork, copied without modification
 - Subject: Existing application icon
 - [Source](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg): `artwork/show-stillwood-20261022/podcast-cover-3000.jpg`
-- [Preserved asset](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-channel-0a64cac84ab3.jpg)
+- [Preserved asset](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-channel-1024-66fb745c6975.webp)
 - Original dimensions: 3000 × 3000
 - Original size: 495570 bytes
 - SHA-256: `0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85`
@@ -64,7 +64,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 象牙手工纸上均匀铺开的冷杉与蕨类压痕。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.3; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
-- [Paper PNG](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light.png) · [Night PNG](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light.webp) · [Night WebP](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/his-fm/textures/v1.0.3/manifest.json) · [Usage/rights](https://h.no.mt/projects/his-fm/textures/v1.0.3/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/his-fm/v1.0.3/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 

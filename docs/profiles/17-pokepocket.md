@@ -43,7 +43,7 @@ Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection 
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Red-capped trainer turning with a Poké Ball
 - [Source](https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-family-2026-09-07-03-01-eed19029ccc4.png)
+- [Preserved asset](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-1024-ff4fd513ace8.webp)
 - Original dimensions: 960 × 960
 - Original size: 547985 bytes
 - SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
@@ -65,9 +65,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Poké Pocket current icon](https://h.no.mt/projects/pokepocket/icons/v1.0.0/rounded-160.webp)
+![Poké Pocket current icon](https://h.no.mt/projects/pokepocket/icons/v1.0.0/rounded-160-b20819212b73.webp)
 
-- [Native square PNG](https://h.no.mt/projects/pokepocket/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/pokepocket/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/pokepocket/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/pokepocket/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/pokepocket/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/pokepocket/icons/v1.0.0/icon-1024-176d06453f0d.webp) · [1024 px rounded WebP](https://h.no.mt/projects/pokepocket/icons/v1.0.0/rounded-1024-a4b75eacbaab.webp) · [Favicon ICO](https://h.no.mt/projects/pokepocket/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/pokepocket/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/pokepocket/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/pokepocket/icons/v1.0.0/guide.md)
 - Native canvas 960 × 960; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. 1024 px variants are explicitly resampled upscales.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -78,14 +78,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细密棉帆布上的折图压痕与口袋缝线，呼应随身收藏和探索；不生成角色或游戏商标。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/pokepocket/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/pokepocket/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/pokepocket/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/pokepocket/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/pokepocket#brand).
-- [Light lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/pokepocket/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/pokepocket/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/pokepocket/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/pokepocket/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/pokepocket/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -121,10 +121,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥145px wide; lockup ≥166px
 - Site path: `/projects/pokepocket#brand`; [local gallery](https://index.dev.hexly.ai/projects/pokepocket#brand)
 - [Static review HTML](../../artwork/logo-family/pokepocket/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pokepocket/2026-09-07-03)
-- [Transparent foreground](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/transparent.png); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
-- [Square icon](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/icon.png), [rounded icon](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/rounded.png), [white version](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/white.png)
-- [Original illustration](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/source.jpg), [presentation brief](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/pokepocket-45996e3f23bd.svg), copied from [its immutable source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-1024-ff4fd513ace8.webp); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
+- [Square icon WebP](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-1024-ff4fd513ace8.webp)
+- [Presentation brief](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/manifest.json) (raw `source.jpg` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: [/logos/originals/pokepocket.svg](https://h.no.mt/shared/site/v1.0.0/pokepocket-45996e3f23bd.svg), from [its immutable source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg)
 - Previous SHA-256: `45996e3f23bd37f18ea26b35ee2dc3f13174da07a2aa7fcffbb1a17167d62e29`
 - The owner-supplied illustration is extracted and uniformly reframed at native 960 × 960. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 960 px are explicitly recorded upscales; the native master retains its recorded resolution.

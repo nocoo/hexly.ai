@@ -12,7 +12,7 @@ Refresh an already-onboarded catalogue entry so that `src/data/projects/<id>.jso
 
 - **Archived projects**: Entries with `"archived": true` are excluded from batch refreshes unless the owner explicitly names them.
 - **No external source dumps**: Never copy external project source files, `package.json`, `wrangler.*`, `README.md`, or `.txt` code dumps into `docs/sources/` or `artwork/`. Record only lightweight provenance fields in `src/data/projects/<id>.json`.
-- **Immutable R2 versions**: Never overwrite an existing published R2 version path under `https://h.no.mt`. New or updated identity/icon/texture/social assets require a new versioned path and an updated `docs/assets/inventory.json` receipt via [hexly-r2-media](../hexly-r2-media/SKILL.md).
+- **Lean R2 CDN + Google Drive Cold Archive**: R2 (`https://h.no.mt`) serves only Web-First CDN deliverables (WebP/SVG/ICO/WOFF2/OG JPEG/MP4/screenshots/metadata). Never upload 2048px raw PNGs or `artwork/` intermediates to R2; archive originals to Google Drive (`architie@gmail.com` → `My Drive/hexly.ai/06-future-cold-backups/`, Folder ID `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`, configured in `src/data/cold-storage.json`) via `bun run assets:cold-backup -- --project <id> <paths...> --upload`. Never overwrite an existing published R2 key; publish under a new versioned/hashed path via [hexly-r2-media](../hexly-r2-media/SKILL.md) and retire superseded keys post-release via `bun run assets:r2 -- retire`.
 - **Evidence-only facts**: Only record revisions, colors, descriptions, and endpoints directly observed in the upstream repository, live `/api/live`, or `nocoo/nocoo` profile.
 
 ## Workflow

@@ -20,7 +20,7 @@
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](https://h.no.mt/projects/skill-faster-whisper/identity/v1.0.0/skill-faster-whisper-fe2151b4426e.png)
+- [Preserved asset](https://h.no.mt/projects/skill-faster-whisper/identity/v1.0.0/skill-faster-whisper-1024-3ffab94ee192.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 518181 bytes
 - SHA-256: `fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6`
@@ -45,7 +45,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细织吸音毡与稀疏长孔收住声音，轻浅横向波纹呼应语音转写而不生成虚构转录内容。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/skill-faster-whisper/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/skill-faster-whisper/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 

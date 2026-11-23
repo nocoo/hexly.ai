@@ -20,7 +20,7 @@
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/huran.cc/blob/9085d193a00fc378fb3c54c1b740328e4cf000f7/public/images/hr-logo-2x.png): `public/images/hr-logo-2x.png`
-- [Preserved asset](https://h.no.mt/projects/huran-cc/identity/v1.0.0/huran-cc-91d20c9117ae.png)
+- [Preserved asset](https://h.no.mt/projects/huran-cc/identity/v1.0.0/huran-cc-1024-dc81e992e40e.webp)
 - Original dimensions: 398 × 150
 - Original size: 8618 bytes
 - SHA-256: `91d20c9117ae3166c1e4e911c07717246966fb456ec10150af2deb379045f0c7`

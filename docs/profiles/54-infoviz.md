@@ -20,7 +20,7 @@
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/infoviz/blob/dc41fd2d23ac9f82c998b3072758c09a86d9b004/images/infoviz_logo@2x.png): `images/infoviz_logo@2x.png`
-- [Preserved asset](https://h.no.mt/projects/infoviz/identity/v1.0.0/infoviz-6572c1eabfc4.png)
+- [Preserved asset](https://h.no.mt/projects/infoviz/identity/v1.0.0/infoviz-1024-76a4764bb636.webp)
 - Original dimensions: 600 × 207
 - Original size: 24045 bytes
 - SHA-256: `6572c1eabfc4a5159cb71dcda4f70a5f2078fb88205ad40b77a604508d317f9c`

@@ -20,7 +20,7 @@
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](https://h.no.mt/projects/feedmaid/identity/v1.0.0/feedmaid-ad705222d130.png)
+- [Preserved asset](https://h.no.mt/projects/feedmaid/identity/v1.0.0/feedmaid-1024-b86457bb6efe.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 335132 bytes
 - SHA-256: `ad705222d130c788d2ad7decc43a79eb8a1f2e8e6c64a54fadfc8891f8101bc5`

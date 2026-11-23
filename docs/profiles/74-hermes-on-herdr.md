@@ -37,12 +37,12 @@ Run a dedicated Hermes Gateway inside Herdr with explicit lifecycle control, per
 
 ## Current logo
 
-![hermes on herdr source identity](https://h.no.mt/projects/hermes-on-herdr/identity/v1.0.0/hermes-on-herdr-160-d0cc996ccd50.webp)
+![hermes on herdr source identity](https://h.no.mt/shared/site/v1.0.0/hermes-gateway-herdr-160-d0cc996ccd50.webp)
 
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens
 - [Source](https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/hermes-on-herdr/identity/v1.0.0/hermes-gateway-herdr-family-2026-09-11-01-01-ba0a4a0a403d.png)
+- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hermes-gateway-herdr-1024-60fd77be06eb.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 4337945 bytes
 - SHA-256: `ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719`
@@ -68,14 +68,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细黄铜拉丝、珐琅嵌缝与错位门框浅槽，承接网关工具的接入关系，保留开门的余地。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
-- [Paper PNG](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/hermes-on-herdr/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/hermes-on-herdr/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/hermes-on-herdr#brand).
-- [Light lockup](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/hermes-on-herdr/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -111,10 +111,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥189px wide; lockup ≥199px
 - Site path: `/projects/hermes-on-herdr#brand`; [local gallery](https://index.dev.hexly.ai/projects/hermes-on-herdr#brand)
 - [Static review HTML](../../artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hermes-gateway-herdr/2026-09-11-01)
-- [Transparent foreground](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png); SHA-256: `ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719`
-- [Square icon](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/rounded.png), [white version](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/hermes-gateway-herdr-df84f29fc925.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/4a0c394a79c8f4d24a11f8d9907d5c797e6b7718/README.md)
+- [Transparent foreground](https://h.no.mt/shared/site/v1.0.0/hermes-gateway-herdr-1024-60fd77be06eb.webp); SHA-256: `ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719`
+- [Square icon WebP](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/shared/site/v1.0.0/hermes-gateway-herdr-1024-60fd77be06eb.webp)
+- [Exact prompt](https://h.no.mt/brands/hermes-on-herdr/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hermes-gateway-herdr/2026-09-11-01/01/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: `/logos/emoji/hermes-gateway-herdr.png` (cold-archived in Google Drive), from [its immutable source](https://github.com/nocoo/nocoo/blob/4a0c394a79c8f4d24a11f8d9907d5c797e6b7718/README.md)
 - Previous SHA-256: `df84f29fc92535512e00cef39272d782a7b9a7f588f104fb85d5383720e6e3a5`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

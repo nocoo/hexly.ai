@@ -20,7 +20,7 @@
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](https://h.no.mt/projects/ccbackup/identity/v1.0.0/ccbackup-1bb8d48c8877.png)
+- [Preserved asset](https://h.no.mt/projects/ccbackup/identity/v1.0.0/ccbackup-1024-50e4c2669790.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 200904 bytes
 - SHA-256: `1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa`
@@ -45,7 +45,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细肋聚合物、矩形索引凹位与档案卡槽承接软盘表情所代表的备份工作，保持现有身份不变。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
-- [Paper PNG](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/ccbackup/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/ccbackup/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ccbackup/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 

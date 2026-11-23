@@ -98,17 +98,18 @@ for both active and kitless archived entries. Reuse assets through `assetUrl` an
 pack automatically. Canonical project routes and sitemap stay unchanged;
 standalone review documents are `noindex` and link back to `#texture`.
 
-## R2 and publication
+## R2 CDN and Google Drive Cold Backup
 
 Local `public/textures/<id>/v<X.Y.Z>/` becomes
 `https://h.no.mt/projects/<id>/textures/v<X.Y.Z>/`. Package-relative filenames are
 already immutable; no extra hash suffix is needed. HTML remains a Worker document,
-with streamed download enhancement; the source HTML also has an archive object.
+with streamed download enhancement.
 
-After all file writers finish, follow the [R2 skill](../../hexly-r2-media/SKILL.md):
-`inventory` → scoped `plan` → `publish --upload` → full-byte/MIME verification.
-Keep rejected originals and inspection evidence in the source inventory too.
-Do not put raw PNG/WebP or contact-sheet binaries into Git/deploy. Keep old
-objects and receipts; new revisions use new texture versions. Update generated
-profiles and publication records, then use the normal exact-SHA site release.
-Verify canonical pages, active theme URLs, original downloads, and remote hashes.
+**Lean CDN / Cold-Backup split**:
+
+- **R2 (`hexlyai` / `h.no.mt`)**: Publish ONLY `texture-light.webp`, `texture-dark.webp`, `texture-light-320.webp`, `texture-dark-320.webp`, exact theme prompts, sanitized request/response/review JSONs, `brief.md`, `guide.md`, `license.txt`, `provenance.json`, and `manifest.json`. Do NOT publish `texture-{light,dark}.png` or `artwork/brands/<id>/texture-studies/` to R2.
+- **Google Drive Cold Archive (`architie@gmail.com` → `My Drive/hexly.ai/06-future-cold-backups/`, Folder ID `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`, see `src/data/cold-storage.json`)**: Archive raw 1024px `texture-{light,dark}.png` masters and all `artwork/brands/<id>/texture-studies/<batch>/` working attempts via `bun run assets:cold-backup -- --project <id> artwork/brands/<id>/texture-studies/<batch> --upload`.
+
+After all file writers finish, follow the [R2 & cold-backup skill](../../hexly-r2-media/SKILL.md):
+`assets:cold-backup --upload` → `inventory` → scoped `plan` → `publish --upload` → full-byte/MIME verification.
+Do not put raw PNG/WebP or contact-sheet binaries into Git/deploy. When replacing an older texture version, archive and retire the superseded R2 objects via `bun run assets:r2 -- retire` after production release.

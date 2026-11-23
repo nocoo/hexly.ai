@@ -42,7 +42,7 @@ Give macOS app developers a reusable SwiftUI workspace for arranging their own c
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Indigo metal information tray with adjustable dividers and four colored paper stacks
 - [Source](https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/infospace/identity/v1.0.0/infospace-family-2026-09-09-01-01-3b2e9aaead0e.png)
+- [Preserved asset](https://h.no.mt/projects/infospace/identity/v1.0.0/infospace-1024-564387116f4e.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 4365206 bytes
 - SHA-256: `3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772`
@@ -66,9 +66,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Info Space current icon](https://h.no.mt/projects/infospace/icons/v1.0.0/rounded-160.webp)
+![Info Space current icon](https://h.no.mt/projects/infospace/icons/v1.0.0/rounded-160-0f94713a1644.webp)
 
-- [Native square PNG](https://h.no.mt/projects/infospace/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/infospace/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/infospace/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/infospace/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/infospace/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/infospace/icons/v1.0.0/icon-1024-04a0ff87afde.webp) · [1024 px rounded WebP](https://h.no.mt/projects/infospace/icons/v1.0.0/rounded-1024-4271d8206daf.webp) · [Favicon ICO](https://h.no.mt/projects/infospace/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/infospace/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/infospace/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/infospace/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -79,14 +79,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 分隔槽与压缩纸纤维交织为连续的浅压纹。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/infospace/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/infospace/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/infospace/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/infospace#brand).
-- [Light lockup](https://h.no.mt/brands/infospace/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/infospace/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/infospace/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/infospace/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/infospace/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/infospace/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/infospace/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/infospace/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/infospace/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -122,10 +122,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥103px wide; lockup ≥160px
 - Site path: `/projects/infospace#brand`; [local gallery](https://index.dev.hexly.ai/projects/infospace#brand)
 - [Static review HTML](../../artwork/logo-family/infospace/2026-09-09-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/infospace/2026-09-09-01)
-- [Transparent foreground](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/transparent.png); SHA-256: `3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772`
-- [Square icon](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/rounded.png), [white version](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/infospace-7540789c41a7.svg), copied from [its immutable source](https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg)
+- [Transparent foreground](https://h.no.mt/projects/infospace/identity/v1.0.0/infospace-1024-564387116f4e.webp); SHA-256: `3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772`
+- [Square icon WebP](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/infospace/identity/v1.0.0/infospace-1024-564387116f4e.webp)
+- [Exact prompt](https://h.no.mt/brands/infospace/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/infospace/2026-09-09-01/01/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: [/logos/originals/infospace.svg](https://h.no.mt/shared/site/v1.0.0/infospace-7540789c41a7.svg), from [its immutable source](https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg)
 - Previous SHA-256: `7540789c41a74c8553af6fe38b23aa3784753259038ff93dc8e7797f17582d03`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

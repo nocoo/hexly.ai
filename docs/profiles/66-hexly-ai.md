@@ -38,7 +38,7 @@ Browse bilingual project records, preserved identities, palettes, service observ
 - Type: Original project artwork, copied without modification
 - Subject: Two-tone cream-framed hexagonal emblem
 - [Source](https://github.com/nocoo/hexly.ai/blob/c89ba6d1534a8df5028c28087c98c82aebbf6c68/artwork/logo-family/hexly-ai/2026-11-13-02/finishing/02/manifest.json): `logo.png`
-- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-02-5df6368fc0d5.png)
+- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-1024-90db9d324081.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 2600545 bytes
 - SHA-256: `5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5`
@@ -57,9 +57,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![hexly.ai current icon](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded-160.webp)
+![hexly.ai current icon](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded-160-e2c5ac6ef24d.webp)
 
-- [Native square PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/favicon.ico) · [Apple touch](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/icon-1024-0e92d2723365.webp) · [1024 px rounded WebP](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded-1024-73c9b72e1a94.webp) · [Favicon ICO](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/favicon.ico) · [Apple touch](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 细陶土颗粒与疏朗的标本排布压痕，为原始品牌留出安静底面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.2; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
-- [Paper PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light.png) · [Night PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light.webp) · [Night WebP](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/manifest.json) · [Usage/rights](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/hexly-ai/v1.0.2/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -83,11 +83,11 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Two-tone cream-framed hexagonal emblem
 - Site path: `/projects/hexly-ai#brand`; [local gallery](https://index.dev.hexly.ai/projects/hexly-ai#brand)
 - [Static review HTML](../../artwork/logo-family/hexly-ai/2026-11-13-02/review.html)
-- [Full process archive](../../artwork/logo-family/hexly-ai/2026-11-13-02)
-- [Transparent foreground](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/transparent.png); SHA-256: `5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5`
-- [Square icon](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/icon.png), [rounded icon](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/rounded.png), [white version](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/raw.png), [exact prompt](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-10-18-02-01-595c9da2186c.png), copied from [its immutable source](https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hexly-ai/2026-11-13-02)
+- [Transparent foreground](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-1024-90db9d324081.webp); SHA-256: `5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5`
+- [Square icon WebP](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-1024-90db9d324081.webp)
+- [Exact prompt](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: `/logos/originals/hexly-ai-family-2026-10-18-02-01.png` (cold-archived in Google Drive), from [its immutable source](https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json)
 - Previous SHA-256: `595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d`
 - Generation: built-in image tool; model unrecorded, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

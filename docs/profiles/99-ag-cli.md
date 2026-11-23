@@ -37,8 +37,8 @@ Let external CLI bots dispatch tasks to local Antigravity conversations, wait on
 
 - Type: Owner-approved Hexly review candidate; source-project identity and adoption are pending
 - Subject: Brushed-brass pneumatic message capsule with a blue enamel band and a stitched leather pull strap
-- [Source](https://hexly.ai/artwork/logo-family/ag-cli/2026-11-14-01/review.html): `Hexly-generated first-identity candidate; source adoption pending`
-- [Preserved asset](https://h.no.mt/projects/ag-cli/identity/v1.0.0/ag-cli-review-2026-11-14-2888800f1341.png)
+- [Source](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ag-cli/2026-11-14-01): `Hexly-generated first-identity candidate; source adoption pending`
+- [Preserved asset](https://h.no.mt/projects/ag-cli/identity/v1.0.0/ag-cli-1024-aab45bd3fbf9.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 1718697 bytes
 - SHA-256: `2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a`
@@ -58,9 +58,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![ag-cli current icon](https://h.no.mt/projects/ag-cli/icons/v1.0.0/rounded-160.webp)
+![ag-cli current icon](https://h.no.mt/projects/ag-cli/icons/v1.0.0/rounded-160-34dc207aadb7.webp)
 
-- [Native square PNG](https://h.no.mt/projects/ag-cli/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/ag-cli/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/ag-cli/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/ag-cli/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/ag-cli/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/ag-cli/icons/v1.0.0/icon-1024-2af31e065b64.webp) · [1024 px rounded WebP](https://h.no.mt/projects/ag-cli/icons/v1.0.0/rounded-1024-0030e85da813.webp) · [Favicon ICO](https://h.no.mt/projects/ag-cli/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/ag-cli/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/ag-cli/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/ag-cli/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Local Hexly presentation preview; source adoption and publication are not implied. Original identity archives below remain available.
@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 浅浅的成对管道槽、圆弧弯头与小法兰环压在哑光纸面上，勾勒出安静的派发路径。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ag-cli/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/ag-cli/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/ag-cli/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ag-cli/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -84,10 +84,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Brushed-brass pneumatic capsule with a blue enamel band and a leather strap
 - Site path: `/projects/ag-cli#brand`; [local gallery](https://index.dev.hexly.ai/projects/ag-cli#brand)
 - [Static review HTML](../../artwork/logo-family/ag-cli/2026-11-14-01/review.html)
-- [Full process archive](/artwork/logo-family/ag-cli/2026-11-14-01/review.html)
-- [Transparent foreground](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/transparent.png); SHA-256: `2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a`
-- [Square icon](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/rounded.png), [white version](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/manifest.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ag-cli/2026-11-14-01)
+- [Transparent foreground](https://h.no.mt/projects/ag-cli/identity/v1.0.0/ag-cli-1024-aab45bd3fbf9.webp); SHA-256: `2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a`
+- [Square icon WebP](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/ag-cli/identity/v1.0.0/ag-cli-1024-aab45bd3fbf9.webp)
+- [Exact prompt](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/ag-cli/2026-11-14-01/01/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

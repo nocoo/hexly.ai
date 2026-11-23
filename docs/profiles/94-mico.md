@@ -39,7 +39,7 @@ Provide a local-first collaborative canvas for people and AI agents, with named 
 - Type: Original project artwork, copied without modification
 - Subject: Candy-colored rounded-square canvas application mark
 - [Source](https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/mico/identity/v1.0.0/mico-012db800045e.png)
+- [Preserved asset](https://h.no.mt/projects/mico/identity/v1.0.0/mico-1024-8c56c247b5f1.webp)
 - Original dimensions: 1440 × 1440
 - Original size: 1254051 bytes
 - SHA-256: `012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521`
@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 圆角框、便签、笔触与连接点的浅压痕铺满整张工作面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/mico/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/mico/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/mico/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/mico/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/mico/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/mico/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/mico/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/mico/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/mico/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/mico/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/mico/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 

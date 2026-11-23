@@ -38,11 +38,14 @@ The API does not generate images or upload materials.
 | `theme` | `any`, `light`, `dark`; describes artwork suitability, not an instruction to recolor it |
 
 Use transparent project-identity assets for navigation, sidebars and favicons.
-Existing brand packages provide 16/24/32/48/64/128/256/512px PNG marks, with 1024px
-transparent WebP and native foregrounds from family archives. Background family
-artwork provides 32/64/160/256/512/1024px WebP and native PNG; packaged presentations
-also provide light/dark 512px tiles and opaque 180px Apple touch icons.
-Projects without these archives return their existing original and display assets.
+Active CDN packages serve lean WebP/SVG assets: brand kits provide transparent
+marks and lockups (`svg` for vector kits; `512px` WebP for raster kits), family
+archives provide `32/64/160/1024px` WebP foregrounds and `32/64/160/512/1024px`
+WebP icons, and packaged presentations provide `32/64/160/512/1024px` WebP
+square/rounded tiles plus `180px` opaque `apple-touch-icon.png` and `favicon.ico`.
+Projects without these archives return their existing original (SVG) or WebP
+display assets. Raw 2048px PNG masters are cold-archived in Google Drive
+(`architie@gmail.com` → `My Drive/hexly.ai/04-masters-png/`).
 Missing variants must not be inferred or fabricated.
 
 Small/large defaults never silently adopt a different family drawing. A foreground

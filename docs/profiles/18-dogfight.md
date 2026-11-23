@@ -43,7 +43,7 @@ Fly an F-22 through a complete browser arcade mission using target locks, missil
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Titanium F-22 desk model caught in a banking turn
 - [Source](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/dogfight/identity/v1.0.0/dogfight-family-2026-09-07-01-02-274611f248e4.png)
+- [Preserved asset](https://h.no.mt/projects/dogfight/identity/v1.0.0/dogfight-1024-257ae5cba739.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 2743288 bytes
 - SHA-256: `274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4`
@@ -64,9 +64,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Dogfight current icon](https://h.no.mt/projects/dogfight/icons/v1.0.0/rounded-160.webp)
+![Dogfight current icon](https://h.no.mt/projects/dogfight/icons/v1.0.0/rounded-160-a8f9664e31da.webp)
 
-- [Native square PNG](https://h.no.mt/projects/dogfight/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/dogfight/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/dogfight/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/dogfight/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/dogfight/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/dogfight/icons/v1.0.0/icon-1024-09d01065a038.webp) · [1024 px rounded WebP](https://h.no.mt/projects/dogfight/icons/v1.0.0/rounded-1024-586e34c3d664.webp) · [Favicon ICO](https://h.no.mt/projects/dogfight/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/dogfight/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/dogfight/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/dogfight/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -77,14 +77,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 拉丝加工纹与收束接缝压痕呼应飞机表面的工艺。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
-- [Paper PNG](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-light.webp) · [Night WebP](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dogfight/textures/v1.0.1/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/dogfight/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/dogfight/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dogfight/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/dogfight#brand).
-- [Light lockup](https://h.no.mt/brands/dogfight/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/dogfight/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/dogfight/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/dogfight/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/dogfight/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/dogfight/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/dogfight/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/dogfight/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/dogfight/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -120,10 +120,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥88px wide; lockup ≥160px.
 - Site path: `/projects/dogfight#brand`; [local gallery](https://index.dev.hexly.ai/projects/dogfight#brand)
 - [Static review HTML](../../artwork/logo-family/dogfight/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dogfight/2026-09-07-01)
-- [Transparent foreground](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/transparent.png); SHA-256: `274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4`
-- [Square icon](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/dogfight-229e0e5757f8.svg), copied from [its immutable source](https://github.com/nocoo/dogfight/blob/9ec76522713a527bc831f8fa37ec7a50967e24e4/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/projects/dogfight/identity/v1.0.0/dogfight-1024-257ae5cba739.webp); SHA-256: `274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4`
+- [Square icon WebP](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/dogfight/identity/v1.0.0/dogfight-1024-257ae5cba739.webp)
+- [Exact prompt](https://h.no.mt/brands/dogfight/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/dogfight/2026-09-07-01/02/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: [/logos/originals/dogfight.svg](https://h.no.mt/shared/site/v1.0.0/dogfight-229e0e5757f8.svg), from [its immutable source](https://github.com/nocoo/dogfight/blob/9ec76522713a527bc831f8fa37ec7a50967e24e4/public/favicon.svg)
 - Previous SHA-256: `229e0e5757f8bddb9a9c2dce88b3a69b0e30640e6d4ecdf98c527d719f9d2080`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

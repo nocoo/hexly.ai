@@ -38,7 +38,7 @@ Provide a TypeScript Agent and Workflow SDK aligned with the google-antigravity 
 - Type: Owner-approved generated raster identity; model unrecorded, source-adopted bytes and native JPEG provenance preserved
 - Subject: Dual-channel brass and charcoal aluminum rotary selector switch
 - [Source](https://github.com/nocoo/workflow-sdk/blob/301aad6deccb80c8cc02ff696553859e31ddf7b7/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/workflow-sdk/identity/v1.0.0/workflow-sdk-family-2026-11-20-01-01-c5d35abf84ce.png)
+- [Preserved asset](https://h.no.mt/projects/workflow-sdk/identity/v1.0.0/workflow-sdk-family-2026-11-20-1024-b7b819a1d9bf.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 1062184 bytes
 - SHA-256: `c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd`
@@ -58,9 +58,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Workflow SDK current icon](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded-160.webp)
+![Workflow SDK current icon](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded-160-7a246072b88e.webp)
 
-- [Native square PNG](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/icon-1024-a2a929aea248.webp) · [1024 px rounded WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded-1024-43ba534a656c.webp) · [Favicon ICO](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/guide.md)
 - Native canvas 1024 × 1024; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -74,10 +74,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Dual-channel brass and charcoal aluminum rotary selector switch
 - Site path: `/projects/workflow-sdk#brand`; [local gallery](https://index.dev.hexly.ai/projects/workflow-sdk#brand)
 - [Static review HTML](../../artwork/logo-family/workflow-sdk/2026-11-20-01/review.html)
-- [Full process archive](../../artwork/logo-family/workflow-sdk/2026-11-20-01)
-- [Transparent foreground](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/transparent.png); SHA-256: `c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd`
-- [Square icon](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/rounded.png), [white version](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/raw.jpg), [exact prompt](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/manifest.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/workflow-sdk/2026-11-20-01)
+- [Transparent foreground](https://h.no.mt/projects/workflow-sdk/identity/v1.0.0/workflow-sdk-family-2026-11-20-1024-b7b819a1d9bf.webp); SHA-256: `c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd`
+- [Square icon WebP](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/workflow-sdk/identity/v1.0.0/workflow-sdk-family-2026-11-20-1024-b7b819a1d9bf.webp)
+- [Exact prompt](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/workflow-sdk/2026-11-20-01/01/manifest.json) (raw `raw.jpg` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: built-in image tool; model unrecorded, native 1024 × 1024; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 1024 px are explicitly recorded upscales; the native master retains its recorded resolution.

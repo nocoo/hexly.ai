@@ -190,12 +190,14 @@ Reference boards and the presentation-reference disclosure belong only in the
 static study page and Git. Omit them from the React site. Use pathname
 navigation for the gallery and each identity, never `?view=logos&project=...`.
 
-For a local candidate, copy the curated files to
+For a local candidate, copy the curated lean CDN files (WebP previews/icons, `prompt.txt`/`brief.txt`, `manifest.json`) to
 `public/logos/family/<project>/<run>/<pass>/` and add a `family` record with
 `status: "review"`, the finishing number, update date, separate foreground
 path/dimensions/hash, previous original, palette and direction notes. The
 project's `logo` field describes the actual source repository and must not be
 rewritten by a local preview.
+
+**Cold backup boundary (mandatory)**: Never publish 2048px master PNGs (`transparent.png`, `icon.png`, `rounded.png`, `white.png`, `raw.png`, `background.png`) or `artwork/logo-family/<project>/<run>/` working files to R2 `hexlyai`. Archive the complete `artwork/logo-family/<project>/<run>/` study and 2048px PNG masters to Google Drive (`architie@gmail.com` → `My Drive/hexly.ai/06-future-cold-backups/`, Folder ID `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`, configured in `src/data/cold-storage.json`) via `bun run assets:cold-backup -- --project <project> artwork/logo-family/<project>/<run> --upload`. R2 (`h.no.mt`) serves only WebP/SVG/ICO/small platform PNG CDN deliverables.
 
 Inspect desktop and mobile in a real browser through `index.dev.hexly.ai`: both
 the static page and the site path, all modes and themes, clipboard, disclosures,

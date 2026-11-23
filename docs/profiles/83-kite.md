@@ -38,7 +38,7 @@ Collect Pi execution traces locally through a passive extension and a separate U
 - Type: Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved
 - Subject: Multicolored fragmented red kite head entering from the right
 - [Source](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/kite/identity/v1.0.0/kite-family-2026-09-25-02-03-5e414e28dc10.png)
+- [Preserved asset](https://h.no.mt/projects/kite/identity/v1.0.0/kite-1024-5d51caa5bb9d.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 2284290 bytes
 - SHA-256: `5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6`
@@ -60,9 +60,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Kite current icon](https://h.no.mt/projects/kite/icons/v1.0.0/rounded-160.webp)
+![Kite current icon](https://h.no.mt/projects/kite/icons/v1.0.0/rounded-160-395b6436aa5e.webp)
 
-- [Native square PNG](https://h.no.mt/projects/kite/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/kite/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/kite/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/kite/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/kite/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/kite/icons/v1.0.0/icon-1024-4d0077667819.webp) · [1024 px rounded WebP](https://h.no.mt/projects/kite/icons/v1.0.0/rounded-1024-390c031f74e9.webp) · [Favicon ICO](https://h.no.mt/projects/kite/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/kite/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/kite/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/kite/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -73,14 +73,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 橡林叶缘：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
-- [Paper PNG](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/kite/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/kite/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/kite/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/kite#brand).
-- [Light lockup](https://h.no.mt/brands/kite/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/kite/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/kite/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/kite/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/kite/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/kite/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/kite/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/kite/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/kite/v1.0.0/manifest.json).
 - Source adoption: recorded at `704ae3833c9bf752ae7785d9aa6faa7756fefbbf`.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -115,10 +115,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥49px wide; lockup ≥160px.
 - Refined subject: Multicolored fragmented red kite head entering from the right
 - Site path: `/projects/kite#brand`; [local gallery](https://index.dev.hexly.ai/projects/kite#brand)
 - [Static review HTML](../../artwork/logo-family/kite/2026-09-25-02/review.html)
-- [Full process archive](../../artwork/logo-family/kite/2026-09-25-02)
-- [Transparent foreground](https://h.no.mt/logos/family/kite/2026-09-25-02/03/transparent.png); SHA-256: `5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6`
-- [Square icon](https://h.no.mt/logos/family/kite/2026-09-25-02/03/icon.png), [rounded icon](https://h.no.mt/logos/family/kite/2026-09-25-02/03/rounded.png), [white version](https://h.no.mt/logos/family/kite/2026-09-25-02/03/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/kite/2026-09-25-02/03/raw.png), [exact prompt](https://h.no.mt/logos/family/kite/2026-09-25-02/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/kite/2026-09-25-02/03/manifest.json)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/kite/2026-09-25-02)
+- [Transparent foreground](https://h.no.mt/projects/kite/identity/v1.0.0/kite-1024-5d51caa5bb9d.webp); SHA-256: `5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6`
+- [Square icon WebP](https://h.no.mt/logos/family/kite/2026-09-25-02/03/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/kite/2026-09-25-02/03/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/kite/identity/v1.0.0/kite-1024-5d51caa5bb9d.webp)
+- [Exact prompt](https://h.no.mt/brands/kite/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/kite/2026-09-25-02/03/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

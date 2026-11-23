@@ -42,7 +42,7 @@ Watch and guide a virtual character through a browser playroom with animated toy
 - Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Naturally crouched biscuit-colored rabbit with one colorful carrot
 - [Source](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/gaga/identity/v1.0.0/gaga-family-2026-09-07-01-01-3bbfa196509e.png)
+- [Preserved asset](https://h.no.mt/projects/gaga/identity/v1.0.0/gaga-1024-fbfb3633c494.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 2357751 bytes
 - SHA-256: `3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076`
@@ -63,9 +63,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Gaga current icon](https://h.no.mt/projects/gaga/icons/v1.0.0/rounded-160.webp)
+![Gaga current icon](https://h.no.mt/projects/gaga/icons/v1.0.0/rounded-160-000ef236a20b.webp)
 
-- [Native square PNG](https://h.no.mt/projects/gaga/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/gaga/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/gaga/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/gaga/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/gaga/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/gaga/icons/v1.0.0/icon-1024-526605bf4f41.webp) · [1024 px rounded WebP](https://h.no.mt/projects/gaga/icons/v1.0.0/rounded-1024-df8cda4d743a.webp) · [Favicon ICO](https://h.no.mt/projects/gaga/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/gaga/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/gaga/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/gaga/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -76,14 +76,14 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 轻盈胡萝卜缨、三叶草与蒲公英叶散落成小小菜圃，用柔软的间距承接兔子的探索欲。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/gaga/textures/v1.0.0/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/gaga/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/gaga/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/gaga/v1.0.0/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/gaga#brand).
-- [Light lockup](https://h.no.mt/brands/gaga/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/gaga/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/gaga/v1.0.0/favicon.ico).
+- [Light lockup](https://h.no.mt/brands/gaga/v1.0.0/lockup-light.webp), [dark lockup](https://h.no.mt/brands/gaga/v1.0.0/lockup-dark.webp), [favicon](https://h.no.mt/brands/gaga/v1.0.0/favicon.ico).
 - [Complete usage and integration guide](https://h.no.mt/brands/gaga/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/gaga/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/gaga/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
@@ -119,10 +119,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥53px wide; lockup ≥160px.
 - Site path: `/projects/gaga#brand`; [local gallery](https://index.dev.hexly.ai/projects/gaga#brand)
 - [Static review HTML](../../artwork/logo-family/gaga/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/gaga/2026-09-07-01)
-- [Transparent foreground](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/transparent.png); SHA-256: `3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076`
-- [Square icon](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/gaga-abfcdf4a83a6.svg), copied from [its immutable source](https://github.com/nocoo/gaga/blob/b960a12ce78a579ac9e99c4b985aaf85d5b8c8aa/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/projects/gaga/identity/v1.0.0/gaga-1024-fbfb3633c494.webp); SHA-256: `3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076`
+- [Square icon WebP](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/gaga/identity/v1.0.0/gaga-1024-fbfb3633c494.webp)
+- [Exact prompt](https://h.no.mt/brands/gaga/v1.0.0/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/gaga/2026-09-07-01/01/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: [/logos/originals/gaga.svg](https://h.no.mt/shared/site/v1.0.0/gaga-abfcdf4a83a6.svg), from [its immutable source](https://github.com/nocoo/gaga/blob/b960a12ce78a579ac9e99c4b985aaf85d5b8c8aa/public/favicon.svg)
 - Previous SHA-256: `abfcdf4a83a692c90f0e3f9b40380fb3f3a701923291c7a45a71778386146995`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

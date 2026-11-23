@@ -174,12 +174,11 @@ tests, typecheck/build and required repository gates; reuse valid evidence when
 only documentation changes. Keep screenshots under ignored `.video-work/` and
 small durable inspection records with the source recipe.
 
-Only within an authorized publication, use the
-[R2 skill](../hexly-r2-media/SKILL.md): inventory → project-scoped plan → publish →
-verify. Keep binaries out of Git/deploy, preserve old URLs and receipts, then use
-[the normal exact-SHA release](../../../docs/05-release.md). Verify production
-page/card, both themes, PNG/WebP/prompt/manifest URLs and actual hashes. This skill
-does not authorize a catalogue-wide rollout, other-repository edits or npm work.
+Only within an authorized publication, follow the **Lean R2 CDN + Google Drive Cold Backup** workflow in [hexly-r2-media](../hexly-r2-media/SKILL.md):
+
+- Cold-backup raw 1024px `texture-{light,dark}.png` and `artwork/brands/<id>/texture-studies/<batch>/` working files to **Google Drive (`architie@gmail.com` → `My Drive/hexly.ai/06-future-cold-backups/`, Folder ID `1JTKowhtSVL4CrbJK_qxhnTEOvSh74oxD`, root `1hUXSAaoZ8bV-p7e93sRFoEHW2qEIXsvx`, configured in `src/data/cold-storage.json`)** via `bun run assets:cold-backup -- --project <id> <paths...> --upload`.
+- Publish ONLY `texture-{light,dark}.webp`, `texture-{light,dark}-320.webp`, prompts, and metadata to R2 `hexlyai` (`h.no.mt`) via `inventory` → project-scoped `plan` → `publish --upload` → `verify`. Never upload raw `.png` textures or `artwork/` studies to R2.
+- Keep binaries out of Git/deploy, retire superseded R2 keys post-release via `bun run assets:r2 -- retire`, then use [the normal exact-SHA release](../../../docs/05-release.md). Verify production page/card, both themes, WebP/prompt/manifest URLs and actual hashes. This skill does not authorize a catalogue-wide rollout, other-repository edits or npm work.
 
 For exact accepted prompts, placement measurements and the no-repeat decision,
 read [the Pi Agent Policy precedent](references/pi-agent-policy.md).

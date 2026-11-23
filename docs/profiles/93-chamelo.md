@@ -39,7 +39,7 @@ Turn an original cultural image into a curated palette, a semantic website theme
 - Type: Original project artwork, copied without modification
 - Subject: Dunhuang-mural chameleon head entering the frame
 - [Source](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png): `logo.png`
-- [Preserved asset](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-338f4041d0ce.png)
+- [Preserved asset](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-1024-815a95a989e1.webp)
 - Original dimensions: 2048 × 2048
 - Original size: 5048621 bytes
 - SHA-256: `338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa`
@@ -60,9 +60,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Chamelo current icon](https://h.no.mt/projects/chamelo/icons/v1.0.0/rounded-160.webp)
+![Chamelo current icon](https://h.no.mt/projects/chamelo/icons/v1.0.0/rounded-160-07219c95158a.webp)
 
-- [Native square PNG](https://h.no.mt/projects/chamelo/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/chamelo/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/chamelo/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/chamelo/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/chamelo/icons/v1.0.0/apple-touch-icon.png)
+- [1024 px square WebP](https://h.no.mt/projects/chamelo/icons/v1.0.0/icon-1024-e9208d4dcc09.webp) · [1024 px rounded WebP](https://h.no.mt/projects/chamelo/icons/v1.0.0/rounded-1024-695137080007.webp) · [Favicon ICO](https://h.no.mt/projects/chamelo/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/chamelo/icons/v1.0.0/apple-touch-icon.png)
 - [Manifest and checksums](https://h.no.mt/projects/chamelo/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/chamelo/icons/v1.0.0/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
@@ -73,7 +73,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - 斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
 - Independent texture pack v1.0.9; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.44.
-- [Paper PNG](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-light.png) · [Night PNG](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-dark-prompt.txt)
+- [Paper WebP](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-light.webp) · [Night WebP](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.9/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/chamelo/textures/v1.0.9/manifest.json) · [Usage/rights](https://h.no.mt/projects/chamelo/textures/v1.0.9/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/chamelo/v1.0.9/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
@@ -87,10 +87,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Site path: `/projects/chamelo#brand`; [local gallery](https://index.dev.hexly.ai/projects/chamelo#brand)
 - [Static review HTML](../../artwork/logo-family/chamelo/2026-10-24-05/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/chamelo/2026-10-24-05)
-- [Transparent foreground](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/transparent.png); SHA-256: `338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa`
-- [Square icon](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/icon.png), [rounded icon](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/rounded.png), [white version](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/raw.png), [exact prompt](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/manifest.json)
-- [Previous original](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-36d1f5a19426.svg), copied from [its immutable source](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-1024-815a95a989e1.webp); SHA-256: `338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa`
+- [Square icon WebP](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-1024-815a95a989e1.webp)
+- [Exact prompt](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/manifest.json) (raw `raw.png` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
+- Previous original: [/logos/originals/chamelo.svg](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-36d1f5a19426.svg), from [its immutable source](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/favicon.svg)
 - Previous SHA-256: `36d1f5a194268e37890433809f0a09240e77ca166184e5d49d28a68baa8c266c`
 - Generation: Azure OpenAI / Foundry · gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
