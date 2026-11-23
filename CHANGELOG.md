@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.0] - 2026-11-23
+
+### Fixes
+
+- point image helper to system0-image-generation-gpt ([6203008](https://github.com/nocoo/hexly.ai/commit/6203008db5ff742febe048eaaaf00cef87322c29))
+
+### Features
+
+- switch R2 CDN to lean WebP delivery and add Google Drive cold backup ([c8dbcab](https://github.com/nocoo/hexly.ai/commit/c8dbcabb49bee78d8245ea486996923d77ce5827))
+
+### Documentation
+
+- document lean R2 CDN boundaries and Google Drive cold-backup paths ([1862eb1](https://github.com/nocoo/hexly.ai/commit/1862eb18f8ab0aed88fbd9aa0e9f3146ffbdcf18))
+
 ## [1.10.1] - 2026-11-22
 
 ### Documentation
