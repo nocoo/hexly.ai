@@ -25,7 +25,7 @@ env:
     "L2": {"status": "na", "reason": "No dedicated Workers runtime suite; the D1 binding is exercised inside L1 through getPlatformProxy, and HTTP/browser behaviour runs in L3/L4."},
     "L3": {"status": "impl"},
     "L4": {"status": "impl"},
-    "P1": {"status": "na", "reason": "The root package and packages/video-kit are private and never published, so no consumer artifact exists to check."},
+    "P1": {"status": "impl"},
     "Z1": {"status": "impl"}}
 
 jobs:
@@ -169,9 +169,14 @@ jobs:
           install-policy: project
 
       - name: "B1: Build"
-        run: |
-          bun run build
-          bun run deploy:check
+        run: bun run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: b1-dist
+          path: dist
+          retention-days: 1
 
       - name: Record SHA
         id: record-sha
@@ -397,12 +402,39 @@ jobs:
 
   p1-package:
     name: "P1: Package"
-    # Nothing is published from this repository; keep the canonical check skipped.
-    if: ${{ vars.ENABLE_P1_PACKAGE == 'true' }}
+    needs:
+      - b1-build
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
     steps:
-      - run: echo "P1 is not applicable; see SLOT_STATUS for the reason."
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: Download build artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
+        with:
+          name: b1-dist
+          path: dist
+
+      - name: "P1: Package"
+        run: bun run deploy:check
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
   z1-gate:
     name: "Z1: Gate"

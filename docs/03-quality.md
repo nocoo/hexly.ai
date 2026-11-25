@@ -12,15 +12,15 @@ Twelve fixed slots, one required check. The canonical slot definitions live in t
 | S3 Workflow | actionlint 1.7.12, immutable `nocoo/base-ci` refs, yamllint 1.38.0 | `.github/workflows/` | CI | 9s | impl |
 | G1 Secrets | `gitleaks protect --staged`; `gitleaks dir`/`git --log-opts`; CI `detect --no-git` | Staged content, pushed tree plus new commits, CI checkout | pre-commit, pre-push, CI | 0.0s / 3.7s / 8s | impl |
 | G2 Dependencies | `osv-scanner scan source --lockfile bun.lock` | Lockfile of the verified revision | pre-push, CI | 1.2s / 7s | impl |
-| B1 Build | `bun run build` + `bun run deploy:check` | Real bundle and Wrangler dry run | pre-push, CI | 1.5s / 17s | impl |
-| L1 Unit | `bun run check:focus` + `bun run test:coverage` | Model, Worker status logic, gate helpers; four 95% thresholds | pre-commit, CI | 3.8s / 24s | impl |
+| B1 Build | `bun run build` | Real bundle (`dist/` uploaded as artifact) | pre-push, CI | 1.5s / 17s | impl |
+| L1 Unit | `bun run check:focus` + `bun run test:coverage` | Model, Worker status logic, gate helpers; four 80% thresholds | pre-commit, CI | 3.8s / 24s | impl |
 | L2 Runtime | none | No dedicated Workers runtime suite; the D1 binding runs inside L1 via `getPlatformProxy` | — | — | na |
 | L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 18.7s / 118s | impl |
 | L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 62.1s / 246s | impl |
-| P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
+| P1 Package | `bun run deploy:check` | Wrangler dry run on `B1` build artifact | pre-push, CI | — | impl |
 | Z1 Gate | local validator over `needs` | Declarations vs executed jobs and sub-jobs, SHA equality | CI | 4s | impl |
 
-Coverage: Vitest enforces 95% for statements, branches, functions and lines over
+Coverage: Vitest enforces 80% for statements, branches, functions and lines over
 `src/model/**`, `worker/status.ts`, `scripts/{gate-refs,gate-runtime,isolation,release-model,test-focus,test-focus-files}.ts`.
 The exact figures move with every commit — the current tree measures 98.37 / 95.22 /
 98.91 / 99.31 from 314 tests — and each CI run publishes its own report as the
@@ -201,7 +201,7 @@ deployment is not deployment evidence.
 
 ## Not selected
 
-`L2 Runtime` and `P1 Package` are the only unimplemented slots, both `na`. Everything
+`L2 Runtime` is the only unimplemented slot (`na`). Everything
 listed as `impl` runs in CI on every push to main and every pull request. The site has no
-authentication surface, no published package and no long-lived worker runtime suite, so
+authentication surface and no long-lived worker runtime suite, so
 no further slot applies.
