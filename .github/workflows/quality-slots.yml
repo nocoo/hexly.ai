@@ -375,7 +375,7 @@ jobs:
       - run: echo "P1 is not applicable; see SLOT_STATUS for the reason."
 
   catalogue-and-media:
-    name: "Catalogue and media verification"
+    name: "L1: Unit (Catalogue & Media)"
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
@@ -462,7 +462,6 @@ jobs:
       - name: Verify declarations against executed jobs
         env:
           NEEDS_JSON: ${{ toJSON(needs) }}
-          EXTRA_JOBS: '{"catalogue-and-media": "Catalogue and media verification"}'
           EXPECTED_SHA: ${{ github.sha }}
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -472,17 +471,20 @@ jobs:
           from datetime import datetime
 
           SLOT_JOBS = {
-              "S1": ("s1-types", "S1: Types"),
-              "S2": ("s2-lint", "S2: Lint"),
-              "S3": ("s3-workflow", "S3: Workflow"),
-              "G1": ("g1-secrets", "G1: Secrets"),
-              "G2": ("g2-dependencies", "G2: Dependencies"),
-              "B1": ("b1-build", "B1: Build"),
-              "L1": ("l1-unit", "L1: Unit"),
-              "L2": ("l2-runtime", "L2: Runtime"),
-              "L3": ("l3-integration", "L3: Integration"),
-              "L4": ("l4-e2e", "L4: E2E"),
-              "P1": ("p1-package", "P1: Package"),
+              "S1": [("s1-types", "S1: Types")],
+              "S2": [("s2-lint", "S2: Lint")],
+              "S3": [("s3-workflow", "S3: Workflow")],
+              "G1": [("g1-secrets", "G1: Secrets")],
+              "G2": [("g2-dependencies", "G2: Dependencies")],
+              "B1": [("b1-build", "B1: Build")],
+              "L1": [
+                  ("l1-unit", "L1: Unit"),
+                  ("catalogue-and-media", "L1: Unit (Catalogue & Media)"),
+              ],
+              "L2": [("l2-runtime", "L2: Runtime")],
+              "L3": [("l3-integration", "L3: Integration")],
+              "L4": [("l4-e2e", "L4: E2E")],
+              "P1": [("p1-package", "P1: Package")],
           }
           VALID = ("impl", "na", "todo")
 
@@ -494,7 +496,6 @@ jobs:
 
           needs = json.loads(os.environ["NEEDS_JSON"])
           declarations = json.loads(os.environ["SLOT_STATUS"])
-          extra = json.loads(os.environ["EXTRA_JOBS"])
           expected = os.environ["EXPECTED_SHA"]
           wanted = [*SLOT_JOBS, "Z1"]
 
@@ -518,31 +519,25 @@ jobs:
 
           rows = []
           verified = []
-          for slot, (job, name) in SLOT_JOBS.items():
-              state = needs.get(job, {})
-              result = state.get("result", "missing")
-              sha = (state.get("outputs") or {}).get("tested-sha", "")
+          for slot, jobs in SLOT_JOBS.items():
               status = declarations[slot]["status"]
+              reason = declarations[slot].get("reason", "")
+              for job, name in jobs:
+                  state = needs.get(job, {})
+                  result = state.get("result", "missing")
+                  sha = (state.get("outputs") or {}).get("tested-sha", "")
+                  if status == "impl":
+                      if result != "success":
+                          fail(f"{slot} ({name}) is impl but the job finished '{result}'")
+                      if not sha:
+                          fail(f"{slot} ({name}) is impl but reported no tested SHA")
+                      if sha != expected:
+                          fail(f"{slot} ({name}) tested {sha}, expected {expected}")
+                  elif result != "skipped":
+                      fail(f"{slot} ({name}) is {status} but the job finished '{result}'")
+                  rows.append((name, status, reason, result, ""))
               if status == "impl":
-                  if result != "success":
-                      fail(f"{slot} is impl but the job finished '{result}'")
-                  if not sha:
-                      fail(f"{slot} is impl but reported no tested SHA")
-                  if sha != expected:
-                      fail(f"{slot} tested {sha}, expected {expected}")
                   verified.append(slot)
-              elif result != "skipped":
-                  fail(f"{slot} is {status} but the job finished '{result}'")
-              rows.append((name, status, declarations[slot].get("reason", ""), result, ""))
-          for job, name in extra.items():
-              state = needs.get(job, {})
-              result = state.get("result", "missing")
-              sha = (state.get("outputs") or {}).get("tested-sha", "")
-              if result != "success":
-                  fail(f"Blocking job '{name}' finished '{result}'")
-              if sha != expected:
-                  fail(f"Blocking job '{name}' tested {sha or 'nothing'}, expected {expected}")
-              rows.append((name, "blocking", "", result, ""))
 
           durations, wall = {}, ""
           try:
@@ -596,5 +591,5 @@ jobs:
                       handle.write(
                           f"\nCI wall clock **{wall}s** ({verdict} the 300s target / 600s reference limit).\n"
                       )
-          print(f"Z1 verified {len(verified)} implemented slots and {len(extra)} blocking job(s) at {expected}")
+          print(f"Z1 verified {len(verified)} implemented slots at {expected}")
           PY

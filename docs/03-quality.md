@@ -18,7 +18,7 @@ Twelve fixed slots, one required check. The canonical slot definitions live in t
 | L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 18.7s / 118s | impl |
 | L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 62.1s / 246s | impl |
 | P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
-| Z1 Gate | local validator over `needs` | Declarations vs executed jobs, SHA equality, blocking jobs | CI | 4s | impl |
+| Z1 Gate | local validator over `needs` | Declarations vs executed jobs and sub-jobs, SHA equality | CI | 4s | impl |
 
 Coverage: Vitest enforces 95% for statements, branches, functions and lines over
 `src/model/**`, `worker/status.ts`, `scripts/{gate-refs,gate-runtime,isolation,release-model,test-focus,test-focus-files}.ts`.
@@ -93,7 +93,7 @@ Install restores Husky. Checks never auto-fix; never bypass either hook.
 `quality-slots.yml`. The workflow declares `SLOT_STATUS` inline; `Z1: Gate` parses
 `needs`, rejects a missing or unknown slot, an invalid status, an `na`/`todo` without a
 reason, an `impl` slot that did not succeed, any tested SHA that differs from
-`github.sha`, and a blocking job (`Catalogue and media verification`) that did not run or
+`github.sha`, and any sub-job of an implemented slot (such as `L1: Unit (Catalogue & Media)`) that did not run or
 reported another SHA. It then writes the slot table with per-job durations and the CI
 wall clock against the 300s/600s budgets.
 
@@ -101,7 +101,7 @@ wall clock against the 300s/600s budgets.
 `vars.ENABLE_L2_RUNTIME` / `vars.ENABLE_P1_PACKAGE`; flipping a variable without adding
 the real suite fails Z1.
 
-The catalogue and media job is outside the slots but inside Z1's `needs`. It owns
+The catalogue and media job runs under the `L1` slot (`L1: Unit (Catalogue & Media)`) inside Z1's `needs`. It owns
 `assets:check-tracked`, `assets:prepare-test`, `verify-assets.ts`, `social:check`,
 `video:check` and `test:assets`. L1 never hydrates materials or reads `h.no.mt`; a fetch
 guard and a static access scan enforce that.

@@ -45,7 +45,7 @@ bun run verify  # full local sweep (600s; not CI gate)
 
 Follows `system1-quality`; CI slots & pinned `base-ci` live in [`quality-slots.yml`](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main`; admin bypass allows direct pushes). Status: `enforced`, `planned`, `manual`, `N/A`.
 
-- **Exceptions / extra**: `L2 Runtime` `N/A` (D1 in L1 via `getPlatformProxy`, HTTP/E2E in L3/L4); `P1 Package` `N/A` (private). Extra blocking job: `catalogue-and-media`.
+- **Exceptions**: `L2 Runtime` `N/A` (D1 in L1 via `getPlatformProxy`, HTTP/E2E in L3/L4); `P1 Package` `N/A` (private). `L1 Unit` runs two jobs: `L1: Unit` and `L1: Unit (Catalogue & Media)`.
 - **L1 coverage**: 95% ×4 on `src/model/**` (excl. `brand-manifest.ts`, `social-card.ts`), `worker/status.ts`, gate helpers; never hydrates materials or reads `h.no.mt`.
 - **Hooks** (`bun run prepare`, `.husky/`): `pre-commit` (`gate:commit`) checks staged index (tracked binaries, `G1`, `check:focus`, `check:purity`, `S1`, `S2`, `L1`).
 - **Pre-push** (`gate:push`): `git archive` per stdin OID -> `G2`, `G1`, fixtures, `check:isolation`, `B1`, `L3`, `L4`. Details: [Quality](docs/03-quality.md).
