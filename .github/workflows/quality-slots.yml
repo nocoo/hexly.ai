@@ -42,7 +42,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -70,7 +70,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -97,40 +97,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install verified actionlint
-        run: |
-          set -euo pipefail
-          curl --fail --silent --show-error --location --retry 3 \
-            https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz \
-            -o "$RUNNER_TEMP/actionlint.tar.gz"
-          echo "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  $RUNNER_TEMP/actionlint.tar.gz" | sha256sum --check
-          tar -xzf "$RUNNER_TEMP/actionlint.tar.gz" -C "$RUNNER_TEMP" actionlint
-
-      - name: Validate workflow syntax
-        run: '"$RUNNER_TEMP/actionlint"'
-
-      - name: Check immutable base-ci references
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import pathlib, re, sys, yaml
-          files = sorted(pathlib.Path('.github/workflows').glob('*.y*ml'))
-          references = []
-          for path in files:
-              data = yaml.safe_load(path.read_text())
-              for job in data.get('jobs', {}).values():
-                  references.extend(item['uses'] for item in [job, *job.get('steps', [])] if 'uses' in item)
-          for ref in references:
-              if ref.startswith('nocoo/base-ci/') and not re.fullmatch(r'nocoo/base-ci/[^@]+@[a-f0-9]{40}', ref):
-                  sys.exit(f'Shared CI reference must use a full commit SHA: {ref}')
-          print(f'Validated {len(files)} workflows and {len(references)} action references')
-          PY
-
-      - name: Check YAML style
-        run: |
-          set -euo pipefail
-          python3 -m pip install --quiet 'yamllint==1.38.0'
-          yamllint -d '{extends: default, rules: {line-length: disable, document-start: disable, truthy: disable}}' .github/workflows/*.yml
+      - name: Lint workflows
+        uses: nocoo/base-ci/.github/actions/lint-workflows@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
 
       - name: Record SHA
         id: record-sha
@@ -150,11 +118,8 @@ jobs:
           persist-credentials: false
           fetch-depth: 1
 
-      - name: Install verified security scanners
-        uses: nocoo/base-ci/.github/actions/setup-security-scanners@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
-
-      - name: "G1: Secrets"
-        run: gitleaks detect --no-banner --verbose --redact --no-git --config=.gitleaks.toml
+      - name: Scan secrets
+        uses: nocoo/base-ci/.github/actions/scan-secrets@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
 
       - name: Record SHA
         id: record-sha
@@ -173,11 +138,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install verified security scanners
-        uses: nocoo/base-ci/.github/actions/setup-security-scanners@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
-
-      - name: "G2: Dependencies"
-        run: osv-scanner scan source --lockfile bun.lock
+      - name: Scan dependencies
+        uses: nocoo/base-ci/.github/actions/scan-dependencies@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        with:
+          lockfiles: "bun.lock"
 
       - name: Record SHA
         id: record-sha
@@ -197,7 +161,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -227,7 +191,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -254,126 +218,6 @@ jobs:
         if: always()
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-  l2-runtime:
-    name: "L2: Runtime"
-    # No dedicated Workers runtime suite yet; keep the canonical check skipped.
-    if: ${{ vars.ENABLE_L2_RUNTIME == 'true' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - run: echo "L2 is not applicable; see SLOT_STATUS for the reason."
-
-  l3-integration:
-    name: "L3: Integration"
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    outputs:
-      tested-sha: ${{ steps.record-sha.outputs.sha }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          persist-credentials: false
-
-      - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
-        with:
-          package-manager: bun
-          runtime-version: "1.4.4"
-          node-version: "26.12.1"
-          install-policy: project
-
-      - name: Restore verified asset fixtures
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
-        env:
-          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
-        with:
-          path: .wrangler/asset-cache
-          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
-          restore-keys: fixtures-v1-${{ runner.os }}-
-
-      - name: "L3: Integration"
-        run: |
-          bun run assets:prepare-test
-          bun run test:http
-
-      - name: Retain failure evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
-        with:
-          name: l3-integration-evidence
-          path: .test-results/
-          retention-days: 7
-          if-no-files-found: ignore
-
-      - name: Record SHA
-        id: record-sha
-        if: always()
-        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
-  l4-e2e:
-    name: "L4: E2E"
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    outputs:
-      tested-sha: ${{ steps.record-sha.outputs.sha }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          persist-credentials: false
-
-      - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
-        with:
-          package-manager: bun
-          runtime-version: "1.4.4"
-          node-version: "26.12.1"
-          install-policy: project
-
-      # The GitHub image already carries the system libraries; asking apt as well
-      # stalls for minutes when the Ubuntu mirrors are unreachable.
-      - name: Install Chromium
-        timeout-minutes: 5
-        run: bunx playwright install chromium
-
-      - name: Restore verified asset fixtures
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
-        env:
-          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
-        with:
-          path: .wrangler/asset-cache
-          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
-          restore-keys: fixtures-v1-${{ runner.os }}-
-
-      - name: "L4: E2E"
-        run: |
-          bun run assets:prepare-test
-          bun run test:browser
-
-      - name: Retain failure evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
-        with:
-          name: l4-e2e-evidence
-          path: .test-results/
-          retention-days: 7
-          if-no-files-found: ignore
-
-      - name: Record SHA
-        id: record-sha
-        if: always()
-        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
-  p1-package:
-    name: "P1: Package"
-    # Nothing is published from this repository; keep the canonical check skipped.
-    if: ${{ vars.ENABLE_P1_PACKAGE == 'true' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - run: echo "P1 is not applicable; see SLOT_STATUS for the reason."
-
   catalogue-and-media:
     name: "L1: Unit (Catalogue & Media)"
     runs-on: ubuntu-latest
@@ -388,7 +232,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@6424d395d36a815d931f10e557762eb635d511c0  # v2026.16
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -439,6 +283,126 @@ jobs:
         id: record-sha
         if: always()
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  l2-runtime:
+    name: "L2: Runtime"
+    # No dedicated Workers runtime suite yet; keep the canonical check skipped.
+    if: ${{ vars.ENABLE_L2_RUNTIME == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "L2 is not applicable; see SLOT_STATUS for the reason."
+
+  l3-integration:
+    name: "L3: Integration"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: Restore verified asset fixtures
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
+        with:
+          path: .wrangler/asset-cache
+          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
+          restore-keys: fixtures-v1-${{ runner.os }}-
+
+      - name: "L3: Integration"
+        run: |
+          bun run assets:prepare-test
+          bun run test:http
+
+      - name: Retain failure evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: l3-integration-evidence
+          path: .test-results/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  l4-e2e:
+    name: "L4: E2E"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      # The GitHub image already carries the system libraries; asking apt as well
+      # stalls for minutes when the Ubuntu mirrors are unreachable.
+      - name: Install Chromium
+        timeout-minutes: 5
+        run: bunx playwright install chromium
+
+      - name: Restore verified asset fixtures
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
+        with:
+          path: .wrangler/asset-cache
+          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
+          restore-keys: fixtures-v1-${{ runner.os }}-
+
+      - name: "L4: E2E"
+        run: |
+          bun run assets:prepare-test
+          bun run test:browser
+
+      - name: Retain failure evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: l4-e2e-evidence
+          path: .test-results/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  p1-package:
+    name: "P1: Package"
+    # Nothing is published from this repository; keep the canonical check skipped.
+    if: ${{ vars.ENABLE_P1_PACKAGE == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "P1 is not applicable; see SLOT_STATUS for the reason."
 
   z1-gate:
     name: "Z1: Gate"
