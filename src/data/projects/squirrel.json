@@ -1,0 +1,255 @@
+{
+	"id": "squirrel",
+	"repo": "squirrel",
+	"title": "Squirrel",
+	"emoji": "🐿️",
+	"description": {
+		"en": "Personal API key and token vault MCP server on Cloudflare Workers with OAuth 2.1 and Bot Bearer Tokens",
+		"zh": "基于 Cloudflare Workers 的个人级 API Key / Token 托管 MCP 服务，支持 OAuth 2.1 与无头 Bot Token"
+	},
+	"category": "tools",
+	"website": "https://squirrel.hexly.ai",
+	"websiteSource": "wrangler.jsonc custom_domain route and PUBLIC_ORIGIN at 0b2869d9b4a8516808bca812394ecc1618949617; docs/sources/onboarding-squirrel-2026-11-26.json",
+	"repository": "https://github.com/nocoo/squirrel",
+	"subject": "Fragmented russet-orange squirrel head portrait",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/squirrel-family-2026-11-26-01-02.png",
+		"thumbnail": "/logos/display/squirrel-family-2026-11-26-160.webp",
+		"display": "/logos/display/squirrel-family-2026-11-26-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 661253,
+		"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb"
+	},
+	"family": {
+		"id": "2026-11-26-01",
+		"status": "adopted",
+		"updated": "2026-11-26",
+		"finishing": "02",
+		"root": "/logos/family/squirrel/2026-11-26-01/02",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/squirrel/2026-11-26-01",
+		"model": "gemini-nano-banana-2.1",
+		"rawFile": "raw.jpg",
+		"foreground": {
+			"subject": {
+				"en": "Fragmented russet-orange squirrel head portrait",
+				"zh": "赤橙色切面松鼠"
+			},
+			"original": "/logos/family/squirrel/2026-11-26-01/02/transparent.png",
+			"display": "/logos/family/squirrel/2026-11-26-01/02/transparent-1024.webp",
+			"width": 1024,
+			"height": 1024,
+			"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Lower-left edge entry",
+					"zh": "左下入画构图"
+				},
+				"description": {
+					"en": "A tufted-ear squirrel head enters from the bottom-left edge while ears, brow and muzzle clear the upper and right margins.",
+					"zh": "带耳簇的松鼠头部从左下角入画，双耳、额面与吻部远离上沿与右侧留白。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Connected flat facets",
+					"zh": "相连平面切面"
+				},
+				"description": {
+					"en": "Connected irregular flat facets carry russet-orange, warm amber, chestnut brown and cream tones without outlines or surface texture.",
+					"zh": "赤橙、暖琥珀、栗棕与米白不规则相连切面组成主体，无描边与表面肌理。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Woodland oak canopy",
+					"zh": "栎树枝叶背景"
+				},
+				"description": {
+					"en": "Sparse oak twigs and gentle lobed leaf silhouettes along the right margin with fine grain and two soft contact shadows; transparent UI marks exclude all background layers.",
+					"zh": "右侧边缘稀疏栎树枝条与浅色叶影搭配细纸纹和两层浅阴影，透明界面标记不含任何背景层。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#cfd6c4",
+				"role": "background",
+				"label": {
+					"en": "Woodland oak canopy",
+					"zh": "独立栎树纸面"
+				},
+				"source": "artwork/logo-family/squirrel/2026-11-26-01/presentation.json background.base; not a product UI token"
+			},
+			{
+				"color": "#f05423",
+				"role": "primary",
+				"label": {
+					"en": "Russet orange",
+					"zh": "赤橙切面"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (180, 820); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#ed8129",
+				"role": "accent",
+				"label": {
+					"en": "Warm amber",
+					"zh": "暖琥珀切面"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (190, 940); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#9d5431",
+				"role": "accent",
+				"label": {
+					"en": "Chestnut ear",
+					"zh": "栗棕耳簇"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (240, 320); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#fbf3e0",
+				"role": "accent",
+				"label": {
+					"en": "Cream throat",
+					"zh": "米白胸颈"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (350, 990); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 32 and 16 px the twin tufted ears and pointed cheek silhouette remain legible while small muzzle facets merge.",
+			"zh": "32 与 16 px 时双尖耳簇与面颊轮廓清晰可辨，吻部细碎切面自然合并。"
+		}
+	},
+	"theme": {
+		"primary": {
+			"value": "32 95% 44%",
+			"source": "src/components/BasaltProviders.tsx PALETTE_OVERRIDES.primary.light"
+		},
+		"background": {
+			"value": "0 0% 95%",
+			"source": "@nocoo/basalt@3.6.0 dist/styles/standalone.css --basalt-background"
+		},
+		"ink": {
+			"value": "0 0% 10%",
+			"source": "@nocoo/basalt@3.6.0 dist/styles/standalone.css --basalt-foreground"
+		}
+	},
+	"colors": {
+		"primary": "#db7706",
+		"background": "#f2f2f2",
+		"ink": "#1a1a1a",
+		"palette": [
+			{
+				"color": "#f05423",
+				"role": "primary",
+				"label": {
+					"en": "Russet orange",
+					"zh": "赤橙切面"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (180, 820); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#ed8129",
+				"role": "accent",
+				"label": {
+					"en": "Warm amber",
+					"zh": "暖琥珀切面"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (190, 940); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#9d5431",
+				"role": "accent",
+				"label": {
+					"en": "Chestnut ear",
+					"zh": "栗棕耳簇"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (240, 320); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			},
+			{
+				"color": "#fbf3e0",
+				"role": "accent",
+				"label": {
+					"en": "Cream throat",
+					"zh": "米白胸颈"
+				},
+				"source": "Native 15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f, sRGB pixel (350, 990); artwork/logo-family/squirrel/2026-11-26-01/palette.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "9ba9f30b857ce1b86e3020dd645ae60f0339399c",
+		"profileSection": "Recent Projects",
+		"description": "Personal API key and token vault MCP server on Cloudflare Workers with OAuth 2.1 and Bot Bearer Tokens",
+		"repositoryRevision": "0b2869d9b4a8516808bca812394ecc1618949617",
+		"statusEvidence": {
+			"path": "docs/sources/onboarding-squirrel-2026-11-26.json",
+			"sha256": "606621cc94d732cc939ebf75c38eae0dd74a6392752f9866feb3f2a2983e0abd"
+		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Provide a personal API key and token vault on Cloudflare Workers that dispatches low-sensitivity credentials on demand to Gemini, Claude Code, Cursor and CI agents over Streamable HTTP MCP, OAuth 2.1 + PKCE and headless Bot Bearer Tokens with folder/secret ACLs, AES-256-GCM encryption and 90-day audit retention.",
+			"zh": "部署在 Cloudflare Workers 上的个人级 API Key / Token 托管服务，通过标准 Streamable HTTP MCP、OAuth 2.1 + PKCE 与无头 Bot Bearer Token 向 Gemini、Claude Code、Cursor 及自动化 Agent 按需分发低敏凭证，支持文件夹与单密钥细粒度授权、AES-256-GCM 加密及 90 天审计留存。"
+		},
+		"techStack": [
+			{
+				"name": "Hono / Cloudflare Workers",
+				"role": {
+					"en": "Streamable HTTP MCP endpoint, OAuth 2.1 authorization server and CF Access admin API",
+					"zh": "Streamable HTTP MCP 服务端、OAuth 2.1 授权服务与 Cloudflare Access 管理接口"
+				}
+			},
+			{
+				"name": "D1 / KV / AES-256-GCM",
+				"role": {
+					"en": "Encrypted secret storage with per-secret IV/AAD, OAuth KV state and 90-day audit log pruning",
+					"zh": "独立随机 IV 与 AAD 的 AES-256-GCM 密钥加密存储、OAuth KV 状态与 90 天定时审计清理"
+				}
+			},
+			{
+				"name": "React 19 / Vite 8 / Basalt",
+				"role": {
+					"en": "Amber-themed vault console and OAuth scope approval UI",
+					"zh": "琥珀色主题密钥托管控制台与 OAuth 作用域授权界面"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-11-26",
+			"revision": "0b2869d9b4a8516808bca812394ecc1618949617",
+			"readmes": {
+				"en": "README.md",
+				"zh": "README.md"
+			},
+			"sources": [
+				"README.md",
+				"package.json",
+				"wrangler.jsonc",
+				"AGENTS.md",
+				"worker/src/index.ts"
+			]
+		}
+	},
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/squirrel/v1.0.0",
+		"width": 1024,
+		"height": 1024
+	}
+}

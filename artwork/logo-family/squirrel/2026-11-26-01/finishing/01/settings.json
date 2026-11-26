@@ -1,0 +1,67 @@
+{
+	"project": "squirrel",
+	"series": "character",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [],
+	"background": {
+		"base": "#cfd6c4",
+		"light": "#e7ece0",
+		"shade": "#aeb9a0",
+		"motif": "#5b6d4c",
+		"grainAmplitude": 0.65,
+		"grainSeed": 20261126,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.28,
+		"ribbonOpacity": 0.14,
+		"pattern": {
+			"name": "Woodland oak canopy",
+			"description": "Sparse oak twigs and gentle lobed leaf silhouettes along the upper-right and lower-right margins; quiet woodland habitat behind the squirrel portrait.",
+			"layers": [
+				{
+					"d": "M706 -16Q748 112 838 206Q904 274 1038 296 M848 214Q920 144 1024 128 M822 1038Q854 904 934 832Q982 788 1038 770",
+					"tone": "motif",
+					"strokeWidth": 2.2
+				},
+				{
+					"d": "M786 154Q776 96 814 78Q830 112 818 158Z M916 184Q952 138 986 150Q972 190 924 198Z M886 878Q860 822 894 794Q920 828 906 876Z M954 920Q996 880 1018 904Q996 942 952 936Z",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [52, 61, 41],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [36, 44, 28],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": ["left", "bottom"],
+		"note": "Native 1024x1024 portrait retained without scaling or recoloring; lower-left neck and shoulder enter the frame intentionally while the ears and muzzle keep positive clearance from the top and right edges."
+	},
+	"matte": {
+		"minimumChannel": 244,
+		"maximumChroma": 14,
+		"backgroundRgb": [255, 255, 255],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Exterior JPEG matte samples range from RGB 251..255 with chroma <= 2, while the lightest cream throat facet sits around [251,243,224] (low 224, chroma 27). Border-connected extraction only, preserving cream throat/cheek facets and enclosed eye specular."
+	}
+}

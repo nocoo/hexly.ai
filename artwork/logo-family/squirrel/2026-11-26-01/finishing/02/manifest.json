@@ -1,0 +1,342 @@
+{
+	"createdAt": "2026-11-26T02:18:56.827Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.jpg",
+		"sha256": "15dee7abd4a3b0f9de35d4b688693424566a4c9f60f87f20cfdafba42b30993f",
+		"width": 1024,
+		"height": 1024
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "squirrel",
+		"series": "character",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": [],
+		"background": {
+			"base": "#cfd6c4",
+			"light": "#e7ece0",
+			"shade": "#aeb9a0",
+			"motif": "#5b6d4c",
+			"grainAmplitude": 0.65,
+			"grainSeed": 20261126,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.28,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Woodland oak canopy",
+				"description": "Sparse oak twigs and gentle lobed leaf silhouettes along the upper-right and lower-right margins; quiet woodland habitat behind the squirrel portrait.",
+				"layers": [
+					{
+						"d": "M706 -16Q748 112 838 206Q904 274 1038 296 M848 214Q920 144 1024 128 M822 1038Q854 904 934 832Q982 788 1038 770",
+						"tone": "motif",
+						"strokeWidth": 2.2
+					},
+					{
+						"d": "M786 154Q776 96 814 78Q830 112 818 158Z M916 184Q952 138 986 150Q972 190 924 198Z M886 878Q860 822 894 794Q920 828 906 876Z M954 920Q996 880 1018 904Q996 942 952 936Z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					52,
+					61,
+					41
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					36,
+					44,
+					28
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"left",
+				"bottom"
+			],
+			"note": "Native 1024x1024 portrait retained without scaling or recoloring; lower-left neck and shoulder enter the frame intentionally while the ears and muzzle keep positive clearance from the top and right edges."
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				255,
+				255,
+				255
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 600,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Pass 02 lowers minimumChannel from 244 to 235 (chroma <= 18, edgeBand 3) to decontaminate 1px JPEG boundary ringing at ear tufts and chin on dark surfaces while keeping the lightest cream throat facet ([251,243,224], low 224, chroma 27) untouched."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 653738,
+		"foregroundPixels": 394838,
+		"softEdgePixels": 6299,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 166,
+			"right": 746,
+			"bottom": 1023
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 166,
+			"right": 746,
+			"bottom": 1023
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -96.84847142892474,
+		"clippedPixels": 11901
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2168,
+			"sha256": "77d95d2fb06731b8cc44931fea317532c894f599c2d7284a862599e78667fc83"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1376,
+			"sha256": "6bd849f1236b89264bc7e47d811a3bcb52559fc582b74315667c5f6377e3beb6"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 661253,
+			"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 30034,
+			"sha256": "ee20bdbd0fb2ad28e69d10cbde5e04f89957c2ba48c723603ea7cf3e9fef2ca2"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 799,
+			"sha256": "83270ad27f86a3286de4c4a8ba31e9ba12cbebb585d7c0088a365ffd39a8078a"
+		},
+		{
+			"path": "background.png",
+			"bytes": 454943,
+			"sha256": "93ae3ddbf4049d562db5926205ca0c8857bc4b597e3ae2a9bb03a7b7fc7aa8de"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 50401,
+			"sha256": "ae442d79d74b0d39ad1b6b418905d608c85c35ab3cd65315063c6cae1776d27d"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 38373,
+			"sha256": "9a51e6a188047aea322fec73431a7a1f12e21ecff5b85464ffb8002c408bb908"
+		},
+		{
+			"path": "exports/squirrel-transparent-1024.png",
+			"bytes": 661253,
+			"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb"
+		},
+		{
+			"path": "exports/squirrel-icon-1024.png",
+			"bytes": 1035197,
+			"sha256": "7332b429072019c49009e258e0c682d8c690f9542137001f08d0b11ab93cf344"
+		},
+		{
+			"path": "exports/squirrel-rounded-1024.png",
+			"bytes": 1012686,
+			"sha256": "462fc8f15d62be6f3b0e937bbdffe0cb6365eca3662851041afdc55fc70e88d8"
+		},
+		{
+			"path": "exports/squirrel-transparent-512.png",
+			"bytes": 210497,
+			"sha256": "b43a8297f674c59b5fd6b58e99c3be4d51e211eba923da29575ed30f1311b045"
+		},
+		{
+			"path": "exports/squirrel-icon-512.png",
+			"bytes": 283313,
+			"sha256": "9d82a6915116cf02cc6a5fc8c751773a06185f17bb3d4f5355943947033759e1"
+		},
+		{
+			"path": "exports/squirrel-rounded-512.png",
+			"bytes": 284328,
+			"sha256": "75023159836fc5bc3eff4d5a6654cb3f3354ede70d478e2f4c85c2eea9402140"
+		},
+		{
+			"path": "exports/squirrel-transparent-256.png",
+			"bytes": 62340,
+			"sha256": "3646f70a6684ad4216e24f0ca4064e0fbf798c9af994d815485a449e474bb6db"
+		},
+		{
+			"path": "exports/squirrel-icon-256.png",
+			"bytes": 93052,
+			"sha256": "f928b74d69a2cdf1aacdfc0278f1f37c709574eff7afac2a71db6abbd98d21ae"
+		},
+		{
+			"path": "exports/squirrel-rounded-256.png",
+			"bytes": 94053,
+			"sha256": "c039cdb22699ccd35333502ef7b121a896d8679b1b7d8ab564fdb2e69fdcac01"
+		},
+		{
+			"path": "exports/squirrel-transparent-128.png",
+			"bytes": 19445,
+			"sha256": "6daf594df0bbdc7d5fa4b591b7f92f332cd3331b367e9f86820894f84ca48a08"
+		},
+		{
+			"path": "exports/squirrel-icon-128.png",
+			"bytes": 24700,
+			"sha256": "a1e0276d1d9d1e96a608a5c741e094dd1bb75ade722c35214c67876e36d71ebf"
+		},
+		{
+			"path": "exports/squirrel-rounded-128.png",
+			"bytes": 26089,
+			"sha256": "841a27f95b5c37d3993a019d80703f6ea1e70bb6577b497806474088ad5ba6a5"
+		},
+		{
+			"path": "exports/squirrel-transparent-64.png",
+			"bytes": 6161,
+			"sha256": "e66baec7b1f4ee0c9e88d2adf0884febb9b9ccec32483db80779c538610c2cb9"
+		},
+		{
+			"path": "exports/squirrel-icon-64.png",
+			"bytes": 8689,
+			"sha256": "eb17bf75ac93959abb6e6782a9d3e69314f266a71fd33db3a12d7a32cd30c699"
+		},
+		{
+			"path": "exports/squirrel-rounded-64.png",
+			"bytes": 9215,
+			"sha256": "1d1052d4069a8db962c560f46a5a985d3d3c2ed8f9dea2d38cef56375171e395"
+		},
+		{
+			"path": "exports/squirrel-transparent-48.png",
+			"bytes": 3832,
+			"sha256": "f8bfa850cb07a701db3687b1cbe510c653084f419ece311b2d0e10deb25fec9d"
+		},
+		{
+			"path": "exports/squirrel-icon-48.png",
+			"bytes": 5270,
+			"sha256": "18000642ecef967931e437b48214585a7c6491ba39d5282790276c1c49d215db"
+		},
+		{
+			"path": "exports/squirrel-rounded-48.png",
+			"bytes": 5662,
+			"sha256": "edbce963b586fe94c3794ede909ba266b5183dd7347334136967ec18ab1d76e8"
+		},
+		{
+			"path": "exports/squirrel-transparent-32.png",
+			"bytes": 1962,
+			"sha256": "17d40f6cd45af5b72540e3ddb60c7cb98624153a477593c7ce07946365fba462"
+		},
+		{
+			"path": "exports/squirrel-icon-32.png",
+			"bytes": 2802,
+			"sha256": "cededdf40bc53fd54878e42137cdaba8a0a042554af436188b9193e97a093514"
+		},
+		{
+			"path": "exports/squirrel-rounded-32.png",
+			"bytes": 2951,
+			"sha256": "b6fab8fcebd85f0fa6f8910b9f109b094ec355e5e3b2c38d8ce1e1280fa26b40"
+		},
+		{
+			"path": "exports/squirrel-transparent-24.png",
+			"bytes": 1252,
+			"sha256": "397633c0b19874e772cf6d93fe2d473d01ec45d84ecece3d5645763f3db51002"
+		},
+		{
+			"path": "exports/squirrel-icon-24.png",
+			"bytes": 1760,
+			"sha256": "44d91e3656ddc17404e5121811073a5d1c728ba2e75258e1128ac47979620b04"
+		},
+		{
+			"path": "exports/squirrel-rounded-24.png",
+			"bytes": 1879,
+			"sha256": "963e39808a9b13c4a4508e2c1c125f39655394776b487d432f0c1765f89157ca"
+		},
+		{
+			"path": "exports/squirrel-transparent-16.png",
+			"bytes": 709,
+			"sha256": "0665899d738e3f34fa5e96c9b898967a85af2a420cb8387f127b59e3e1f57dff"
+		},
+		{
+			"path": "exports/squirrel-icon-16.png",
+			"bytes": 939,
+			"sha256": "6ce0d3d13684d7a09602c51efcf6c02f642ed43d78062bf9052d9c9a427e3267"
+		},
+		{
+			"path": "exports/squirrel-rounded-16.png",
+			"bytes": 979,
+			"sha256": "567b49b38dbafd6c73ab5773ae1aee975ed9bee3ca1a9262d4daf63eb37123de"
+		},
+		{
+			"path": "exports/squirrel-white-1024.png",
+			"bytes": 629476,
+			"sha256": "c9fe07d9383616c2f165e9518654215df5839ff306437f2a95737edbd861003f"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 636691,
+			"sha256": "127828d5bfe8e4850a30a61accc206632721e5c53333f45e08bec2a625a3fbcd"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 636426,
+			"sha256": "b31744195f67e696b9450290d368b5918df127854f20c70b6c5d7987a859b076"
+		}
+	]
+}
