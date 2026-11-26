@@ -5,7 +5,7 @@ export default defineConfig({
 	fullyParallel: true,
 	forbidOnly: true,
 	retries: 0,
-	workers: 3,
+	workers: 4,
 	reporter: [
 		["list"],
 		["json", { outputFile: ".test-results/browser/report.json" }],

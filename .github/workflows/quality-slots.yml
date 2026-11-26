@@ -1,6 +1,6 @@
 # System0 quality slots, implemented natively for hexly.ai.
 # Canonical check names are `quality / <ID>: <Name>`; `Z1: Gate` is the only
-# required check. See docs/03-quality.md and nocoo/workflow system0-quality.
+# required check. See docs/03-quality.md and nocoo/base-ci v2026.18.
 name: Quality Slots
 
 on:
@@ -14,19 +14,6 @@ env:
   WRANGLER_SEND_METRICS: "false"
   WRANGLER_LOG_PATH: ".wrangler/verification.log"
   WRANGLER_LOG_SANITIZE: "true"
-  SLOT_STATUS: >-
-    {"S1": {"status": "impl"},
-    "S2": {"status": "impl"},
-    "S3": {"status": "impl"},
-    "G1": {"status": "impl"},
-    "G2": {"status": "impl"},
-    "B1": {"status": "impl"},
-    "L1": {"status": "impl"},
-    "L2": {"status": "na", "reason": "No dedicated Workers runtime suite; the D1 binding is exercised inside L1 through getPlatformProxy, and HTTP/browser behaviour runs in L3/L4."},
-    "L3": {"status": "impl"},
-    "L4": {"status": "impl"},
-    "P1": {"status": "impl"},
-    "Z1": {"status": "impl"}}
 
 jobs:
   s1-types:
@@ -42,7 +29,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -70,7 +57,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -98,7 +85,7 @@ jobs:
           persist-credentials: false
 
       - name: Lint workflows
-        uses: nocoo/base-ci/.github/actions/lint-workflows@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/lint-workflows@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
 
       - name: Record SHA
         id: record-sha
@@ -119,7 +106,7 @@ jobs:
           fetch-depth: 1
 
       - name: Scan secrets
-        uses: nocoo/base-ci/.github/actions/scan-secrets@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/scan-secrets@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
 
       - name: Record SHA
         id: record-sha
@@ -139,7 +126,7 @@ jobs:
           persist-credentials: false
 
       - name: Scan dependencies
-        uses: nocoo/base-ci/.github/actions/scan-dependencies@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/scan-dependencies@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           lockfiles: "bun.lock"
 
@@ -161,7 +148,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -196,7 +183,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -237,7 +224,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -245,7 +232,7 @@ jobs:
           install-policy: project
 
       - name: Restore verified asset fixtures
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         env:
           SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
         with:
@@ -291,15 +278,16 @@ jobs:
 
   l2-runtime:
     name: "L2: Runtime"
-    # No dedicated Workers runtime suite yet; keep the canonical check skipped.
     if: ${{ vars.ENABLE_L2_RUNTIME == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - run: echo "L2 is not applicable; see SLOT_STATUS for the reason."
+      - run: echo "L2 is not applicable; D1 binding is exercised in L1 via getPlatformProxy."
 
   l3-integration:
     name: "L3: Integration"
+    needs:
+      - b1-build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     outputs:
@@ -311,15 +299,21 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
           node-version: "26.12.1"
           install-policy: project
 
+      - name: Download build artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
+        with:
+          name: b1-dist
+          path: dist
+
       - name: Restore verified asset fixtures
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         env:
           SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
         with:
@@ -329,8 +323,9 @@ jobs:
 
       - name: "L3: Integration"
         run: |
+          bun run check:isolation
           bun run assets:prepare-test
-          bun run test:http
+          bunx playwright test --config playwright.http.config.ts
 
       - name: Retain failure evidence
         if: always()
@@ -348,8 +343,10 @@ jobs:
 
   l4-e2e:
     name: "L4: E2E"
+    needs:
+      - b1-build
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     outputs:
       tested-sha: ${{ steps.record-sha.outputs.sha }}
     steps:
@@ -359,21 +356,27 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
           node-version: "26.12.1"
           install-policy: project
 
-      # The GitHub image already carries the system libraries; asking apt as well
-      # stalls for minutes when the Ubuntu mirrors are unreachable.
-      - name: Install Chromium
-        timeout-minutes: 5
-        run: bunx playwright install chromium
+      - name: Download build artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
+        with:
+          name: b1-dist
+          path: dist
+
+      - name: Setup Playwright
+        uses: nocoo/base-ci/.github/actions/setup-playwright@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        with:
+          package-manager: bun
+          browsers: chromium
 
       - name: Restore verified asset fixtures
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         env:
           SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
         with:
@@ -383,8 +386,9 @@ jobs:
 
       - name: "L4: E2E"
         run: |
+          bun run check:isolation
           bun run assets:prepare-test
-          bun run test:browser
+          bunx playwright test
 
       - name: Retain failure evidence
         if: always()
@@ -415,7 +419,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7  # v2026.17
+        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -454,138 +458,26 @@ jobs:
       - catalogue-and-media
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    outputs:
+      tested-sha: ${{ steps.gate.outputs.tested-sha }}
     steps:
-      - name: Verify declarations against executed jobs
-        env:
-          NEEDS_JSON: ${{ toJSON(needs) }}
-          EXPECTED_SHA: ${{ github.sha }}
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import json, os, sys, urllib.request
-          from datetime import datetime
-
-          SLOT_JOBS = {
-              "S1": [("s1-types", "S1: Types")],
-              "S2": [("s2-lint", "S2: Lint")],
-              "S3": [("s3-workflow", "S3: Workflow")],
-              "G1": [("g1-secrets", "G1: Secrets")],
-              "G2": [("g2-dependencies", "G2: Dependencies")],
-              "B1": [("b1-build", "B1: Build")],
-              "L1": [
-                  ("l1-unit", "L1: Unit"),
-                  ("catalogue-and-media", "L1: Unit (Catalogue & Media)"),
-              ],
-              "L2": [("l2-runtime", "L2: Runtime")],
-              "L3": [("l3-integration", "L3: Integration")],
-              "L4": [("l4-e2e", "L4: E2E")],
-              "P1": [("p1-package", "P1: Package")],
-          }
-          VALID = ("impl", "na", "todo")
-
-
-          def fail(message):
-              sys.stderr.write(f"::error::{message}\n")
-              sys.exit(1)
-
-
-          needs = json.loads(os.environ["NEEDS_JSON"])
-          declarations = json.loads(os.environ["SLOT_STATUS"])
-          expected = os.environ["EXPECTED_SHA"]
-          wanted = [*SLOT_JOBS, "Z1"]
-
-          unknown = sorted(set(declarations) - set(wanted))
-          if unknown:
-              fail(f"SLOT_STATUS declares unknown slots: {', '.join(unknown)}")
-          missing = [slot for slot in wanted if slot not in declarations]
-          if missing:
-              fail(f"SLOT_STATUS is missing: {', '.join(missing)}")
-          for slot in wanted:
-              entry = declarations[slot]
-              status = entry.get("status")
-              if status not in VALID:
-                  fail(f"{slot} has an invalid status '{status}'")
-              if status in ("na", "todo") and not str(entry.get("reason", "")).strip():
-                  fail(f"{slot} is {status} without a reason")
-          if declarations["Z1"]["status"] != "impl":
-              fail("Z1 must be impl")
-          if not [slot for slot in SLOT_JOBS if declarations[slot]["status"] == "impl"]:
-              fail("No slot other than Z1 is implemented")
-
-          rows = []
-          verified = []
-          for slot, jobs in SLOT_JOBS.items():
-              status = declarations[slot]["status"]
-              reason = declarations[slot].get("reason", "")
-              for job, name in jobs:
-                  state = needs.get(job, {})
-                  result = state.get("result", "missing")
-                  sha = (state.get("outputs") or {}).get("tested-sha", "")
-                  if status == "impl":
-                      if result != "success":
-                          fail(f"{slot} ({name}) is impl but the job finished '{result}'")
-                      if not sha:
-                          fail(f"{slot} ({name}) is impl but reported no tested SHA")
-                      if sha != expected:
-                          fail(f"{slot} ({name}) tested {sha}, expected {expected}")
-                  elif result != "skipped":
-                      fail(f"{slot} ({name}) is {status} but the job finished '{result}'")
-                  rows.append((name, status, reason, result, ""))
-              if status == "impl":
-                  verified.append(slot)
-
-          durations, wall = {}, ""
-          try:
-              token = os.environ.get("GITHUB_TOKEN", "")
-              repo = os.environ["GITHUB_REPOSITORY"]
-              run_id = os.environ["GITHUB_RUN_ID"]
-              api = os.environ.get("GITHUB_API_URL", "https://api.github.com").rstrip("/")
-              headers = {
-                  "Authorization": f"Bearer {token}",
-                  "Accept": "application/vnd.github+json",
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "hexly-z1-gate",
-              }
-
-              def get_json(url):
-                  request = urllib.request.Request(url, headers=headers)
-                  with urllib.request.urlopen(request, timeout=60) as response:
-                      return json.loads(response.read().decode("utf-8"))
-
-              fmt = "%Y-%m-%dT%H:%M:%SZ"
-              payload = get_json(f"{api}/repos/{repo}/actions/runs/{run_id}/jobs?per_page=100")
-              for job in payload.get("jobs", []):
-                  start, end = job.get("started_at"), job.get("completed_at")
-                  if start and end:
-                      durations[job["name"]] = int(
-                          (datetime.strptime(end, fmt) - datetime.strptime(start, fmt)).total_seconds()
-                      )
-              run = get_json(f"{api}/repos/{repo}/actions/runs/{run_id}")
-              if run.get("run_started_at") and run.get("updated_at"):
-                  wall = int(
-                      (
-                          datetime.strptime(run["updated_at"], fmt)
-                          - datetime.strptime(run["run_started_at"], fmt)
-                      ).total_seconds()
-                  )
-          except Exception as exc:  # noqa: BLE001 - the summary is not a gate
-              print(f"Z1 summary: Actions metadata unavailable ({exc})", file=sys.stderr)
-
-          summary = os.environ.get("GITHUB_STEP_SUMMARY")
-          if summary:
-              with open(summary, "a", encoding="utf-8") as handle:
-                  handle.write("| Slot | Status | Reason | Result | Seconds |\n")
-                  handle.write("| --- | --- | --- | --- | --- |\n")
-                  for name, status, reason, result, _ in rows:
-                      handle.write(
-                          f"| {name} | {status} | {reason or '—'} | {result} | {durations.get(name, '—')} |\n"
-                      )
-                  handle.write(f"| Z1: Gate | impl | — | success | {durations.get('Z1: Gate', '—')} |\n")
-                  if wall != "":
-                      verdict = "within" if wall <= 600 else "over"
-                      handle.write(
-                          f"\nCI wall clock **{wall}s** ({verdict} the 300s target / 600s reference limit).\n"
-                      )
-          print(f"Z1 verified {len(verified)} implemented slots at {expected}")
-          PY
+      - name: Verify quality slots
+        id: gate
+        uses: nocoo/base-ci/.github/actions/z1-gate@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        with:
+          needs-json: ${{ toJSON(needs) }}
+          expected-sha: ${{ github.sha }}
+          required-jobs: |
+            s1-types=S1: Types
+            s2-lint=S2: Lint
+            s3-workflow=S3: Workflow
+            g1-secrets=G1: Secrets
+            g2-dependencies=G2: Dependencies
+            b1-build=B1: Build
+            l1-unit=L1: Unit
+            catalogue-and-media=L1: Unit (Catalogue & Media)
+            l3-integration=L3: Integration
+            l4-e2e=L4: E2E
+            p1-package=P1: Package
+          skipped-jobs: |
+            l2-runtime=L2: Runtime
