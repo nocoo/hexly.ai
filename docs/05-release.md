@@ -51,7 +51,7 @@ or a skipped deployment as publication. GitHub Release notes link both runs.
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.
 
 The shared deployment workflow is pinned at
-`98fc023423f82b010f17e0ebbc9dd580fe68736a` (`v2026.19`). It delegates publication to
+`e5876a604547b1ddb0916f16dd841a4f832609a0` (`v2026.20`). It delegates publication to
 `bun run deploy:worker`, using the project's frozen CLI resolution rather than a
 second exact-version input. The script applies D1 migrations before deploying;
 the shared workflow retains source-run, main-freshness and credential boundaries.
