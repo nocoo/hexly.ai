@@ -1,0 +1,42 @@
+{
+	"startedAt": "2026-11-26T02:11:43.000000+00:00",
+	"provider": "Google Gemini Nano Banana (system0-image-generation-nano-banana)",
+	"endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-nano-banana-2.1:generateContent",
+	"method": "POST",
+	"parameters": {
+		"model": "gemini-nano-banana-2.1",
+		"aspectRatio": "1:1",
+		"n": 1
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "105200865c1c1f46fc43207976c5ccf7d32d26a6b7afee642665e8e55cc0c33a",
+	"images": [
+		{
+			"index": 1,
+			"path": "../../../../public/logos/display/noheir-1024.webp",
+			"sha256": "9fd11606ff77eb9a121016b63093823df4bd8f98c45771573711de0b89863d96",
+			"bytes": 66188,
+			"mime": "image/webp"
+		},
+		{
+			"index": 2,
+			"path": "../../../../public/logos/display/falcon-1024.webp",
+			"sha256": "cfcdab97557f0d6a663f7d7607c5b89ebb06dfea68ccb28683354c6f0683126b",
+			"bytes": 66834,
+			"mime": "image/webp"
+		},
+		{
+			"index": 3,
+			"path": "../../../../public/logos/display/octo-family-2026-10-18-1024.webp",
+			"sha256": "6a79143efbfa6f4c0caf625f1e978c86e3d9761b69d34b2435d03424383f49a9",
+			"bytes": 86034,
+			"mime": "image/webp"
+		}
+	],
+	"tool": "~/.agents/skills/system0-image-generation-nano-banana/scripts/generate.py",
+	"notes": [
+		"Local ~/.config/system0/image-generation.json lacks gpt credentials.",
+		"Local Magpie gateway (http://127.0.0.1:3425) returned HTTP 403 (jp4.via.mt / jp6.via.mt error code: 1010) for GPT Image 2.5.",
+		"Owner explicitly authorized Nano Banana (gemini-nano-banana-2.1) for this generation."
+	]
+}
