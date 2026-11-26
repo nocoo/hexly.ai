@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "workflow-sdk",
+	"version": "1.0.0",
+	"root": "/textures/workflow-sdk/v1.0.0",
+	"canonical": "https://hexly.ai/projects/workflow-sdk#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/workflow-sdk/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Dual-kernel routing bench", "zh": "双核分流压纹纸面" },
+		"description": {
+			"en": "Blind-embossed split-channel routing grooves, circular terminal seats and rotary detent arcs pressed across matte pressboard.",
+			"zh": "在全画幅哑光压纹纸板上压出分流双通道导槽、圆形终端座与旋转档位点弧线，呼应双内核切换工具。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gemini-nano-banana-2.1",
+		"surfaceOpacity": 0.41
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/workflow-sdk-family-2026-11-20-01-01.png",
+		"sha256": "c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd",
+		"rgbaSha256": "d9995761a28973b28639b372ef9e0f9c57b4d8d926bfab7060c3995a85700d59",
+		"source": "https://github.com/nocoo/workflow-sdk/blob/301aad6deccb80c8cc02ff696553859e31ddf7b7/logo.png",
+		"bytes": 1062184,
+		"width": 1024,
+		"height": 1024,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/workflow-sdk/texture-studies/2026-11-26-nano-01/light",
+			"request": "/textures/workflow-sdk/v1.0.0/source-light-request.json",
+			"response": "/textures/workflow-sdk/v1.0.0/source-light-response.json",
+			"prompt": "/textures/workflow-sdk/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/workflow-sdk/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/workflow-sdk/v1.0.0/texture-light.jpg",
+				"sha256": "812b58fb77da1d786722e439c197e4ada5cb06ae856ed17e7bbf4a03a4760940",
+				"bytes": 792673,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/workflow-sdk/texture-studies/2026-11-26-nano-01/dark",
+			"request": "/textures/workflow-sdk/v1.0.0/source-dark-request.json",
+			"response": "/textures/workflow-sdk/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/workflow-sdk/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/workflow-sdk/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/workflow-sdk/v1.0.0/texture-dark.jpg",
+				"sha256": "e783a58a1cd175bc0e1ddcabdd9af4989a81978c4699f2a4627a370cf5a65b6d",
+				"bytes": 715645,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-light.jpg",
+			"role": "Untouched native Gemini Nano Banana JPEG; full canvas and metadata preserved",
+			"bytes": 792673,
+			"sha256": "812b58fb77da1d786722e439c197e4ada5cb06ae856ed17e7bbf4a03a4760940"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 183886,
+			"sha256": "116168e2ddbf4bb13159e7a7d028c5b1215b6952c937048f30730f318d03c55b"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 11210,
+			"sha256": "90fee5ccba7f9ac88934b9c464c2caf497861982122d05a6b602b8524e32255c"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2170,
+			"sha256": "8a332d97a377362b28cc702b3f91eefccdc2affe25405b6b7e049153109d8440"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 336,
+			"sha256": "6ceeacf0c8f9d9477e0daa45f054169ccbe201befd457d84881788613802a653"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 427,
+			"sha256": "e74292d80fda6a50f984d3c565cc3bf971d1eddd9be5efac395c0cfa45d8642a"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 719,
+			"sha256": "1321ac471021fde00f16866afbe70caecec404713676aed62545ad75b4f3d270"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-dark.jpg",
+			"role": "Untouched native Gemini Nano Banana JPEG; full canvas and metadata preserved",
+			"bytes": 715645,
+			"sha256": "e783a58a1cd175bc0e1ddcabdd9af4989a81978c4699f2a4627a370cf5a65b6d"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 121286,
+			"sha256": "b547f6172ad2c0dbf24b85ffea146350a4c1042fad8c0ff15832be66ec920b9c"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7678,
+			"sha256": "13f4b592354898b0942920efc99c9050438a44c173dfe35e26f7672b14335676"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2164,
+			"sha256": "1a0ff7c0703e3fbcd917b999302496540e5e743c34c5fcd75b0f011d6227cb86"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 335,
+			"sha256": "4435630e6a291f244474bcb2c42623ad58b5798927f8c7f99f91ac46cd899bec"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 426,
+			"sha256": "352bd1251d5ca6203f8b468531cbdff0bfef14f2d9aaee969c46ad2a2e545aa5"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 716,
+			"sha256": "5546a7041bf7d37b5a92011086b24ea5bfdae38a8fa62c535dd4b59769a7dd85"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4750,
+			"sha256": "6bd3603752835b0ce9abb13a0c12834a2d68421b6809aba61bd12760b033dcd2"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1317,
+			"sha256": "fd0daaaeb5dfa09c071e56789ea8c7111ef8bf7f2f2f197df6d7f2528d58dade"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1764,
+			"sha256": "3f046663df5a74bd06698472328d187fc786c2688b4a524d2298fb042199a1ac"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2596,
+			"sha256": "6f90d9e47a31352e062631c45b0643e9d0818c46918b24f219c9ec7ed095065f"
+		},
+		{
+			"path": "/textures/workflow-sdk/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3684,
+			"sha256": "e7a9d625fe6b331570790063534ee80e8fccfab654bb93ef128f5e32a4119580"
+		}
+	]
+}

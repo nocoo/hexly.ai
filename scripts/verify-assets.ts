@@ -53,15 +53,19 @@ for (const project of projects) {
 		const manifest = JSON.parse(
 			await readFile(`public${icon.root}/manifest.json`, "utf8"),
 		);
-		const texturePath =
+		const allowedTextures = [
+			`${project.brandTexture?.root}/texture-light.png`,
+			`${project.brandTexture?.root}/texture-light.jpg`,
+		];
+		const textureOk =
 			manifest.texture.sourceMethod === "authored-family-background"
-				? `${project.family?.root}/background.png`
-				: `${project.brandTexture?.root}/texture-light.png`;
+				? manifest.texture.path === `${project.family?.root}/background.png`
+				: allowedTextures.includes(manifest.texture.path);
 		if (
 			manifest.project !== project.id ||
 			manifest.version !== icon.version ||
 			manifest.foreground.sha256 !== project.family?.foreground.sha256 ||
-			manifest.texture.path !== texturePath ||
+			!textureOk ||
 			manifest.width !== icon.width ||
 			manifest.height !== icon.height ||
 			manifest.generationCalls !== 0 ||

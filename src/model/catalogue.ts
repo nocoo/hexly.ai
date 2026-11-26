@@ -205,9 +205,11 @@ export function catalogueProblems(projects: Project[]): string[] {
 						(kit.texture.display !== undefined &&
 							!["repeat", "single"].includes(kit.texture.display)) ||
 						(kit.texture.model !== undefined &&
-							(!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
-								kit.texture.model,
-							) ||
+							(![
+								"gpt-image-2.5-flare",
+								"gpt-image-2.5-sunburst",
+								"gemini-nano-banana-2.1",
+							].includes(kit.texture.model) ||
 								kit.texture.format !== "webp")))) ||
 				(kit.hero !== undefined &&
 					(!kit.hero ||
@@ -251,9 +253,11 @@ export function catalogueProblems(projects: Project[]): string[] {
 				texture.scope !== "hexly-campaign" ||
 				texture.format !== "webp" ||
 				texture.display !== "single" ||
-				!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
-					texture.model,
-				) ||
+				![
+					"gpt-image-2.5-flare",
+					"gpt-image-2.5-sunburst",
+					"gemini-nano-banana-2.1",
+				].includes(texture.model) ||
 				!hasTranslations(texture.name) ||
 				!hasTranslations(texture.description) ||
 				!Number.isFinite(texture.surfaceOpacity) ||

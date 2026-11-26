@@ -188,17 +188,26 @@ export function textureManifestProblems(value: unknown): string[] {
 			.join(",") !== "dark,light" ||
 		generations.some((g) => {
 			const raw = object(g.raw);
+			const model = String(g.model);
+			const expectedProvider =
+				model === "gemini-nano-banana-2.1" ? "Google Gemini" : "Azure OpenAI";
+			const expectedRawPaths =
+				model === "gemini-nano-banana-2.1"
+					? [`${root}/texture-${g.theme}.png`, `${root}/texture-${g.theme}.jpg`]
+					: [`${root}/texture-${g.theme}.png`];
 			return (
-				!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
-					String(g.model),
-				) ||
-				g.provider !== "Azure OpenAI" ||
+				![
+					"gpt-image-2.5-flare",
+					"gpt-image-2.5-sunburst",
+					"gemini-nano-banana-2.1",
+				].includes(model) ||
+				g.provider !== expectedProvider ||
 				!text(g.source) ||
 				g.crop !== false ||
 				g.recolor !== false ||
 				!["delegated-agent", "owner"].includes(String(g.acceptance)) ||
 				g.ownerReviewedExactBytes !== (g.acceptance === "owner") ||
-				raw.path !== `${root}/texture-${g.theme}.png` ||
+				!expectedRawPaths.includes(String(raw.path)) ||
 				raw.width !== 1024 ||
 				raw.height !== 1024 ||
 				![

@@ -247,9 +247,26 @@
 		}
 	},
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/squirrel/v1.0.0",
+		"version": "1.0.1",
+		"root": "/icons/squirrel/v1.0.1",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/squirrel/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Woodland oak canopy",
+			"zh": "栎树与榛叶纸面"
+		},
+		"description": {
+			"en": "Oak and hazel leaves, slender twigs and empty acorn cups rest along the right margin of quiet matte mineral paper.",
+			"zh": "栎树与榛叶、细枝和空橡果壳托沿安静的矿物纸面右侧入画，与赤橙松鼠徽标的自然栖息地相呼应。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gemini-nano-banana-2.1",
+		"surfaceOpacity": 0.28
 	}
 }

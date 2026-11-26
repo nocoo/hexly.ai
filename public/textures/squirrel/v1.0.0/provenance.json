@@ -1,0 +1,111 @@
+{
+	"project": "squirrel",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "Habitat foliage",
+		"name": { "en": "Woodland oak canopy", "zh": "栎树与榛叶纸面" },
+		"description": {
+			"en": "Oak and hazel leaves, slender twigs and empty acorn cups rest along the right margin of quiet matte mineral paper.",
+			"zh": "栎树与榛叶、细枝和空橡果壳托沿安静的矿物纸面右侧入画，与赤橙松鼠徽标的自然栖息地相呼应。"
+		},
+		"motif": "Asymmetric gray-sage lobed oak leaves, hazel leaves, fine twigs and small empty acorn cups pressed along the right and lower-right margins.",
+		"rationale": "Matches Squirrel's woodland oak and hazel cache habitat with right-margin composition and quiet left 62% typography space, distinct from other animal leaves."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/squirrel.json",
+		"purpose": {
+			"en": "Personal API key and token vault MCP server on Cloudflare Workers with OAuth 2.1 and Bot Bearer Tokens.",
+			"zh": "基于 Cloudflare Workers 的个人级 API Key / Token 托管 MCP 服务，支持 OAuth 2.1 与无头 Bot Token。"
+		},
+		"inspectedRevision": "0b2869d9b4a8516808bca812394ecc1618949617"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/squirrel-family-2026-11-26-01-02.png",
+		"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb",
+		"rgbaSha256": "08b535aacdd0abbfe075531cbc1b90091d00fa06d4007b781c7afd66b9d28707",
+		"source": "https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png",
+		"bytes": 661253,
+		"width": 1024,
+		"height": 1024,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-11-26-squirrel-workflow-sdk/inventory.json",
+	"sourceInventorySha256": "687d7cdb5fd644658a68a9d1e1e5ca587bd5334baa64c015c1f5fbb1429c3ae8",
+	"siteBaseline": null,
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/squirrel/texture-studies/2026-11-26-nano-01/light",
+			"request": "/textures/squirrel/v1.0.0/source-light-request.json",
+			"response": "/textures/squirrel/v1.0.0/source-light-response.json",
+			"prompt": "/textures/squirrel/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/squirrel/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/squirrel/v1.0.0/texture-light.jpg",
+				"sha256": "47ee078e9c8a2d26e2b9d4e1dea75c4a016138cd3c66f43c4ed9f4ab940e9472",
+				"bytes": 793585,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/squirrel/texture-studies/2026-11-26-nano-01/dark",
+			"request": "/textures/squirrel/v1.0.0/source-dark-request.json",
+			"response": "/textures/squirrel/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/squirrel/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/squirrel/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/squirrel/v1.0.0/texture-dark.jpg",
+				"sha256": "68c65efd413d6f53663010f8d748aee51f140f00670cd3bdd88d96e57dbcf9a5",
+				"bytes": 819820,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Google Gemini generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.28
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.370230440739429,
+		"darkMinimum": 4.747639033063709,
+		"target": 4.7
+	},
+	"recordedAt": "2026-11-26T10:55:28.853Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

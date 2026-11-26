@@ -1,0 +1,52 @@
+{
+	"schemaVersion": 1,
+	"project": "squirrel",
+	"version": "1.0.1",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"foreground": {
+		"subject": {
+			"en": "Fragmented russet-orange squirrel head portrait",
+			"zh": "赤橙色切面松鼠"
+		},
+		"original": "/logos/family/squirrel/2026-11-26-01/02/transparent.png",
+		"display": "/logos/family/squirrel/2026-11-26-01/02/transparent-1024.webp",
+		"width": 1024,
+		"height": 1024,
+		"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/squirrel/v1.0.0/texture-light.jpg",
+		"sha256": "47ee078e9c8a2d26e2b9d4e1dea75c4a016138cd3c66f43c4ed9f4ab940e9472",
+		"originalWidth": 1024,
+		"placementWidth": 1024,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-review/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 1024,
+	"height": 1024,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/squirrel/2026-11-26-01",
+		"texture": "/textures/squirrel/v1.0.0/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 388539,
+		"foregroundPixelsAtOutline": 12152,
+		"opaqueForegroundRgbUnchanged": true
+	}
+}

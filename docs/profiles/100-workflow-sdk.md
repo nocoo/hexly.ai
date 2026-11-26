@@ -58,12 +58,22 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Workflow SDK current icon](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded-160-7a246072b88e.webp)
+![Workflow SDK current icon](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/rounded-160-197cf4ce3a51.webp)
 
-- [1024 px square WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/icon-1024-a2a929aea248.webp) · [1024 px rounded WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/rounded-1024-43ba534a656c.webp) · [Favicon ICO](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/workflow-sdk/icons/v1.0.0/guide.md)
-- Native canvas 1024 × 1024; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- [1024 px square WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/icon-1024-734e45fb1ffd.webp) · [1024 px rounded WebP](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/rounded-1024-c0b51f34052c.webp) · [Favicon ICO](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/favicon.ico) · [Apple touch](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/workflow-sdk/icons/v1.0.1/guide.md)
+- Native canvas 1024 × 1024; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
+## Current campaign texture
+
+- Dual-kernel routing bench / 双核分流压纹纸面: Blind-embossed split-channel routing grooves, circular terminal seats and rotary detent arcs pressed across matte pressboard.
+- 在全画幅哑光压纹纸板上压出分流双通道导槽、圆形终端座与旋转档位点弧线，呼应双内核切换工具。
+- Model: `gemini-nano-banana-2.1`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
+- [Paper WebP](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/workflow-sdk/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/workflow-sdk/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity
 

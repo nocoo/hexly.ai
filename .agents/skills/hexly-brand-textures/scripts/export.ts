@@ -178,6 +178,10 @@ for (const row of rows) {
 		sha(await sharp(original).ensureAlpha().raw().toBuffer()),
 		reference.rgbaSha256,
 	);
+	const batchModel =
+		typeof batch.model === "string" && batch.model.trim()
+			? batch.model
+			: "gpt-image-2.5-flare";
 	const sources = [];
 	for (const theme of ["light", "dark"] as const) {
 		const selection = await readJson(`${row.study}/${theme}/selection.json`);
@@ -188,10 +192,15 @@ for (const row of rows) {
 				(run.startsWith(attemptPrefix) &&
 					/^(?:0[2-9]|[1-9][0-9]+)$/.test(run.slice(attemptPrefix.length))),
 		);
-		const raw = await readFile(`${run}/raw.png`);
 		const approval = await readJson(`${run}/raw-review.json`);
 		const request = await readJson(`${run}/request.json`);
 		const response = await readJson(`${run}/response.json`);
+		const rawExt =
+			response.outputs?.[0]?.format === "jpeg" ||
+			String(response.outputs?.[0]?.path ?? "").endsWith(".jpg")
+				? "jpg"
+				: "png";
+		const raw = await readFile(`${run}/raw.${rawExt}`);
 		assert.equal(approval.status, "approved");
 		assert.equal(approval.imageSha256, sha(raw));
 		assert(["delegated-agent", "owner"].includes(approval.acceptance));
@@ -205,7 +214,11 @@ for (const row of rows) {
 		assert.equal(response.status, "succeeded");
 		assert.equal(response.outputs.length, 1);
 		assert.equal(response.outputs[0].sha256, sha(raw));
-		assert.equal(request.parameters.model, "gpt-image-2.5-flare");
+		assert(
+			["gpt-image-2.5-flare", "gemini-nano-banana-2.1"].includes(
+				request.parameters.model,
+			),
+		);
 		assert.equal(
 			request.promptSha256,
 			sha(await readFile(`${run}/prompt.txt`)),
@@ -217,6 +230,12 @@ for (const row of rows) {
 			theme,
 			run,
 			raw,
+			rawExt,
+			model: String(request.parameters.model),
+			provider:
+				request.parameters.model === "gemini-nano-banana-2.1"
+					? "Google Gemini"
+					: "Azure OpenAI",
 			approval,
 			request,
 			response,
@@ -246,10 +265,13 @@ for (const row of rows) {
 		});
 	for (const source of sources) {
 		const prefix = `texture-${source.theme}`;
+		const rawExt = source.rawExt;
 		add(
-			`${prefix}.png`,
+			`${prefix}.${rawExt}`,
 			source.raw,
-			"Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			source.model === "gemini-nano-banana-2.1"
+				? "Untouched native Gemini Nano Banana JPEG; full canvas and metadata preserved"
+				: "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
 		);
 		add(
 			`${prefix}.webp`,
@@ -289,21 +311,23 @@ for (const row of rows) {
 		description: row.design.description,
 		format: "webp",
 		display: "single",
-		model: "gpt-image-2.5-flare",
+		model: (sources[0]?.model ?? batchModel) as NonNullable<
+			Project["brandTexture"]
+		>["model"],
 		surfaceOpacity: opacity,
 	};
 	const generations = sources.map((source) => ({
 		theme: source.theme,
-		model: source.request.parameters.model,
-		provider: "Azure OpenAI",
-		requestId: source.response.requestId,
+		model: source.model,
+		provider: source.provider,
+		requestId: source.response.requestId ?? null,
 		source: source.run,
 		request: `${row.root}/source-${source.theme}-request.json`,
 		response: `${row.root}/source-${source.theme}-response.json`,
 		prompt: `${row.root}/texture-${source.theme}-prompt.txt`,
 		approval: `${row.root}/source-${source.theme}-raw-review.json`,
 		raw: {
-			path: `${row.root}/texture-${source.theme}.png`,
+			path: `${row.root}/texture-${source.theme}.${source.rawExt}`,
 			sha256: sha(source.raw),
 			bytes: source.raw.length,
 			width: 1024,
@@ -314,6 +338,7 @@ for (const row of rows) {
 		crop: false,
 		recolor: false,
 	}));
+	const providerName = sources[0]?.provider ?? "Azure OpenAI";
 	const scope = {
 		id: "hexly-campaign",
 		productUIChanged: false,
@@ -332,11 +357,10 @@ for (const row of rows) {
 		existingKit: row.existingKit,
 		sourceInventory: values.inventory,
 		sourceInventorySha256: sha(await readFile(values.inventory)),
-		siteBaseline: batch.siteBaseline,
-		tokenSource: batch.tokenSource,
+		siteBaseline: batch.siteBaseline ?? null,
+		tokenSource: batch.tokenSource ?? "src/styles/base.css",
 		generations,
-		rights:
-			"Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+		rights: `Owner-commissioned ${providerName} generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.`,
 		delivery: {
 			nativeSize: [1024, 1024],
 			webpQuality: 90,
@@ -369,12 +393,17 @@ for (const row of rows) {
 		await readFile(`${row.study}/brief.md`),
 		"Original product-specific design brief",
 	);
+	const modelLabel =
+		catalogue.model === "gemini-nano-banana-2.1"
+			? "Google Gemini Nano Banana"
+			: "Azure OpenAI gpt-image-2.5-flare";
+	const rawDownloadExt = sources[0]?.rawExt ?? "png";
 	add(
 		"license.txt",
-		`Hexly campaign texture pack: ${row.title} / ${row.version}\n\nGenerated PNG/WebP: Azure OpenAI gpt-image-2.5-flare, commissioned by the owner under applicable provider terms. Original native PNGs retain their metadata. No third-party reference image or font was submitted. This is generated raster decoration, not a native SVG or hand-drawn artwork; no new exclusive trademark claim is made.\n\nThis pack does not copy or relicense the project Logo, fonts, icons or Hero. Their original bytes, rights and existing kit remain authoritative. The review page uses Hexly's separately licensed Space Grotesk font (SIL OFL 1.1) through the existing site font URL.\n\nAuthored code, prompts, documentation and assembly:\n\n${await readFile("LICENSE", "utf8")}\n`,
+		`Hexly campaign texture pack: ${row.title} / ${row.version}\n\nGenerated raster images: ${modelLabel}, commissioned by the owner under applicable provider terms. Original native bytes retain their metadata. No third-party reference image or font was submitted. This is generated raster decoration, not a native SVG or hand-drawn artwork; no new exclusive trademark claim is made.\n\nThis pack does not copy or relicense the project Logo, fonts, icons or Hero. Their original bytes, rights and existing kit remain authoritative. The review page uses Hexly's separately licensed Space Grotesk font (SIL OFL 1.1) through the existing site font URL.\n\nAuthored code, prompts, documentation and assembly:\n\n${await readFile("LICENSE", "utf8")}\n`,
 		"Generated-output terms, MIT authored material, separate original identity and font rights",
 	);
-	const guide = `# ${row.title} — ${row.design.name.en}\n\n${row.design.description.en}\n\n${row.design.description.zh}\n\n## Scope\n\nThis v${row.version} texture pack is independent of the existing Logo/brand kit. It decorates Hexly project pages and Hexly-created campaigns; it does not change the product's identity, palette, UI, release or archived status. ${row.reviewCandidate ? "The referenced identity is an unadopted Hexly review candidate, not an official product Logo" : "Preserve official Logo bytes and colors"}: ${reference.sha256}.\n\n${row.design.rationale}\n\n## Use\n\nUse texture-light.webp or texture-dark.webp for full specimens. The PNGs are untouched native 1024 × 1024 responses; the WebP files are whole-canvas delivery encodings. Use the -320.webp files for cards. Light and dark were generated independently with the actual Workflow GPT Image Flare helper.\n\nKeep aspect ratio 1:1, background-size: contain and background-repeat: no-repeat. Do not crop, stretch, mirror, patch edges or claim seamless repetition. Full specimens show the image at full opacity. Text-bearing regions use a separate background layer at opacity ${opacity}, softly masked at the left edge; text and Logo remain fully opaque. Use Hexly's real paper/ink tokens and minimum 4.5:1 normal text contrast. Measured worst-case contrasts at export are ${contrasts[0]?.toFixed(3)}:1 light and ${contrasts[1]?.toFixed(3)}:1 dark, including normal/hover surface colors before the mask.\n\n## Exact generation and reuse\n\nRead texture-light-prompt.txt and texture-dark-prompt.txt, plus the source request/response and raw-review records. ${sources.map((source) => `${source.theme}: ${source.approval.acceptance === "owner" ? "the owner reviewed and approved these exact native bytes" : "the owner delegated acceptance and Codex inspected the raw canvas; no personal owner review is claimed"}.`).join(" ")} Reuse the accepted files directly instead of regenerating them for each campaign. Check manifest.json hashes before adopting.\n\nSource batch: ${values.inventory}\nOriginal source study: ${row.study}\nExisting identity kit: ${row.existingKit?.root ?? (row.reviewCandidate ? "None; source-project identity adoption is pending." : "None; the archived original/emoji identity is retained.")}\n\nOld kit texture URLs remain historical and byte-identical. New texture revisions use a new independent pack version and an updated Project.brandTexture reference. Publication receipts remain in docs/assets/publication.jsonl; recover exact URLs with bun run assets:r2 -- url ${row.root}/manifest.json.\n`;
+	const guide = `# ${row.title} — ${row.design.name.en}\n\n${row.design.description.en}\n\n${row.design.description.zh}\n\n## Scope\n\nThis v${row.version} texture pack is independent of the existing Logo/brand kit. It decorates Hexly project pages and Hexly-created campaigns; it does not change the product's identity, palette, UI, release or archived status. ${row.reviewCandidate ? "The referenced identity is an unadopted Hexly review candidate, not an official product Logo" : "Preserve official Logo bytes and colors"}: ${reference.sha256}.\n\n${row.design.rationale}\n\n## Use\n\nUse texture-light.webp or texture-dark.webp for full specimens. The raw native outputs are untouched 1024 × 1024 responses; the WebP files are whole-canvas delivery encodings. Use the -320.webp files for cards. Light and dark were generated independently with ${modelLabel}.\n\nKeep aspect ratio 1:1, background-size: contain and background-repeat: no-repeat. Do not crop, stretch, mirror, patch edges or claim seamless repetition. Full specimens show the image at full opacity. Text-bearing regions use a separate background layer at opacity ${opacity}, softly masked at the left edge; text and Logo remain fully opaque. Use Hexly's real paper/ink tokens and minimum 4.5:1 normal text contrast. Measured worst-case contrasts at export are ${contrasts[0]?.toFixed(3)}:1 light and ${contrasts[1]?.toFixed(3)}:1 dark, including normal/hover surface colors before the mask.\n\n## Exact generation and reuse\n\nRead texture-light-prompt.txt and texture-dark-prompt.txt, plus the source request/response and raw-review records. ${sources.map((source) => `${source.theme}: ${source.approval.acceptance === "owner" ? "the owner reviewed and approved these exact native bytes" : "the owner delegated acceptance and Codex inspected the raw canvas; no personal owner review is claimed"}.`).join(" ")} Reuse the accepted files directly instead of regenerating them for each campaign. Check manifest.json hashes before adopting.\n\nSource batch: ${values.inventory}\nOriginal source study: ${row.study}\nExisting identity kit: ${row.existingKit?.root ?? (row.reviewCandidate ? "None; source-project identity adoption is pending." : "None; the archived original/emoji identity is retained.")}\n\nOld kit texture URLs remain historical and byte-identical. New texture revisions use a new independent pack version and an updated Project.brandTexture reference. Publication receipts remain in docs/assets/publication.jsonl; recover exact URLs with bun run assets:r2 -- url ${row.root}/manifest.json.\n`;
 	add(
 		"guide.md",
 		guide,
@@ -385,7 +414,7 @@ for (const row of rows) {
 	const font = assetUrl("/fonts/space-grotesk.woff2");
 	add(
 		"review.html",
-		`<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>${escapeHtml(row.title)} textures · hexly.ai</title><link rel="canonical" href="https://hexly.ai/projects/${row.id}#texture"><style>@font-face{font-family:Space;src:url('${font}') format('woff2');font-weight:100 900;font-display:swap}*{box-sizing:border-box}body{margin:0;padding:clamp(20px,5vw,64px);font-family:Space,system-ui,sans-serif;color:#30372e;background:#f0f0e9}main{max-width:1160px;margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px}a{color:inherit;text-underline-offset:4px}h1{font-size:clamp(32px,5vw,58px);line-height:1.2;letter-spacing:-.045em;margin:48px 0 20px}p{max-width:760px;line-height:1.8}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:36px 0}figure{margin:0;overflow:hidden;border:1px solid #d4d8cb;border-radius:20px;background:#f8f8f2;color:#30372e}figure.dark{background:#1e2824;color:#e6e9dc}figure img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}figcaption{display:flex;justify-content:space-between;gap:18px;padding:18px;font-size:13px}footer{display:flex;gap:20px;flex-wrap:wrap;margin-top:32px;font-size:13px}.meta{font-size:12px;line-height:1.8}@media(max-width:640px){.pair{grid-template-columns:1fr;gap:20px}header{align-items:flex-start}h1{margin-top:32px}figcaption{flex-wrap:wrap}}@media(prefers-color-scheme:dark){body{color:#e6e9dc;background:#1e2824}figure{border-color:#3d4940}}</style></head><body><main><header><a href="/projects/${row.id}#texture">${escapeHtml(row.title)} ↗</a><span>HEXLY / CAMPAIGN SURFACES / v${row.version}</span></header><h1>${escapeHtml(row.design.name.en)}</h1><p>${escapeHtml(row.design.description.en)}</p><p lang="zh">${escapeHtml(row.design.description.zh)}</p><div class="pair">${sources.map((source) => `<figure class="${source.theme}"><img src="${href(`texture-${source.theme}.webp`)}" crossorigin="anonymous" width="1024" height="1024" alt="${escapeHtml(row.design.name.en)} — ${source.theme} full canvas"><figcaption><span>${source.theme === "light" ? "Paper" : "Night"}</span><a href="${href(`texture-${source.theme}.png`)}" download>Original PNG ↓</a><a href="${href(`texture-${source.theme}-prompt.txt`)}">Exact prompt ↗</a></figcaption></figure>`).join("")}</div><p class="meta">GPT Image Flare · Independent light and dark generations · Complete canvases, no crop or repetition · ${row.reviewCandidate ? "Hexly review candidate; source adoption pending." : "Official project identity preserved."}</p><footer><a href="${href("manifest.json")}">Files &amp; SHA-256</a><a href="${href("guide.md")}">Usage guide</a><a href="${href("provenance.json")}">Generation provenance</a><a href="${href("license.txt")}">License</a></footer></main></body></html>\n`,
+		`<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>${escapeHtml(row.title)} textures · hexly.ai</title><link rel="canonical" href="https://hexly.ai/projects/${row.id}#texture"><style>@font-face{font-family:Space;src:url('${font}') format('woff2');font-weight:100 900;font-display:swap}*{box-sizing:border-box}body{margin:0;padding:clamp(20px,5vw,64px);font-family:Space,system-ui,sans-serif;color:#30372e;background:#f0f0e9}main{max-width:1160px;margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px}a{color:inherit;text-underline-offset:4px}h1{font-size:clamp(32px,5vw,58px);line-height:1.2;letter-spacing:-.045em;margin:48px 0 20px}p{max-width:760px;line-height:1.8}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:36px 0}figure{margin:0;overflow:hidden;border:1px solid #d4d8cb;border-radius:20px;background:#f8f8f2;color:#30372e}figure.dark{background:#1e2824;color:#e6e9dc}figure img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}figcaption{display:flex;justify-content:space-between;gap:18px;padding:18px;font-size:13px}footer{display:flex;gap:20px;flex-wrap:wrap;margin-top:32px;font-size:13px}.meta{font-size:12px;line-height:1.8}@media(max-width:640px){.pair{grid-template-columns:1fr;gap:20px}header{align-items:flex-start}h1{margin-top:32px}figcaption{flex-wrap:wrap}}@media(prefers-color-scheme:dark){body{color:#e6e9dc;background:#1e2824}figure{border-color:#3d4940}}</style></head><body><main><header><a href="/projects/${row.id}#texture">${escapeHtml(row.title)} ↗</a><span>HEXLY / CAMPAIGN SURFACES / v${row.version}</span></header><h1>${escapeHtml(row.design.name.en)}</h1><p>${escapeHtml(row.design.description.en)}</p><p lang="zh">${escapeHtml(row.design.description.zh)}</p><div class="pair">${sources.map((source) => `<figure class="${source.theme}"><img src="${href(`texture-${source.theme}.webp`)}" crossorigin="anonymous" width="1024" height="1024" alt="${escapeHtml(row.design.name.en)} — ${source.theme} full canvas"><figcaption><span>${source.theme === "light" ? "Paper" : "Night"}</span><a href="${href(`texture-${source.theme}.${rawDownloadExt}`)}" download>Original ↓</a><a href="${href(`texture-${source.theme}-prompt.txt`)}">Exact prompt ↗</a></figcaption></figure>`).join("")}</div><p class="meta">${escapeHtml(modelLabel)} · Independent light and dark generations · Complete canvases, no crop or repetition · ${row.reviewCandidate ? "Hexly review candidate; source adoption pending." : "Official project identity preserved."}</p><footer><a href="${href("manifest.json")}">Files &amp; SHA-256</a><a href="${href("guide.md")}">Usage guide</a><a href="${href("provenance.json")}">Generation provenance</a><a href="${href("license.txt")}">License</a></footer></main></body></html>\n`,
 		"Responsive whole-canvas review document; material downloads served by R2",
 	);
 	for (const [name, file] of files)

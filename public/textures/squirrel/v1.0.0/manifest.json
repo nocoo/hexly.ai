@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "squirrel",
+	"version": "1.0.0",
+	"root": "/textures/squirrel/v1.0.0",
+	"canonical": "https://hexly.ai/projects/squirrel#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/squirrel/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Woodland oak canopy", "zh": "栎树与榛叶纸面" },
+		"description": {
+			"en": "Oak and hazel leaves, slender twigs and empty acorn cups rest along the right margin of quiet matte mineral paper.",
+			"zh": "栎树与榛叶、细枝和空橡果壳托沿安静的矿物纸面右侧入画，与赤橙松鼠徽标的自然栖息地相呼应。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gemini-nano-banana-2.1",
+		"surfaceOpacity": 0.28
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/squirrel-family-2026-11-26-01-02.png",
+		"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb",
+		"rgbaSha256": "08b535aacdd0abbfe075531cbc1b90091d00fa06d4007b781c7afd66b9d28707",
+		"source": "https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png",
+		"bytes": 661253,
+		"width": 1024,
+		"height": 1024,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/squirrel/texture-studies/2026-11-26-nano-01/light",
+			"request": "/textures/squirrel/v1.0.0/source-light-request.json",
+			"response": "/textures/squirrel/v1.0.0/source-light-response.json",
+			"prompt": "/textures/squirrel/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/squirrel/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/squirrel/v1.0.0/texture-light.jpg",
+				"sha256": "47ee078e9c8a2d26e2b9d4e1dea75c4a016138cd3c66f43c4ed9f4ab940e9472",
+				"bytes": 793585,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gemini-nano-banana-2.1",
+			"provider": "Google Gemini",
+			"requestId": null,
+			"source": "artwork/brands/squirrel/texture-studies/2026-11-26-nano-01/dark",
+			"request": "/textures/squirrel/v1.0.0/source-dark-request.json",
+			"response": "/textures/squirrel/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/squirrel/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/squirrel/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/squirrel/v1.0.0/texture-dark.jpg",
+				"sha256": "68c65efd413d6f53663010f8d748aee51f140f00670cd3bdd88d96e57dbcf9a5",
+				"bytes": 819820,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-light.jpg",
+			"role": "Untouched native Gemini Nano Banana JPEG; full canvas and metadata preserved",
+			"bytes": 793585,
+			"sha256": "47ee078e9c8a2d26e2b9d4e1dea75c4a016138cd3c66f43c4ed9f4ab940e9472"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 209864,
+			"sha256": "5138fb062ae7854a48ac75fbed09527942086397d096e6005bce06d204eb186b"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6574,
+			"sha256": "4d1f861748609b32d3fc5d66cca4e65032128aa9830adda6013bb82426fa3b5a"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1658,
+			"sha256": "3a1c20453ddcf4d7608f3d7c18f8258ec9920189f8e6fa41b6235ded79993578"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 332,
+			"sha256": "13a9b5a2eb235324f4429a05b71206ae3272049904e6925bbd78fe078e6f5c77"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 423,
+			"sha256": "247dce39aa82993da8bdf80be9fed4ae7f0e3e0ed37d8c7cfcd38a6ec18b8584"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 723,
+			"sha256": "80450a2442bb2de25d813e225040ee661f022e6e2149aed1072a3284bc185fe6"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-dark.jpg",
+			"role": "Untouched native Gemini Nano Banana JPEG; full canvas and metadata preserved",
+			"bytes": 819820,
+			"sha256": "68c65efd413d6f53663010f8d748aee51f140f00670cd3bdd88d96e57dbcf9a5"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 216262,
+			"sha256": "89e07324b03dcb1c7df39aafdadb8d08a08aabf837556a27b56efc9e650099d2"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6452,
+			"sha256": "d47d0c32770586e7543488e99f98a6344efc10439c8be6ab169a9ea362cd5b91"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1703,
+			"sha256": "e8759ba2b8f061e3849e1aa261ed5ba4226022be3e07345ca7dd3b7c0b068280"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 331,
+			"sha256": "0cb65cf823f89161d19b00a665d44cd4a4e41196256fd3c1348e353d9346fa51"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 422,
+			"sha256": "ee76c0c29234fa92e6ba02b82f7148a9af10923449776e2a1f654189d537279f"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 722,
+			"sha256": "e1b1be8771eea19613f4dba67348c5397f01686bb8ede5a882679e5c4af8b4a7"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4686,
+			"sha256": "a59e025786aa03ab53c8ad0bbbd654aeb8cd0a97edd486efa263808c43dd95ca"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1340,
+			"sha256": "cc90116bf96fa881b4645847553f887236d94249609f0e9f308ac48fb449e317"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "658d3e9175d32ae2aa3d8171539ec2470e8640a33517b32e85a2ff29cf0d2e6d"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2584,
+			"sha256": "6830d4441c88b02fe11f0222b9c8f74e27e951e2fea893f04fdd7fd97bfff1f6"
+		},
+		{
+			"path": "/textures/squirrel/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3596,
+			"sha256": "6af9eec1b9f79e14e235c142a18c30bdffb32d8feb66af6bd797b06c42ec79bb"
+		}
+	]
+}

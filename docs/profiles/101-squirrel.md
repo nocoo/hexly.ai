@@ -33,12 +33,12 @@ Provide a personal API key and token vault on Cloudflare Workers that dispatches
 
 ## Current logo
 
-![Squirrel source identity](https://hexly.ai/logos/display/squirrel-family-2026-11-26-160.webp)
+![Squirrel source identity](https://h.no.mt/projects/squirrel/identity/v1.0.0/squirrel-family-2026-11-26-160-9cd6b1048cdc.webp)
 
 - Type: Owner-approved generated raster identity; model unrecorded, source-adopted bytes and native JPEG provenance preserved
 - Subject: Fragmented russet-orange squirrel head portrait
 - [Source](https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/display/squirrel-family-2026-11-26-1024.webp)
+- [Preserved asset](https://h.no.mt/projects/squirrel/identity/v1.0.0/squirrel-family-2026-11-26-1024-d9671397c7fb.webp)
 - Original dimensions: 1024 × 1024
 - Original size: 661253 bytes
 - SHA-256: `e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb`
@@ -58,12 +58,22 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Squirrel current icon](https://h.no.mt/projects/squirrel/icons/v1.0.0/rounded-160.webp)
+![Squirrel current icon](https://h.no.mt/projects/squirrel/icons/v1.0.1/rounded-160-3103b8761ba7.webp)
 
-- [1024 px square WebP](https://h.no.mt/projects/squirrel/icons/v1.0.0/icon-1024.webp) · [1024 px rounded WebP](https://h.no.mt/projects/squirrel/icons/v1.0.0/rounded-1024.webp) · [Favicon ICO](https://h.no.mt/projects/squirrel/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/squirrel/icons/v1.0.0/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/squirrel/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/squirrel/icons/v1.0.0/guide.md)
-- Native canvas 1024 × 1024; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- [1024 px square WebP](https://h.no.mt/projects/squirrel/icons/v1.0.1/icon-1024-647790e85c89.webp) · [1024 px rounded WebP](https://h.no.mt/projects/squirrel/icons/v1.0.1/rounded-1024-a3d0c71b7b62.webp) · [Favicon ICO](https://h.no.mt/projects/squirrel/icons/v1.0.1/favicon.ico) · [Apple touch](https://h.no.mt/projects/squirrel/icons/v1.0.1/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/squirrel/icons/v1.0.1/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/squirrel/icons/v1.0.1/guide.md)
+- Native canvas 1024 × 1024; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
+## Current campaign texture
+
+- Woodland oak canopy / 栎树与榛叶纸面: Oak and hazel leaves, slender twigs and empty acorn cups rest along the right margin of quiet matte mineral paper.
+- 栎树与榛叶、细枝和空橡果壳托沿安静的矿物纸面右侧入画，与赤橙松鼠徽标的自然栖息地相呼应。
+- Model: `gemini-nano-banana-2.1`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.28.
+- [Paper WebP](https://h.no.mt/projects/squirrel/textures/v1.0.0/texture-light.webp) · [Night WebP](https://h.no.mt/projects/squirrel/textures/v1.0.0/texture-dark.webp) · [Exact paper prompt](https://h.no.mt/projects/squirrel/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/squirrel/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/squirrel/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/squirrel/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/squirrel/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity
 
@@ -75,8 +85,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Site path: `/projects/squirrel#brand`; [local gallery](https://index.dev.hexly.ai/projects/squirrel#brand)
 - [Static review HTML](../../artwork/logo-family/squirrel/2026-11-26-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/squirrel/2026-11-26-01)
-- [Transparent foreground](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/transparent-1024.webp); SHA-256: `e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb`
-- [Square icon WebP](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/transparent-1024.webp)
+- [Transparent foreground](https://h.no.mt/projects/squirrel/identity/v1.0.0/squirrel-family-2026-11-26-1024-d9671397c7fb.webp); SHA-256: `e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb`
+- [Square icon WebP](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/icon-1024.webp), [rounded icon WebP](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/rounded-1024.webp), [transparent foreground WebP](https://h.no.mt/projects/squirrel/identity/v1.0.0/squirrel-family-2026-11-26-1024-d9671397c7fb.webp)
 - [Exact prompt](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/squirrel/2026-11-26-01/02/manifest.json) (raw `raw.jpg` master cold-archived in Google Drive `My Drive/hexly.ai/04-masters-png/`)
 - First project identity; no earlier independent Logo existed at intake.
 - Generation: gemini-nano-banana-2.1, native 1024 × 1024; transparent extraction and presentation are separate finishing steps.

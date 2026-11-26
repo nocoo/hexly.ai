@@ -137,7 +137,11 @@
 					"const": "single"
 				},
 				"model": {
-					"enum": ["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"]
+					"enum": [
+						"gpt-image-2.5-flare",
+						"gpt-image-2.5-sunburst",
+						"gemini-nano-banana-2.1"
+					]
 				},
 				"surfaceOpacity": {
 					"type": "number",
@@ -223,10 +227,14 @@
 						"enum": ["light", "dark"]
 					},
 					"model": {
-						"enum": ["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"]
+						"enum": [
+							"gpt-image-2.5-flare",
+							"gpt-image-2.5-sunburst",
+							"gemini-nano-banana-2.1"
+						]
 					},
 					"provider": {
-						"const": "Azure OpenAI"
+						"enum": ["Azure OpenAI", "Google Gemini"]
 					},
 					"source": {
 						"type": "string",

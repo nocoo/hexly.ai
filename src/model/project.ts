@@ -62,12 +62,17 @@ export interface PaletteColor {
 	label?: Record<Locale, string>;
 }
 
+export type TextureModel =
+	| "gpt-image-2.5-flare"
+	| "gpt-image-2.5-sunburst"
+	| "gemini-nano-banana-2.1";
+
 export interface TextureDescription {
 	name: Record<Locale, string>;
 	description: Record<Locale, string>;
 	format?: "svg" | "webp";
 	display?: "repeat" | "single";
-	model?: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
+	model?: TextureModel;
 }
 
 /** Decorative campaign material has its own version; identity kits stay frozen. */
@@ -77,7 +82,7 @@ export interface ProjectTexture extends TextureDescription {
 	scope: "hexly-campaign";
 	format: "webp";
 	display: "single";
-	model: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
+	model: TextureModel;
 	surfaceOpacity: number;
 }
 

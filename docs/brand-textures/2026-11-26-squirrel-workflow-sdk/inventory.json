@@ -1,0 +1,94 @@
+{
+	"date": "2026-11-26",
+	"scope": "Independent campaign textures and textured presentation icons for squirrel and workflow-sdk",
+	"model": "gemini-nano-banana-2.1",
+	"generationAuthorization": "Owner authorized texture generation via Nano Banana (gemini-nano-banana-2.1) for squirrel and workflow-sdk on 2026-11-26.",
+	"acceptanceAuthorization": "Exact-byte owner approval recorded for all four light and dark raw outputs on 2026-11-26.",
+	"publicationAuthorization": "Owner authorized continuing full onboarding & publication workflow on 2026-11-26.",
+	"projects": [
+		{
+			"id": "squirrel",
+			"title": "Squirrel",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/squirrel/v1.0.0",
+			"version": "1.0.0",
+			"study": "artwork/brands/squirrel/texture-studies/2026-11-26-nano-01",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/squirrel-family-2026-11-26-01-02.png",
+				"sha256": "e0b07713d9f3473bd9c27f3656d862cfbc601835cc8698a18e44db0e84287fbb",
+				"rgbaSha256": "08b535aacdd0abbfe075531cbc1b90091d00fa06d4007b781c7afd66b9d28707",
+				"source": "https://github.com/nocoo/squirrel/blob/0b2869d9b4a8516808bca812394ecc1618949617/logo.png",
+				"bytes": 661253,
+				"width": 1024,
+				"height": 1024,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "animal",
+				"language": "Habitat foliage",
+				"name": {
+					"en": "Woodland oak canopy",
+					"zh": "栎树与榛叶纸面"
+				},
+				"description": {
+					"en": "Oak and hazel leaves, slender twigs and empty acorn cups rest along the right margin of quiet matte mineral paper.",
+					"zh": "栎树与榛叶、细枝和空橡果壳托沿安静的矿物纸面右侧入画，与赤橙松鼠徽标的自然栖息地相呼应。"
+				},
+				"motif": "Asymmetric gray-sage lobed oak leaves, hazel leaves, fine twigs and small empty acorn cups pressed along the right and lower-right margins.",
+				"rationale": "Matches Squirrel's woodland oak and hazel cache habitat with right-margin composition and quiet left 62% typography space, distinct from other animal leaves."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/squirrel.json",
+				"purpose": {
+					"en": "Personal API key and token vault MCP server on Cloudflare Workers with OAuth 2.1 and Bot Bearer Tokens.",
+					"zh": "基于 Cloudflare Workers 的个人级 API Key / Token 托管 MCP 服务，支持 OAuth 2.1 与无头 Bot Token。"
+				},
+				"inspectedRevision": "0b2869d9b4a8516808bca812394ecc1618949617"
+			}
+		},
+		{
+			"id": "workflow-sdk",
+			"title": "Workflow SDK",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/workflow-sdk/v1.0.0",
+			"version": "1.0.0",
+			"study": "artwork/brands/workflow-sdk/texture-studies/2026-11-26-nano-01",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/workflow-sdk-family-2026-11-20-01-01.png",
+				"sha256": "c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd",
+				"rgbaSha256": "d9995761a28973b28639b372ef9e0f9c57b4d8d926bfab7060c3995a85700d59",
+				"source": "https://github.com/nocoo/workflow-sdk/blob/301aad6deccb80c8cc02ff696553859e31ddf7b7/logo.png",
+				"bytes": 1062184,
+				"width": 1024,
+				"height": 1024,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "Routing pressboard",
+				"name": {
+					"en": "Dual-kernel routing bench",
+					"zh": "双核分流压纹纸面"
+				},
+				"description": {
+					"en": "Blind-embossed split-channel routing grooves, circular terminal seats and rotary detent arcs pressed across matte pressboard.",
+					"zh": "在全画幅哑光压纹纸板上压出分流双通道导槽、圆形终端座与旋转档位点弧线，呼应双内核切换工具。"
+				},
+				"motif": "Full-square blind-embossed paired routing grooves, rounded bends, circular terminal-seat rings and rotary detent dot arcs pressed into matte pressboard.",
+				"rationale": "Relates Workflow SDK's dual-kernel selector switch identity to a continuous tactile routing surface with distinct split-channel geometry."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/workflow-sdk.json",
+				"purpose": {
+					"en": "TypeScript Workflow & Agent SDK with dual kernels: Antigravity (primary) and pure-TS Vercel AI SDK.",
+					"zh": "支持 Antigravity 与纯 TypeScript Vercel AI SDK 双内核的编排与智能体开发套件。"
+				},
+				"inspectedRevision": "301aad6deccb80c8cc02ff696553859e31ddf7b7"
+			}
+		}
+	]
+}

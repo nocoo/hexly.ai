@@ -211,9 +211,26 @@
 		}
 	},
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/workflow-sdk/v1.0.0",
+		"version": "1.0.1",
+		"root": "/icons/workflow-sdk/v1.0.1",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/workflow-sdk/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Dual-kernel routing bench",
+			"zh": "双核分流压纹纸面"
+		},
+		"description": {
+			"en": "Blind-embossed split-channel routing grooves, circular terminal seats and rotary detent arcs pressed across matte pressboard.",
+			"zh": "在全画幅哑光压纹纸板上压出分流双通道导槽、圆形终端座与旋转档位点弧线，呼应双内核切换工具。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gemini-nano-banana-2.1",
+		"surfaceOpacity": 0.41
 	}
 }
