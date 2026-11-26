@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.13.0] - 2026-11-26
+
+### Maintenance
+
+- upgrade base-ci to v2026.19 and use production env ([ae54586](https://github.com/nocoo/hexly.ai/commit/ae54586df193e80279f74f884b8772ec9438eded))
+
+### Features
+
+- add card textures and v1.0.1 textured icons for squirrel and workflow-sdk ([9d2ed7f](https://github.com/nocoo/hexly.ai/commit/9d2ed7fdaa54ca1eb36c24d95b0840a79e22dd1d))
+
+### Documentation
+
+- require card textures and textured presentation icons ([21e05d6](https://github.com/nocoo/hexly.ai/commit/21e05d60694e464c0c2095645d7316aa492df8ca))
+
 ## [1.12.0] - 2026-11-26
 
 ### Maintenance
