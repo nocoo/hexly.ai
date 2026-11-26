@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-26: Unscoped social:build re-dated unchanged share cards
+
+Running `bun run social:build` without `-- --project squirrel` during single-project onboarding rewrote `recordedAt`, `renderedAt`, and dated filenames across `site` and all 100 existing project cards to `20261126`, while content-addressed R2 deduplication in `src/data/asset-routes.json` preserved their existing `20261114` delivery keys. That mismatch passed `social:check` and `assets:check` locally, then failed `tests/assets/social-cards.test.ts` (`serves the registered card through share metadata`) in CI `L1: Unit (Catalogue & Media)` during the `v1.12.0` release attempt.
+
+Always pass `-- --project <id>` when generating share cards for single-project onboarding, and run `bun run assets:prepare-test && bun run test:assets` locally before invoking `bun run release`.
+
 ## 2026-11-15: A successful push did not adopt the selected Logo
 
 The selected two-tone Logo remained behind the development-only material flag, while the catalogue, favicon, root master, Video Kit and shared social-card badge still selected October's identity. The prior push and deployment were green but did not establish Logo adoption. The owner then explicitly authorized replacing the old identity and pushing. Remove the identity-selection branch, publish the exact approved derivatives first, and assert production-mode header/favicon paths and matching publication receipts before delivery. The share-card fingerprint must also include the actual shared header-mark bytes, not only each project's main artwork.
