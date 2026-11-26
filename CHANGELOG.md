@@ -18,6 +18,10 @@
 
 - onboard squirrel with animal logo, icons and R2 receipts ([24eb14a](https://github.com/nocoo/hexly.ai/commit/24eb14a688d392e798c11339312e16ce275eba21))
 
+### Fixes
+
+- keep unchanged share-card dates scoped to squirrel onboarding ([9944da4](https://github.com/nocoo/hexly.ai/commit/9944da418b0acbad8cd9bab90512995ca2708f90))
+
 ## [1.11.0] - 2026-11-23
 
 ### Fixes
