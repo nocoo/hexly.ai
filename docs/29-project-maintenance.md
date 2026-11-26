@@ -81,9 +81,12 @@ For new GPT Image requests, the owner's 2026-09-14 model policy is
 `gpt-image-2.5-sunburst` for Logos and primary identity artwork, and
 `gpt-image-2.5-flare` for secondary decoration such as support textures. Read the
 current `system0-image-generation-gpt` skill and select the deployment explicitly;
-the owner has already authorized Flare for this decorative scope. Preserve the
-actual model in each receipt and all historical model records. Model choice does
-not replace the exact-byte raw-image checkpoint or imply asset publication.
+the owner has already authorized Flare for this decorative scope. When Azure GPT
+Image credentials are absent or blocked and the owner authorizes Nano Banana,
+`gemini-nano-banana-2.1` (`Google Gemini`) is the documented fallback. Preserve
+the actual model and provider in each receipt and all historical model records.
+Model choice does not replace the exact-byte raw-image checkpoint or imply asset
+publication.
 
 Backgrounds need the same product research as Logos. Connect the product's core
 interaction to a plausible material or working environment, then choose its
@@ -160,12 +163,12 @@ and `AGENTS.md` via `system1-github-agents-md`**).
 4. Update the source repository description and `nocoo/nocoo` profile entry,
    retaining established emoji and section/order conventions. Record the profile
    revision before citing it in catalogue provenance.
-5. Add the project JSON and index entry, archive its actual artwork and palette
-   evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Read the
-   project R2 skill: inventory, publish and verify the new versioned materials
-   before release. Keep binary working files out of Git/deploy and save receipts.
-   Use the logo skill when identity creation or promotion is in scope.
-6. Validate and publish the source and this site within the user's authorization.
+5. Generate and integrate **both** card background textures and textured logo presentation icons (required for every non-archived project unless an existing identity lacks `family`):
+   - **Card texture (`brandTexture`)**: Read `.agents/skills/hexly-brand-textures/SKILL.md` and `references/independent-packs.md`; archive a pre-generation study in `artwork/brands/<id>/texture-studies/<batch>/` matching animal/bird habitat foliage or physical-tool working surface, stop for raw-image confirmation unless waived, export `public/textures/<id>/v1.0.0/` with `export.ts` (`contrast >= 4.7`), and record `brandTexture` in `src/data/projects/<id>.json`.
+   - **Textured logo icon (`presentationIcon`)**: Using the exported light texture (`texture-light` at `0.7` opacity over `#f0f0e9`), untouched native transparent foreground, and iOS-style continuous-corner squircle mask, run `bun scripts/build-textured-icon.ts --project <id> --version 1.0.0` (or `v1.0.1` when superseding an untextured icon) to produce `public/icons/<id>/v<X.Y.Z>/` (`{icon,rounded}-{32..1024}.webp`, 180×180 `apple-touch-icon.png`, 6-size `favicon.ico`, `provenance.json`, `guide.md`, `manifest.json`), and update `presentationIcon` in `src/data/projects/<id>.json`.
+6. Add the project JSON and index entry, archive its actual artwork and palette
+   evidence, and run `bun run assets:build`, scoped `bun run social:build -- --project <id>`, `bun run docs:profiles`, `bun run assets:check`, and `bun run assets:prepare-test && bun run test:assets`. Read `.agents/skills/hexly-r2-media/SKILL.md`: cold-archive raw PNG/JPG masters + `.wrangler/icon-masters/<id>/` + `artwork/` to Google Drive (`bun run assets:cold-backup -- --project <id> ... --upload`), remove raw PNG/JPG masters from `public/textures/` before `assets:r2 -- inventory --prune`, then run scoped `plan`, `publish --upload`, and `verify` before release. Keep binary working files out of Git/deploy and save receipts. Use `.agents/skills/hexly-logo-pipeline/SKILL.md` when identity creation or promotion is in scope.
+7. Validate and publish the source and this site within the user's authorization.
    A health-only correction uses Z+1. After the next Cron run, verify the exact
    endpoint and current result at `status.hexly.ai`; disclose real failures.
 

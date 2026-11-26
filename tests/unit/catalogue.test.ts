@@ -414,4 +414,10 @@ describe("the imported project catalogue", () => {
 			loadProjects(async () => new Response("", { status: 404 })),
 		).rejects.toThrow("Catalogue HTTP 404");
 	});
+	it("requires every active project to carry an independent brandTexture pack", () => {
+		const missingTexture = projects
+			.filter((project) => !project.archived && !project.brandTexture)
+			.map((project) => project.id);
+		expect(missingTexture).toEqual([]);
+	});
 });

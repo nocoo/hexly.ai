@@ -118,12 +118,19 @@ describe("independent campaign textures", () => {
 				const request = await json(`public${generation.request}`);
 				const response = await json(`public${generation.response}`);
 				const review = await json(`public${generation.approval}`);
-				expect(request.parameters).toMatchObject({
-					model: "gpt-image-2.5-flare",
-					size: "1024x1024",
-					quality: "high",
-					n: 1,
-				});
+				if (generation.model === "gemini-nano-banana-2.1") {
+					expect(request.parameters).toMatchObject({
+						model: "gemini-nano-banana-2.1",
+						aspectRatio: "1:1",
+					});
+				} else {
+					expect(request.parameters).toMatchObject({
+						model: "gpt-image-2.5-flare",
+						size: "1024x1024",
+						quality: "high",
+						n: 1,
+					});
+				}
 				expect(request.promptSha256).toBe(
 					sha(await readFile(`public${generation.prompt}`)),
 				);
@@ -168,6 +175,41 @@ describe("independent campaign textures", () => {
 			expect(guide).toContain("independent of the identity kit");
 		},
 	);
+
+	it("requires every active family project outside the frozen legacy set to composite its presentationIcon over brandTexture", async () => {
+		const legacyUntexturedIcons = new Set([
+			"ag-cli",
+			"chamelo",
+			"hackernews-on-this-day",
+			"hexly-ai",
+			"linie",
+			"mao",
+			"pi-superagent",
+			"rhino",
+		]);
+		for (const project of projects) {
+			if (project.archived || !project.family) continue;
+			expect(
+				project.brandTexture,
+				`${project.id}: missing brandTexture`,
+			).toBeDefined();
+			expect(
+				project.presentationIcon,
+				`${project.id}: missing presentationIcon`,
+			).toBeDefined();
+			if (legacyUntexturedIcons.has(project.id) || !project.presentationIcon)
+				continue;
+			const manifest = await json(
+				`public${project.presentationIcon.root}/manifest.json`,
+			);
+			expect(manifest.texture?.path, project.id).toMatch(
+				new RegExp(
+					`^/textures/${project.id}/v\\d+\\.\\d+\\.\\d+/texture-light\\.(png|jpg)$`,
+				),
+			);
+			expect(manifest.texture?.opacity, project.id).toBe(0.7);
+		}
+	});
 
 	it("selects current textures independently of legacy kits, including archived projects", () => {
 		const project = projects[0];

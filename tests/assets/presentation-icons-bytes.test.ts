@@ -11,7 +11,9 @@ describe("approved textured icon CDN bytes", () => {
 			(p) =>
 				p.presentationIcon &&
 				(p.presentationIcon.width < 1024 ||
-					["frogie", "rio", "coffee"].includes(p.id)),
+					["frogie", "rio", "coffee", "squirrel", "workflow-sdk"].includes(
+						p.id,
+					)),
 		);
 		for (const project of selected) {
 			const icon = project.presentationIcon;

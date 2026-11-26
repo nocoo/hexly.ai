@@ -153,7 +153,7 @@ identity kit: `public/textures/<id>/v<X.Y.Z>/` maps to
 `projects/<id>/textures/v<X.Y.Z>/` in R2. Select it with optional
 `Project.brandTexture`; `brandKit.texture` remains the historical fallback.
 Read [the pack runbook](references/independent-packs.md) for schema, export,
-discovery and publication. Existing animal Logos still get habitat foliage even
+discovery and publication. Every non-archived project onboarding requires **both** a light/dark card `brandTexture` (`public/textures/<id>/v1.0.0/`) **and** a textured `presentationIcon` composited over that light texture (`bun scripts/build-textured-icon.ts --project <id> --version 1.0.0`, followed by scoped `bun run social:build -- --project <id>`). Existing animal Logos still get habitat foliage even
 when the product is a tool; archive status never changes as a side effect.
 The batch runner excludes archived entries even when an old inventory lists them
 for generation. Reuse reviewed completed outputs without new generation.
