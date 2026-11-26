@@ -29,12 +29,12 @@ If CI or deployment fails, no tag is created. Fix the problem, commit it, and re
 
 ## CI/CD credentials and isolation
 
-Repository Actions secrets:
+GitHub `production` environment configuration:
 
-| Name | Purpose |
-| --- | --- |
-| `CLOUDFLARE_API_TOKEN` | Migrate `hexly-status`, deploy the Worker, Cron, assets, and custom domains |
-| `CLOUDFLARE_ACCOUNT_ID` | Select the Cloudflare account |
+| Name | Kind | Purpose |
+| --- | --- | --- |
+| `CLOUDFLARE_API_TOKEN` | Environment secret | Migrate `hexly-status`, deploy the Worker, Cron, assets, and custom domains |
+| `CLOUDFLARE_ACCOUNT_ID` | Environment variable | Select the Cloudflare account |
 
 The token needs Workers deployment and D1 write permissions on the account,
 Workers Routes permissions for the zone, and the read permissions Wrangler
@@ -51,7 +51,7 @@ or a skipped deployment as publication. GitHub Release notes link both runs.
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.
 
 The shared deployment workflow is pinned at
-`ac635753a869cb85fad1f52aae4ccbd6119f3cae`. It delegates publication to
+`98fc023423f82b010f17e0ebbc9dd580fe68736a` (`v2026.19`). It delegates publication to
 `bun run deploy:worker`, using the project's frozen CLI resolution rather than a
 second exact-version input. The script applies D1 migrations before deploying;
 the shared workflow retains source-run, main-freshness and credential boundaries.

@@ -27,7 +27,7 @@ jobs:
        github.event.workflow_run.event == 'push')
     # The reusable workflow proves the CI run and requires the successful
     # `quality / Z1: Gate` check on that SHA before deploying.
-    uses: nocoo/base-ci/.github/workflows/deploy-worker.yml@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+    uses: nocoo/base-ci/.github/workflows/deploy-worker.yml@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
     with:
       expected-workflow-path: ".github/workflows/ci.yml"
       expected-workflow-name: "CI"
@@ -49,4 +49,3 @@ jobs:
         DEPLOY_URL=https://status.hexly.ai bun run verify:production
     secrets:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -1,6 +1,6 @@
 # System0 quality slots, implemented natively for hexly.ai.
 # Canonical check names are `quality / <ID>: <Name>`; `Z1: Gate` is the only
-# required check. See docs/03-quality.md and nocoo/base-ci v2026.18.
+# required check. See docs/03-quality.md and nocoo/base-ci v2026.19.
 name: Quality Slots
 
 on:
@@ -29,7 +29,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -57,7 +57,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -85,7 +85,7 @@ jobs:
           persist-credentials: false
 
       - name: Lint workflows
-        uses: nocoo/base-ci/.github/actions/lint-workflows@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/lint-workflows@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
 
       - name: Record SHA
         id: record-sha
@@ -106,7 +106,7 @@ jobs:
           fetch-depth: 1
 
       - name: Scan secrets
-        uses: nocoo/base-ci/.github/actions/scan-secrets@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/scan-secrets@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
 
       - name: Record SHA
         id: record-sha
@@ -126,7 +126,7 @@ jobs:
           persist-credentials: false
 
       - name: Scan dependencies
-        uses: nocoo/base-ci/.github/actions/scan-dependencies@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/scan-dependencies@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           lockfiles: "bun.lock"
 
@@ -148,7 +148,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -183,7 +183,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -224,7 +224,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -299,7 +299,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -356,7 +356,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -370,7 +370,7 @@ jobs:
           path: dist
 
       - name: Setup Playwright
-        uses: nocoo/base-ci/.github/actions/setup-playwright@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-playwright@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           browsers: chromium
@@ -419,7 +419,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/setup-js@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -463,7 +463,7 @@ jobs:
     steps:
       - name: Verify quality slots
         id: gate
-        uses: nocoo/base-ci/.github/actions/z1-gate@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c  # v2026.18
+        uses: nocoo/base-ci/.github/actions/z1-gate@98fc023423f82b010f17e0ebbc9dd580fe68736a  # v2026.19
         with:
           needs-json: ${{ toJSON(needs) }}
           expected-sha: ${{ github.sha }}
