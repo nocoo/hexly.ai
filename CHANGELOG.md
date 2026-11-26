@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.12.0] - 2026-11-26
+
+### Maintenance
+
+- record post-deploy R2 retirement of 4,641 legacy objects ([f4cb556](https://github.com/nocoo/hexly.ai/commit/f4cb5564877590dc703ea11f79d22d935a97d5cf))
+- fold catalogue verification into L1 Unit slot ([17cd275](https://github.com/nocoo/hexly.ai/commit/17cd2750d6e5ce1a14f9df15e61d6a93c0c90cd4))
+- align quality workflows to base-ci v2026.17 ([b4c2b71](https://github.com/nocoo/hexly.ai/commit/b4c2b710825905cdcf407e89f43ef53e3752cbfb))
+- move deploy:check to P1: Package and set 80% L1 floor ([0611fb1](https://github.com/nocoo/hexly.ai/commit/0611fb10225f8514ef3ac22c143e9036b91197aa))
+- upgrade base-ci to v2026.18, reuse B1 dist in L3/L4, trim L4 to core smoke ([0e8aa30](https://github.com/nocoo/hexly.ai/commit/0e8aa30dd14597980749d11adae1e2571c0feb38))
+
+### Documentation
+
+- archive squirrel study 2026-11-26-01 pending raw review ([1aca493](https://github.com/nocoo/hexly.ai/commit/1aca493f7191464d903db6d7aaf7bb9a3c75fb8a))
+
+### Features
+
+- onboard squirrel with animal logo, icons and R2 receipts ([24eb14a](https://github.com/nocoo/hexly.ai/commit/24eb14a688d392e798c11339312e16ce275eba21))
+
 ## [1.11.0] - 2026-11-23
 
 ### Fixes
