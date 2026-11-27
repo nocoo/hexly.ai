@@ -1,9 +1,16 @@
 import { readFile } from "node:fs/promises";
-import { digest, hydrate, pool, readInventory } from "./asset-storage";
+import {
+	digest,
+	hydrate,
+	pool,
+	pruneAssetCache,
+	readInventory,
+} from "./asset-storage";
 
 const files = readInventory().files.filter((file) => Boolean(file.path));
 
-await hydrate(files, 16);
+await hydrate(files, 32);
+await pruneAssetCache(new Set(files.map((file) => file.sha256)));
 let verified = 0;
 await pool(
 	files,

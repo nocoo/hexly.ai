@@ -717,6 +717,22 @@ export async function hydrate(files: StoredAsset[], concurrency: number) {
 	);
 }
 
+export async function pruneAssetCache(validHashes: Set<string>) {
+	const cache = ".wrangler/asset-cache";
+	if (!existsSync(cache)) return 0;
+	const stale = readdirSync(cache).filter((name) => !validHashes.has(name));
+	if (!stale.length) return 0;
+	await pool(
+		stale,
+		async (name) => {
+			await rm(`${cache}/${name}`, { force: true });
+		},
+		32,
+	);
+	console.info(`Pruned ${stale.length} obsolete asset cache object(s).`);
+	return stale.length;
+}
+
 export async function retireObjects(
 	keys: string[],
 	execute: boolean,

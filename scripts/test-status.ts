@@ -152,12 +152,12 @@ export async function runTestStatus(profile: "http" | "browser") {
 			}),
 			{ mode: 0o600, flag: "wx" },
 		);
-		await command([
+		const created = await command([
 			...database,
 			"--command",
-			`CREATE TABLE _test_marker(key TEXT PRIMARY KEY,value TEXT NOT NULL); INSERT INTO _test_marker VALUES ('env','test'),('run_id','${runId}');`,
+			`CREATE TABLE _test_marker(key TEXT PRIMARY KEY,value TEXT NOT NULL); INSERT INTO _test_marker VALUES ('env','test'),('run_id','${runId}'); SELECT key,value FROM _test_marker ORDER BY key;`,
 		]);
-		await verifyMarker();
+		assertMarker(JSON.parse(created).at(-1)?.results, runId);
 		marked = true;
 		await command([
 			"d1",
@@ -172,7 +172,6 @@ export async function runTestStatus(profile: "http" | "browser") {
 		]);
 		await verifyMarker();
 		await seed("test", directory, async (args) => {
-			await verifyMarker();
 			await command(args);
 		});
 		await verifyMarker();
