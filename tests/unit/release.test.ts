@@ -25,7 +25,7 @@ it("deploys the frozen project toolchain with migrations before publication", ()
 			[
 				"-e",
 				"console.log(JSON.stringify(Bun.YAML.parse(await Bun.file(process.argv[1]).text())))",
-				".github/workflows/release.yml",
+				".github/workflows/pipeline.yml",
 			],
 			{ encoding: "utf8" },
 		),

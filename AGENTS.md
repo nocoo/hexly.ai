@@ -43,9 +43,9 @@ bun run verify  # full local sweep (600s; not CI gate)
 
 ## Quality & Local Gates
 
-Follows `system1-quality`; CI slots & pinned `base-ci` live in [`quality-slots.yml`](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main`; admin bypass allows direct pushes). Status: `enforced`, `planned`, `manual`, `N/A`.
+Follows `system1-quality`; CI (`pipeline.yml` -> `quality-slots.yml`, `nocoo/base-ci` `v2026.24`) requires `quality / Z1: Gate` on `main` (admin bypass allows direct pushes), and CD (`pipeline.yml` `deploy` -> `deploy-worker.yml` D1-D5) deploys the `b1-dist` artifact on `main` push (or `workflow_dispatch` with `deploy: true`) via `bun run deploy:worker` and verifies `hexly.ai` + `status.hexly.ai`. Status: `enforced`, `planned`, `manual`, `N/A`.
 
-- **Exceptions**: `L2 Runtime` `N/A` (D1 in L1 via `getPlatformProxy`, HTTP/E2E in L3/L4 reusing `B1` artifact). `L1 Unit` runs two jobs: `L1: Unit` and `L1: Unit (Catalogue & Media)`. `L4 E2E` runs a single Desktop Chromium core smoke suite via `setup-playwright`. `P1 Package` runs `bun run deploy:check` against the `B1` artifact. `Z1` uses `nocoo/base-ci` `z1-gate` (`v2026.20`).
+- **Exceptions**: `L2 Runtime` `N/A` (D1 in L1 via `getPlatformProxy`, HTTP/E2E in L3/L4 reusing `B1` artifact). `L1 Unit` runs two jobs: `L1: Unit` and `L1: Unit (Catalogue & Media)`. `L4 E2E` runs a single Desktop Chromium core smoke suite via `setup-playwright`. `P1 Package` runs `bun run deploy:check` against the `B1` artifact. `Z1` uses `nocoo/base-ci` `z1-gate` (`v2026.24`).
 - **L1 coverage**: 80% ×4 on `src/model/**` (excl. `brand-manifest.ts`, `social-card.ts`), `worker/status.ts`, gate helpers; never hydrates materials or reads `h.no.mt`.
 - **Hooks** (`bun run prepare`, `.husky/`): `pre-commit` (`gate:commit`) checks staged index (tracked binaries, `G1`, `check:focus`, `check:purity`, `S1`, `S2`, `L1`).
 - **Pre-push** (`gate:push`): `git archive` per stdin OID -> `G2`, `G1`, fixtures, `check:isolation`, `B1`, `L3`, `L4`. Details: [Quality](docs/03-quality.md).
