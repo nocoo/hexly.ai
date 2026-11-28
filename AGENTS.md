@@ -12,7 +12,7 @@ bun install --frozen-lockfile
 bun run dev  # index.dev.hexly.ai -> :7048 + Worker :37048
 bun run typecheck  # S1: emits .wrangler/types.d.ts; browser+Worker
 bun run lint  # S2: Biome check-only, 0 warnings
-bun run test:coverage  # L1: >=80% x4, asset-free
+bun run test:coverage  # L1: >=90/85% (st/fn/ln>=90, br>=85), asset-free
 bun run assets:prepare-test && bun run test:assets  # test fixtures & bytes
 bun run test:http  # L3: isolation + build + Worker HTTP
 bun run test:browser  # L4: isolation + build + Chromium (no --only-shell)
@@ -46,7 +46,7 @@ bun run verify  # full local sweep (600s; not CI gate)
 Follows `system1-quality`; CI (`pipeline.yml` -> `quality-slots.yml`, `nocoo/base-ci` `v2026.24`) requires `quality / Z1: Gate` on `main` (admin bypass allows direct pushes), and CD (`pipeline.yml` `deploy` -> `deploy-worker.yml` D1-D5) deploys the `b1-dist` artifact on `main` push (or `workflow_dispatch` with `deploy: true`) via `bun run deploy:worker` and verifies `hexly.ai` + `status.hexly.ai`. Status: `enforced`, `planned`, `manual`, `N/A`.
 
 - **Exceptions**: `L2 Runtime` `N/A` (D1 in L1 via `getPlatformProxy`, HTTP/E2E in L3/L4 reusing `B1` artifact). `L1 Unit` runs two jobs: `L1: Unit` and `L1: Unit (Catalogue & Media)`. `L4 E2E` runs a single Desktop Chromium core smoke suite via `setup-playwright`. `P1 Package` runs `bun run deploy:check` against the `B1` artifact. `Z1` uses `nocoo/base-ci` `z1-gate` (`v2026.24`).
-- **L1 coverage**: 80% ×4 on `src/model/**` (excl. `brand-manifest.ts`, `social-card.ts`), `worker/status.ts`, gate helpers; never hydrates materials or reads `h.no.mt`.
+- **L1 coverage**: 90% stmts/funcs/lines and 85% branches on `src/model/**` (excl. `brand-manifest.ts`, `social-card.ts`), `worker/**`, gate helpers; never hydrates materials or reads `h.no.mt`.
 - **Hooks** (`bun run prepare`, `.husky/`): `pre-commit` (`gate:commit`) checks staged index (tracked binaries, `G1`, `check:focus`, `check:purity`, `S1`, `S2`, `L1`).
 - **Pre-push** (`gate:push`): `git archive` per stdin OID -> `G2`, `G1`, fixtures, `check:isolation`, `B1`, `L3`, `L4`. Details: [Quality](docs/03-quality.md).
 

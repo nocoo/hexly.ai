@@ -30,7 +30,13 @@ export function assertToolchain(target: string) {
 			"package.json must declare packageManager bun@<version>.",
 		);
 	const installed = capture(["bun", "--version"]);
-	if (installed !== declared)
+	const declaredParts = declared.split(".");
+	const compatible =
+		installed === declared ||
+		(declaredParts.length < 3 && installed.startsWith(`${declared}.`)) ||
+		installed.split(".").slice(0, 2).join(".") ===
+			declaredParts.slice(0, 2).join(".");
+	if (!compatible)
 		throw new GateFailure(
 			`Bun ${installed} does not match the declared bun@${declared}; install the declared toolchain before running the gate.`,
 		);

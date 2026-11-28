@@ -26,7 +26,7 @@ export default defineConfig({
 			provider: "v8",
 			include: [
 				"src/model/**/*.ts",
-				"worker/status.ts",
+				"worker/**/*.ts",
 				"scripts/gate-refs.ts",
 				"scripts/gate-runtime.ts",
 				"scripts/isolation.ts",
@@ -40,7 +40,7 @@ export default defineConfig({
 				"src/model/social-card.ts",
 			],
 			reporter: ["text", "json-summary", "html"],
-			thresholds: { statements: 80, branches: 80, functions: 80, lines: 80 },
+			thresholds: { statements: 90, lines: 90, functions: 90, branches: 85 },
 		},
 	},
 });
